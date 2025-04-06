@@ -1,0 +1,139 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+print("MADE BY 9HA9")
+
+local players = game:GetService("Players")
+local plr = players.LocalPlayer
+local npcs = workspace.NPCSFolder
+
+local foundKiller = nil
+local foundSheriff = nil
+
+local survivorItems = {
+    "Lead Pipe",
+    "Pen",
+    "Boxcutters",
+    "KitchenKnife"
+}
+
+local sheriffItems = {
+    "IZVEKH-412",
+    "RR-Snubby"
+}
+
+
+function juggernautMode()
+    npcs.ChildAdded:Connect(function(char)
+        if plr.Character == char then return end
+
+        for _, v in char:GetChildren() do
+            if v:IsA("BasePart") then
+                local box = Instance.new("BoxHandleAdornment")
+                box.Name = v.Name.." ESP"
+                box.Parent = char
+                box.Adornee = v
+                box.AlwaysOnTop = true
+                box.ZIndex = 10
+                box.Size = v.Name == "Head" and v.Size + Vector3.new(0.2, 0.2, 0.2) or v.Size
+                box.Transparency = 0.5
+                box.Color3 = Color3.fromRGB(0, 255, 0)
+
+                if v:FindFirstChildOfClass("Mesh") then
+                    local nMesh = v:FindFirstChildOfClass("Mesh"):Clone()
+                    nMesh.Parent = box
+                end
+            end
+        end
+
+        local plr = players:GetPlayerFromCharacter(char)
+        char.ChildAdded:Connect(function(child)
+            print(child.Name)
+            print(table.find(survivorItems, child.Name), "SURVIVOR")
+            print(table.find(sheriffItems, child.Name), "SHERIFF")
+            if not foundKiller and not foundSheriff then
+                if table.find(survivorItems, child.Name) == nil then
+                    if table.find(sheriffItems, child.Name) ~= nil then
+                        foundSheriff = plr
+                        print("FOUND SHERIFF "..foundSheriff.Name)
+
+                        local c = plr.Character
+                        for _, v in c:GetChildren() do
+                            if v:IsA("BasePart") then
+                                local box = c:FindFirstChild(v.Name.." ESP")
+                                box.Color3 = Color3.fromRGB(0, 0, 255)
+                            end
+                        end
+                    else
+                        foundKiller = plr
+                        print("FOUND KILLER "..foundKiller.Name)
+
+                        local c = plr.Character
+                        for _, v in c:GetChildren() do
+                            if v:IsA("BasePart") then
+                                local box = c:FindFirstChild(v.Name.." ESP")
+                                box.Color3 = Color3.fromRGB(255, 0, 0)
+                            end
+                        end
+                    end
+                end
+            end
+        end)
+    end)
+end
+
+
+npcs.ChildAdded:Connect(function(char)
+    if plr.Character == char then return end
+
+    for _, v in char:GetChildren() do
+        if v:IsA("BasePart") then
+            local box = Instance.new("BoxHandleAdornment")
+            box.Name = v.Name.." ESP"
+            box.Parent = char
+            box.Adornee = v
+            box.AlwaysOnTop = true
+            box.ZIndex = 10
+            box.Size = v.Name == "Head" and v.Size + Vector3.new(0.2, 0.2, 0.2) or v.Size
+            box.Transparency = 0.5
+            box.Color3 = Color3.fromRGB(0, 255, 0)
+
+            if v:FindFirstChildOfClass("Mesh") then
+                local nMesh = v:FindFirstChildOfClass("Mesh"):Clone()
+                nMesh.Parent = box
+            end
+        end
+    end
+
+    local plr = players:GetPlayerFromCharacter(char)
+    plr.Backpack.ChildAdded:Connect(function(child)
+        print(child.Name)
+        print(table.find(survivorItems, child.Name), "SURVIVOR")
+        print(table.find(sheriffItems, child.Name), "SHERIFF")
+        if not foundKiller then
+            if table.find(survivorItems, child.Name) == nil then
+                if table.find(sheriffItems, child.Name) ~= nil then
+                    foundSheriff = plr
+                    print("FOUND SHERIFF "..foundSheriff.Name)
+
+                    local c = plr.Character
+                    for _, v in c:GetChildren() do
+                        if v:IsA("BasePart") then
+                            local box = c:FindFirstChild(v.Name.." ESP")
+                            box.Color3 = Color3.fromRGB(0, 0, 255)
+                        end
+                    end
+                else
+                    foundKiller = plr
+                    print("FOUND KILLER "..foundKiller.Name)
+
+                    local c = plr.Character
+                    for _, v in c:GetChildren() do
+                        if v:IsA("BasePart") then
+                            local box = c:FindFirstChild(v.Name.." ESP")
+                            box.Color3 = Color3.fromRGB(255, 0, 0)
+                        end
+                    end
+                end
+            end
+        end
+    end)
+end)
