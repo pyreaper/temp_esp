@@ -1,6 +1,9 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-print("MADE BY 9HA9")
-print("Version: 1.0 (will connect to webhost soon)")
+
+local VERSION = 0.9
+
+print("MADE BY 9HUH9")
+print("Version: "..VERSION)
 
 -- Basic setup
 local players = game:GetService("Players")
@@ -22,7 +25,8 @@ local survivorItems = {
     "Lead Pipe",
     "Pen",
     "Boxcutters",
-    "KitchenKnife"
+    "KitchenKnife",
+    "Glass"
 }
 
 local sheriffItems = {
@@ -56,6 +60,9 @@ function onDEBT()
         if plr.Character == char then return end
         local cPlayer = players:GetPlayerFromCharacter(char)
 
+        local humanoid = char:FindFirstChildOfClass("Humanoid")
+        humanoid.NameDisplayDistance = 100
+
         for _, v in char:GetChildren() do
             if v:IsA("BasePart") then
                 --if plr:FindFirstChild("KILLA") then
@@ -73,18 +80,10 @@ function onDEBT()
                 box.Size = v.Name == "Head" and v.Size + Vector3.new(0.2, 0.2, 0.2) or v.Size
                 box.Transparency = 0.5
                 box.Color3 = Color3.fromRGB(0, 255, 0)
-
-                if v:FindFirstChildOfClass("Mesh") then
-                    local nMesh = v:FindFirstChildOfClass("Mesh"):Clone()
-                    nMesh.Parent = box
-                end
             end
         end
 
         local bpConnection = cPlayer.Backpack.ChildAdded:Connect(function(child)
-            print(child.Name)
-            print(table.find(survivorItems, child.Name), "SURVIVOR")
-            print(table.find(sheriffItems, child.Name), "SHERIFF")
             if table.find(survivorItems, child.Name) == nil then
                 if table.find(sheriffItems, child.Name) ~= nil then
                     foundSheriff = cPlayer
@@ -139,22 +138,19 @@ function onJUGGERNAUT()
                 box.Size = v.Name == "Head" and v.Size + Vector3.new(0.2, 0.2, 0.2) or v.Size
                 box.Transparency = 0.5
                 box.Color3 = Color3.fromRGB(0, 0, 255)
-
-                if v:FindFirstChildOfClass("Mesh") then
-                    local nMesh = v:FindFirstChildOfClass("Mesh"):Clone()
-                    nMesh.Parent = box
-                end
             end
         end
 
         local bpConnection = char.ChildAdded:Connect(function(child)
-            if table.find(survivorItems, child.Name) == nil then
-                foundKiller = cPlayer
-                local c = cPlayer.Character
-                for _, v in c:GetChildren() do
-                    if v:IsA("BasePart") then
-                        local box = c:FindFirstChild(v.Name.." ESP")
-                        box.Color3 = Color3.fromRGB(255, 0, 0)
+            if child:IsA("Tool") then
+                if not foundKiller and table.find(survivorItems, child.Name) == nil then
+                    foundKiller = cPlayer
+                    local c = cPlayer.Character
+                    for _, v in c:GetChildren() do
+                        if v:IsA("BasePart") then
+                            local box = c:FindFirstChild(v.Name.." ESP")
+                            box.Color3 = Color3.fromRGB(255, 0, 0)
+                        end
                     end
                 end
             end
@@ -165,10 +161,39 @@ function onJUGGERNAUT()
     currentConnections[2] = npcsConnection
 end
 
+function onTEAMWAR()
+    local npcsConnection = npcs.ChildAdded:Connect(function(char)
+        if plr.Character == char then return end
+        local plrHRP = plr.Character.HumanoidRootPart
+        local cPlayerHRP = char.HumanoidRootPart
+        local distance = (cPlayerHRP.Position - plrHRP.Position).Magnitude
+        print(distance)
+        if distance < 15 then return end
+
+        local cPlayer = players:GetPlayerFromCharacter(char)
+        for _, v in char:GetChildren() do
+            if v:IsA("BasePart") then
+                local box = Instance.new("BoxHandleAdornment")
+                box.Name = v.Name.." ESP"
+                box.Parent = char
+                box.Adornee = v
+                box.AlwaysOnTop = true
+                box.ZIndex = 10
+                box.Size = v.Name == "Head" and v.Size + Vector3.new(0.2, 0.2, 0.2) or v.Size
+                box.Transparency = 0.5
+                box.Color3 = Color3.fromRGB(255, 0, 0)
+            end
+        end
+    end)
+
+    currentConnections[1] = npcsConnection
+end
+
 
 local modeFunctions = {
     ["DEBT"] = onDEBT,
-    ["'Juggernaut'"] = onJUGGERNAUT
+    ["'Juggernaut'"] = onJUGGERNAUT,
+    ["TEAMWAR"] = onTEAMWAR
 }
 
 status:GetPropertyChangedSignal("Value"):Connect(function()
@@ -177,6 +202,8 @@ status:GetPropertyChangedSignal("Value"):Connect(function()
             for _, v in currentConnections do
                 v:Disconnect()
             end
+            foundKiller = nil
+            foundSheriff = nil
             inGame = false
         end
 
