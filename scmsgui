@@ -1,7 +1,3 @@
--- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
-
--- Instances:
-
 local Converted = {
 	["_9HUH9"] = Instance.new("ScreenGui");
 	["_9HUH91"] = Instance.new("TextButton");
