@@ -42,8 +42,6 @@ local Icon_6 = Instance.new("ImageLabel")
 local Enabled_6 = Instance.new("ImageLabel")
 local Placeholder = Instance.new("Frame")
 local Cat = Instance.new("ImageLabel")
-local Auto = Instance.new("Frame")
-local Options_3 = Instance.new("Folder")
 local Selector_7 = Instance.new("Folder")
 local Tweaks_2 = Instance.new("TextButton")
 local Icon_7 = Instance.new("ImageLabel")
@@ -508,19 +506,6 @@ Cat.Position = UDim2.new(0.168202817, 0, 0.192970112, 0)
 Cat.Size = UDim2.new(0.654377878, 0, 0.613636374, 0)
 Cat.Image = "http://www.roblox.com/asset/?id=11176073563"
 
-Auto.Name = "Auto"
-Auto.Parent = Categories
-Auto.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Auto.BackgroundTransparency = 1.000
-Auto.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Auto.BorderSizePixel = 0
-Auto.Position = UDim2.new(0.241999969, 0, 0, 0)
-Auto.Size = UDim2.new(0.759234071, 0, 0.998394251, 0)
-Auto.Visible = false
-
-Options_3.Name = "Options"
-Options_3.Parent = Auto
-
 Selector_7.Name = "Selector"
 Selector_7.Parent = Main
 
@@ -624,7 +609,7 @@ end
 
 -- Scripts:
 
-local function ZXJC_fake_script() -- _9HUH9_2.LocalScript 
+local function PCJD_fake_script() -- _9HUH9_2.LocalScript 
 	local script = Instance.new('LocalScript', _9HUH9_2)
 	local req = require
 	local require = function(obj)
@@ -639,8 +624,8 @@ local function ZXJC_fake_script() -- _9HUH9_2.LocalScript
 		script.Parent.Parent.Main.Visible = not script.Parent.Parent.Main.Visible
 	end)
 end
-coroutine.wrap(ZXJC_fake_script)()
-local function DONQUIJ_fake_script() -- VT.Click 
+coroutine.wrap(PCJD_fake_script)()
+local function NGEW_fake_script() -- VT.Click 
 	local script = Instance.new('LocalScript', VT)
 	local req = require
 	local require = function(obj)
@@ -667,7 +652,7 @@ local function DONQUIJ_fake_script() -- VT.Click
 			enabled = false
 			
 			game.Workspace:FindFirstChildOfClass("Atmosphere").Parent = game.Lighting
-			main.dmg.Visible = true
+			main:WaitForChild("dmg", 20).Visible = true
 			
 			for _, v in pairs(connections) do
 				v:Disconnect()
@@ -701,8 +686,8 @@ local function DONQUIJ_fake_script() -- VT.Click
 		end
 	end)
 end
-coroutine.wrap(DONQUIJ_fake_script)()
-local function BRMAST_fake_script() -- AM.Click 
+coroutine.wrap(NGEW_fake_script)()
+local function GVUWCV_fake_script() -- AM.Click 
 	local script = Instance.new('LocalScript', AM)
 	local req = require
 	local require = function(obj)
@@ -747,8 +732,8 @@ local function BRMAST_fake_script() -- AM.Click
 		end
 	end)
 end
-coroutine.wrap(BRMAST_fake_script)()
-local function AFXPAY_fake_script() -- CL.Click 
+coroutine.wrap(GVUWCV_fake_script)()
+local function AMTMNDW_fake_script() -- CL.Click 
 	local script = Instance.new('LocalScript', CL)
 	local req = require
 	local require = function(obj)
@@ -762,7 +747,7 @@ local function AFXPAY_fake_script() -- CL.Click
 	local module = require(script.Parent.Parent.Parent.Parent.Parent.Parent.Module)
 	
 	local plr = game.Players.LocalPlayer
-	local char = plr.Character
+	local c = plr.Character
 	
 	local enabled = false
 	
@@ -777,7 +762,7 @@ local function AFXPAY_fake_script() -- CL.Click
 				v:Disconnect()
 			end
 			
-			char.HumanoidRootPart:FindFirstChild("Light"):Destroy()
+			c.HumanoidRootPart:FindFirstChild("Light"):Destroy()
 		else
 			module.getEnableTween(script.Parent.Selector):Play()
 			enabled = true
@@ -786,22 +771,24 @@ local function AFXPAY_fake_script() -- CL.Click
 			light.Name = "Light"
 			light.Range = 60
 			light.Brightness = 4
-			light.Parent = char.HumanoidRootPart
+			light.Parent = c.HumanoidRootPart
 			
 			table.insert(connections, 
-				plr.CharacterAdded:Connect(function(char)
-					local light = Instance.new("PointLight")
-					light.Name = "Light"
-					light.Range = 60
-					light.Brightness = 4
-					light.Parent = char.HumanoidRootPart
+				workspace.players.ChildAdded:Connect(function(char)
+					if char.Name == plr.Name then
+						local light = Instance.new("PointLight")
+						light.Name = "Light"
+						light.Range = 60
+						light.Brightness = 4
+						light.Parent = char.HumanoidRootPart
+					end
 				end)
 			)
 		end
 	end)
 end
-coroutine.wrap(AFXPAY_fake_script)()
-local function DWJHSQS_fake_script() -- PLAYERS.Click 
+coroutine.wrap(AMTMNDW_fake_script)()
+local function ZGZVJ_fake_script() -- PLAYERS.Click 
 	local script = Instance.new('LocalScript', PLAYERS)
 	local req = require
 	local require = function(obj)
@@ -878,8 +865,8 @@ local function DWJHSQS_fake_script() -- PLAYERS.Click
 		end
 	end)
 end
-coroutine.wrap(DWJHSQS_fake_script)()
-local function LXINCV_fake_script() -- PILLAR.Click 
+coroutine.wrap(ZGZVJ_fake_script)()
+local function LGPSX_fake_script() -- PILLAR.Click 
 	local script = Instance.new('LocalScript', PILLAR)
 	local req = require
 	local require = function(obj)
@@ -927,8 +914,8 @@ local function LXINCV_fake_script() -- PILLAR.Click
 		end
 	end)
 end
-coroutine.wrap(LXINCV_fake_script)()
-local function JXUG_fake_script() -- PRISONERS.Click 
+coroutine.wrap(LGPSX_fake_script)()
+local function BHGLYH_fake_script() -- PRISONERS.Click 
 	local script = Instance.new('LocalScript', PRISONERS)
 	local req = require
 	local require = function(obj)
@@ -991,8 +978,8 @@ local function JXUG_fake_script() -- PRISONERS.Click
 		end
 	end)
 end
-coroutine.wrap(JXUG_fake_script)()
-local function QMQRZD_fake_script() -- Selector_7.LocalScript 
+coroutine.wrap(BHGLYH_fake_script)()
+local function WXNMML_fake_script() -- Selector_7.LocalScript 
 	local script = Instance.new('LocalScript', Selector_7)
 	local req = require
 	local require = function(obj)
@@ -1022,8 +1009,8 @@ local function QMQRZD_fake_script() -- Selector_7.LocalScript
 		end
 	end
 end
-coroutine.wrap(QMQRZD_fake_script)()
-local function ETQTT_fake_script() -- Main.LocalScript 
+coroutine.wrap(WXNMML_fake_script)()
+local function SREQR_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 	local req = require
 	local require = function(obj)
@@ -1076,4 +1063,4 @@ local function ETQTT_fake_script() -- Main.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ETQTT_fake_script)()
+coroutine.wrap(SREQR_fake_script)()
