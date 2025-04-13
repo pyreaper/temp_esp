@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local _9HUH9 = Instance.new("ScreenGui")
 local _9HUH9_2 = Instance.new("TextButton")
 local Main = Instance.new("ImageLabel")
@@ -18,8 +13,6 @@ local VisibilityTweaks = Instance.new("TextLabel")
 local Selector = Instance.new("ImageButton")
 local Icon = Instance.new("ImageLabel")
 local Enabled = Instance.new("ImageLabel")
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
-local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
 local Placeholder = Instance.new("Frame")
 local Cat = Instance.new("ImageLabel")
 local Auto = Instance.new("Frame")
@@ -29,20 +22,15 @@ local AM_2 = Instance.new("TextLabel")
 local Selector_2 = Instance.new("ImageButton")
 local Icon_2 = Instance.new("ImageLabel")
 local Enabled_2 = Instance.new("ImageLabel")
-local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
-local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
 local Selector_3 = Instance.new("Folder")
 local Tweaks_2 = Instance.new("TextButton")
 local Icon_3 = Instance.new("ImageLabel")
-local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
 local Placeholder_2 = Instance.new("TextButton")
 local Icon_4 = Instance.new("ImageLabel")
-local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
 local Auto_2 = Instance.new("TextButton")
 local Icon_5 = Instance.new("ImageLabel")
-local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
 local CategoryText = Instance.new("TextLabel")
-local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 
 --Properties:
 
@@ -70,7 +58,7 @@ Main.Parent = _9HUH9
 Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Main.BackgroundTransparency = 1.000
 Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Main.Position = UDim2.new(0.145543754, 0, 0.226331368, 0)
+Main.Position = UDim2.new(0.145543754, 0, 0.226331383, 0)
 Main.Size = UDim2.new(0.70641607, 0, 0.54553026, 0)
 Main.Visible = false
 Main.Image = "rbxassetid://3570695787"
@@ -87,8 +75,8 @@ LINE.Parent = Lines
 LINE.BackgroundColor3 = Color3.fromRGB(248, 252, 255)
 LINE.BorderColor3 = Color3.fromRGB(0, 0, 0)
 LINE.BorderSizePixel = 0
-LINE.Position = UDim2.new(0.239999995, 0, 0.109999999, 0)
-LINE.Size = UDim2.new(0.75999999, 0, 0.00300000003, 0)
+LINE.Position = UDim2.new(0, 0, 0.119999997, 0)
+LINE.Size = UDim2.new(1, 0, 0.00300000003, 0)
 
 LINE2.Name = "LINE2"
 LINE2.Parent = Lines
@@ -185,12 +173,6 @@ Enabled.ScaleType = Enum.ScaleType.Slice
 Enabled.SliceCenter = Rect.new(100, 100, 100, 100)
 Enabled.SliceScale = 0.667
 
-UIAspectRatioConstraint.Parent = Icon
-UIAspectRatioConstraint.AspectRatio = 0.952
-
-UIAspectRatioConstraint_2.Parent = Selector
-UIAspectRatioConstraint_2.AspectRatio = 0.952
-
 Placeholder.Name = "Placeholder"
 Placeholder.Parent = Categories
 Placeholder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -205,7 +187,7 @@ Cat.Parent = Placeholder
 Cat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Cat.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Cat.BorderSizePixel = 0
-Cat.Position = UDim2.new(0.168202758, 0, 0.192970082, 0)
+Cat.Position = UDim2.new(0.168202832, 0, 0.192970127, 0)
 Cat.Size = UDim2.new(0.654377878, 0, 0.613636374, 0)
 Cat.Image = "http://www.roblox.com/asset/?id=11176073563"
 
@@ -231,8 +213,8 @@ AM_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 AM_2.BackgroundTransparency = 1.000
 AM_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AM_2.BorderSizePixel = 0
-AM_2.Position = UDim2.new(0.0110573219, 0, 0.139195845, 0)
-AM_2.Size = UDim2.new(0, 252, 0, 34)
+AM_2.Position = UDim2.new(0.011057334, 0, 0.139195845, 0)
+AM_2.Size = UDim2.new(0, 208, 0, 34)
 AM_2.Font = Enum.Font.Cartoon
 AM_2.Text = "AutoMining (binded to T)"
 AM_2.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -278,12 +260,6 @@ Enabled_2.ScaleType = Enum.ScaleType.Slice
 Enabled_2.SliceCenter = Rect.new(100, 100, 100, 100)
 Enabled_2.SliceScale = 0.667
 
-UIAspectRatioConstraint_3.Parent = Icon_2
-UIAspectRatioConstraint_3.AspectRatio = 0.952
-
-UIAspectRatioConstraint_4.Parent = Selector_2
-UIAspectRatioConstraint_4.AspectRatio = 0.952
-
 Selector_3.Name = "Selector"
 Selector_3.Parent = Main
 
@@ -292,7 +268,7 @@ Tweaks_2.Parent = Selector_3
 Tweaks_2.BackgroundColor3 = Color3.fromRGB(40, 41, 41)
 Tweaks_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tweaks_2.BorderSizePixel = 0
-Tweaks_2.Position = UDim2.new(0.0117844017, 0, 0.111551821, 0)
+Tweaks_2.Position = UDim2.new(0.0117844017, 0, 0.137303919, 0)
 Tweaks_2.Size = UDim2.new(0.222000003, 0, 0.0970000029, 0)
 Tweaks_2.Font = Enum.Font.Cartoon
 Tweaks_2.Text = "  Tweaks"
@@ -307,15 +283,12 @@ Icon_3.Position = UDim2.new(0.122556433, 0, 0.279999942, 0)
 Icon_3.Size = UDim2.new(0.157602444, 0, 0.467851073, 0)
 Icon_3.Image = "rbxassetid://2790551206"
 
-UIAspectRatioConstraint_5.Parent = Icon_3
-UIAspectRatioConstraint_5.AspectRatio = 0.909
-
 Placeholder_2.Name = "Placeholder"
 Placeholder_2.Parent = Selector_3
 Placeholder_2.BackgroundColor3 = Color3.fromRGB(40, 41, 41)
 Placeholder_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Placeholder_2.BorderSizePixel = 0
-Placeholder_2.Position = UDim2.new(0.0155136976, 0, 0.302466094, 0)
+Placeholder_2.Position = UDim2.new(0.0155136976, 0, 0.328218162, 0)
 Placeholder_2.Size = UDim2.new(0.221554309, 0, 0.0966553167, 0)
 Placeholder_2.Font = Enum.Font.Cartoon
 Placeholder_2.Text = " SOON"
@@ -330,18 +303,15 @@ Icon_4.Position = UDim2.new(0.100000001, 0, 0.219999984, 0)
 Icon_4.Size = UDim2.new(0.205295354, 0, 0.57622844, 0)
 Icon_4.Image = "rbxassetid://2790459043"
 
-UIAspectRatioConstraint_6.Parent = Icon_4
-UIAspectRatioConstraint_6.AspectRatio = 0.963
-
 Auto_2.Name = "Auto"
 Auto_2.Parent = Selector_3
 Auto_2.BackgroundColor3 = Color3.fromRGB(40, 41, 41)
 Auto_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Auto_2.BorderSizePixel = 0
-Auto_2.Position = UDim2.new(0.0117844017, 0, 0.206459761, 0)
+Auto_2.Position = UDim2.new(0.0117844017, 0, 0.232211828, 0)
 Auto_2.Size = UDim2.new(0.222000003, 0, 0.0970000029, 0)
 Auto_2.Font = Enum.Font.Cartoon
-Auto_2.Text = "Automatic"
+Auto_2.Text = " Automatic"
 Auto_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Auto_2.TextSize = 16.000
 Auto_2.TextWrapped = true
@@ -352,9 +322,6 @@ Icon_5.BackgroundTransparency = 1.000
 Icon_5.Position = UDim2.new(0.0500000007, 0, 0.25, 0)
 Icon_5.Size = UDim2.new(0.157602444, 0, 0.467851073, 0)
 Icon_5.Image = "rbxassetid://2790176032"
-
-UIAspectRatioConstraint_7.Parent = Icon_5
-UIAspectRatioConstraint_7.AspectRatio = 0.909
 
 CategoryText.Name = "CategoryText"
 CategoryText.Parent = Main
@@ -371,8 +338,8 @@ CategoryText.TextScaled = true
 CategoryText.TextSize = 37.000
 CategoryText.TextWrapped = true
 
-UIAspectRatioConstraint_8.Parent = Main
-UIAspectRatioConstraint_8.AspectRatio = 1.211
+UIAspectRatioConstraint.Parent = Main
+UIAspectRatioConstraint.AspectRatio = 1.211
 
 -- Module Scripts:
 
@@ -383,7 +350,6 @@ do -- _9HUH9.Module
 	script.Name = "Module"
 	local function module_script()
 		local module = {}
-		
 		
 		local ts = game:GetService("TweenService")
 		local info = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut)
@@ -415,7 +381,7 @@ end
 
 -- Scripts:
 
-local function MZUMHOZ_fake_script() -- _9HUH9_2.LocalScript 
+local function XGAT_fake_script() -- _9HUH9_2.LocalScript 
 	local script = Instance.new('LocalScript', _9HUH9_2)
 	local req = require
 	local require = function(obj)
@@ -430,8 +396,8 @@ local function MZUMHOZ_fake_script() -- _9HUH9_2.LocalScript
 		script.Parent.Parent.Main.Visible = not script.Parent.Parent.Main.Visible
 	end)
 end
-coroutine.wrap(MZUMHOZ_fake_script)()
-local function GGKXG_fake_script() -- VT.Click 
+coroutine.wrap(XGAT_fake_script)()
+local function PIWW_fake_script() -- VT.Click 
 	local script = Instance.new('LocalScript', VT)
 	local req = require
 	local require = function(obj)
@@ -492,8 +458,8 @@ local function GGKXG_fake_script() -- VT.Click
 		end
 	end)
 end
-coroutine.wrap(GGKXG_fake_script)()
-local function HCXD_fake_script() -- AM.Click 
+coroutine.wrap(PIWW_fake_script)()
+local function MXXK_fake_script() -- AM.Click 
 	local script = Instance.new('LocalScript', AM)
 	local req = require
 	local require = function(obj)
@@ -539,8 +505,8 @@ local function HCXD_fake_script() -- AM.Click
 		end
 	end)
 end
-coroutine.wrap(HCXD_fake_script)()
-local function MINL_fake_script() -- Selector_3.LocalScript 
+coroutine.wrap(MXXK_fake_script)()
+local function WTJA_fake_script() -- Selector_3.LocalScript 
 	local script = Instance.new('LocalScript', Selector_3)
 	local req = require
 	local require = function(obj)
@@ -570,4 +536,58 @@ local function MINL_fake_script() -- Selector_3.LocalScript
 		end
 	end
 end
-coroutine.wrap(MINL_fake_script)()
+coroutine.wrap(WTJA_fake_script)()
+local function LGZYXFE_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			if gui.Visible then
+				update(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(LGZYXFE_fake_script)()
