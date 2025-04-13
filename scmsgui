@@ -1,3 +1,8 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local _9HUH9 = Instance.new("ScreenGui")
 local _9HUH9_2 = Instance.new("TextButton")
 local Main = Instance.new("ImageLabel")
@@ -580,7 +585,7 @@ end
 
 -- Scripts:
 
-local function QTNO_fake_script() -- _9HUH9_2.LocalScript 
+local function SKKOBY_fake_script() -- _9HUH9_2.LocalScript 
 	local script = Instance.new('LocalScript', _9HUH9_2)
 	local req = require
 	local require = function(obj)
@@ -595,8 +600,8 @@ local function QTNO_fake_script() -- _9HUH9_2.LocalScript
 		script.Parent.Parent.Main.Visible = not script.Parent.Parent.Main.Visible
 	end)
 end
-coroutine.wrap(QTNO_fake_script)()
-local function NVMXHU_fake_script() -- VT.Click 
+coroutine.wrap(SKKOBY_fake_script)()
+local function WUCV_fake_script() -- VT.Click 
 	local script = Instance.new('LocalScript', VT)
 	local req = require
 	local require = function(obj)
@@ -657,8 +662,8 @@ local function NVMXHU_fake_script() -- VT.Click
 		end
 	end)
 end
-coroutine.wrap(NVMXHU_fake_script)()
-local function WTOLCYW_fake_script() -- AM.Click 
+coroutine.wrap(WUCV_fake_script)()
+local function MGDK_fake_script() -- AM.Click 
 	local script = Instance.new('LocalScript', AM)
 	local req = require
 	local require = function(obj)
@@ -703,8 +708,8 @@ local function WTOLCYW_fake_script() -- AM.Click
 		end
 	end)
 end
-coroutine.wrap(WTOLCYW_fake_script)()
-local function HNZROJF_fake_script() -- PLAYERS.Click 
+coroutine.wrap(MGDK_fake_script)()
+local function SRYKWTA_fake_script() -- PLAYERS.Click 
 	local script = Instance.new('LocalScript', PLAYERS)
 	local req = require
 	local require = function(obj)
@@ -772,6 +777,7 @@ local function HNZROJF_fake_script() -- PLAYERS.Click
 			
 			table.insert(connections, 
 				workspace.players.ChildAdded:Connect(function(char)
+					print(char.Name, " ADDED")
 					if char.Name ~= plr.Name then
 						plr_esp(char)
 					end
@@ -780,8 +786,8 @@ local function HNZROJF_fake_script() -- PLAYERS.Click
 		end
 	end)
 end
-coroutine.wrap(HNZROJF_fake_script)()
-local function JQBSCP_fake_script() -- PILLAR.Click 
+coroutine.wrap(SRYKWTA_fake_script)()
+local function KJEXE_fake_script() -- PILLAR.Click 
 	local script = Instance.new('LocalScript', PILLAR)
 	local req = require
 	local require = function(obj)
@@ -829,8 +835,8 @@ local function JQBSCP_fake_script() -- PILLAR.Click
 		end
 	end)
 end
-coroutine.wrap(JQBSCP_fake_script)()
-local function ZAKJGA_fake_script() -- PRISONERS.Click 
+coroutine.wrap(KJEXE_fake_script)()
+local function VJFKIJ_fake_script() -- PRISONERS.Click 
 	local script = Instance.new('LocalScript', PRISONERS)
 	local req = require
 	local require = function(obj)
@@ -862,7 +868,7 @@ local function ZAKJGA_fake_script() -- PRISONERS.Click
 			box.ZIndex = 10
 			box.Size = v.Size
 			box.Transparency = 0.5
-			box.Color3 = Color3.fromRGB(255, 255, 255)
+			box.Color3 = v.Color
 		end
 	end
 	
@@ -893,8 +899,8 @@ local function ZAKJGA_fake_script() -- PRISONERS.Click
 		end
 	end)
 end
-coroutine.wrap(ZAKJGA_fake_script)()
-local function TBIJP_fake_script() -- Selector_6.LocalScript 
+coroutine.wrap(VJFKIJ_fake_script)()
+local function EZNEXZ_fake_script() -- Selector_6.LocalScript 
 	local script = Instance.new('LocalScript', Selector_6)
 	local req = require
 	local require = function(obj)
@@ -924,8 +930,8 @@ local function TBIJP_fake_script() -- Selector_6.LocalScript
 		end
 	end
 end
-coroutine.wrap(TBIJP_fake_script)()
-local function VUUMF_fake_script() -- Main.LocalScript 
+coroutine.wrap(EZNEXZ_fake_script)()
+local function VGQNRFN_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 	local req = require
 	local require = function(obj)
@@ -978,4 +984,4 @@ local function VUUMF_fake_script() -- Main.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VUUMF_fake_script)()
+coroutine.wrap(VGQNRFN_fake_script)()
