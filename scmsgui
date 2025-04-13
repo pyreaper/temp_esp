@@ -580,7 +580,7 @@ end
 
 -- Scripts:
 
-local function PKESKF_fake_script() -- _9HUH9_2.LocalScript 
+local function QTNO_fake_script() -- _9HUH9_2.LocalScript 
 	local script = Instance.new('LocalScript', _9HUH9_2)
 	local req = require
 	local require = function(obj)
@@ -595,8 +595,8 @@ local function PKESKF_fake_script() -- _9HUH9_2.LocalScript
 		script.Parent.Parent.Main.Visible = not script.Parent.Parent.Main.Visible
 	end)
 end
-coroutine.wrap(PKESKF_fake_script)()
-local function KLHPID_fake_script() -- VT.Click 
+coroutine.wrap(QTNO_fake_script)()
+local function NVMXHU_fake_script() -- VT.Click 
 	local script = Instance.new('LocalScript', VT)
 	local req = require
 	local require = function(obj)
@@ -657,8 +657,8 @@ local function KLHPID_fake_script() -- VT.Click
 		end
 	end)
 end
-coroutine.wrap(KLHPID_fake_script)()
-local function YZGWAN_fake_script() -- AM.Click 
+coroutine.wrap(NVMXHU_fake_script)()
+local function WTOLCYW_fake_script() -- AM.Click 
 	local script = Instance.new('LocalScript', AM)
 	local req = require
 	local require = function(obj)
@@ -703,8 +703,8 @@ local function YZGWAN_fake_script() -- AM.Click
 		end
 	end)
 end
-coroutine.wrap(YZGWAN_fake_script)()
-local function HVMAU_fake_script() -- PLAYERS.Click 
+coroutine.wrap(WTOLCYW_fake_script)()
+local function HNZROJF_fake_script() -- PLAYERS.Click 
 	local script = Instance.new('LocalScript', PLAYERS)
 	local req = require
 	local require = function(obj)
@@ -743,7 +743,6 @@ local function HVMAU_fake_script() -- PLAYERS.Click
 	end
 	
 	
-	
 	script.Parent.Selector.MouseButton1Click:Connect(function()
 		if enabled then
 			module.getDisableTween(script.Parent.Selector):Play()
@@ -753,8 +752,7 @@ local function HVMAU_fake_script() -- PLAYERS.Click
 				v:Disconnect()
 			end
 			
-			for _, p in game.Players:GetPlayers() do
-				local v = p.Character
+			for _, v in workspace.players:GetChildren() do
 				for _, b in v:GetChildren() do
 					print(string.find(b.Name, " ESP"))
 					if string.find(b.Name, " ESP") then
@@ -766,23 +764,24 @@ local function HVMAU_fake_script() -- PLAYERS.Click
 			module.getEnableTween(script.Parent.Selector):Play()
 			enabled = true
 			
-			for _, p in game.Players:GetPlayers() do
-				if p ~= plr then 
-					local v = p.Character
+			for _, v in workspace.players:GetChildren() do
+				if v.Name ~= plr.Name then
 					plr_esp(v)
-	
-					table.insert(connections, 
-						p.CharacterAdded:Connect(function(char)
-							plr_esp(char)
-						end)
-					)
 				end
 			end
+			
+			table.insert(connections, 
+				workspace.players.ChildAdded:Connect(function(char)
+					if char.Name ~= plr.Name then
+						plr_esp(char)
+					end
+				end)
+			)
 		end
 	end)
 end
-coroutine.wrap(HVMAU_fake_script)()
-local function KVQFPD_fake_script() -- PILLAR.Click 
+coroutine.wrap(HNZROJF_fake_script)()
+local function JQBSCP_fake_script() -- PILLAR.Click 
 	local script = Instance.new('LocalScript', PILLAR)
 	local req = require
 	local require = function(obj)
@@ -830,8 +829,8 @@ local function KVQFPD_fake_script() -- PILLAR.Click
 		end
 	end)
 end
-coroutine.wrap(KVQFPD_fake_script)()
-local function ZYJOJ_fake_script() -- PRISONERS.Click 
+coroutine.wrap(JQBSCP_fake_script)()
+local function ZAKJGA_fake_script() -- PRISONERS.Click 
 	local script = Instance.new('LocalScript', PRISONERS)
 	local req = require
 	local require = function(obj)
@@ -894,8 +893,8 @@ local function ZYJOJ_fake_script() -- PRISONERS.Click
 		end
 	end)
 end
-coroutine.wrap(ZYJOJ_fake_script)()
-local function CTSKGWQ_fake_script() -- Selector_6.LocalScript 
+coroutine.wrap(ZAKJGA_fake_script)()
+local function TBIJP_fake_script() -- Selector_6.LocalScript 
 	local script = Instance.new('LocalScript', Selector_6)
 	local req = require
 	local require = function(obj)
@@ -925,8 +924,8 @@ local function CTSKGWQ_fake_script() -- Selector_6.LocalScript
 		end
 	end
 end
-coroutine.wrap(CTSKGWQ_fake_script)()
-local function SCJUHE_fake_script() -- Main.LocalScript 
+coroutine.wrap(TBIJP_fake_script)()
+local function VUUMF_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 	local req = require
 	local require = function(obj)
@@ -979,4 +978,4 @@ local function SCJUHE_fake_script() -- Main.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SCJUHE_fake_script)()
+coroutine.wrap(VUUMF_fake_script)()
