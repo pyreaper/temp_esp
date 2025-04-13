@@ -1,0 +1,573 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local _9HUH9 = Instance.new("ScreenGui")
+local _9HUH9_2 = Instance.new("TextButton")
+local Main = Instance.new("ImageLabel")
+local Lines = Instance.new("Folder")
+local LINE = Instance.new("Frame")
+local LINE2 = Instance.new("Frame")
+local _9HUH9_3 = Instance.new("TextLabel")
+local Categories = Instance.new("Folder")
+local Tweaks = Instance.new("Frame")
+local Options = Instance.new("Folder")
+local VT = Instance.new("Folder")
+local VisibilityTweaks = Instance.new("TextLabel")
+local Selector = Instance.new("ImageButton")
+local Icon = Instance.new("ImageLabel")
+local Enabled = Instance.new("ImageLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local Placeholder = Instance.new("Frame")
+local Cat = Instance.new("ImageLabel")
+local Auto = Instance.new("Frame")
+local Options_2 = Instance.new("Folder")
+local AM = Instance.new("Folder")
+local AM_2 = Instance.new("TextLabel")
+local Selector_2 = Instance.new("ImageButton")
+local Icon_2 = Instance.new("ImageLabel")
+local Enabled_2 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local Selector_3 = Instance.new("Folder")
+local Tweaks_2 = Instance.new("TextButton")
+local Icon_3 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local Placeholder_2 = Instance.new("TextButton")
+local Icon_4 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local Auto_2 = Instance.new("TextButton")
+local Icon_5 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local CategoryText = Instance.new("TextLabel")
+local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+_9HUH9.Name = "9HUH9"
+_9HUH9.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+_9HUH9.ResetOnSpawn = false
+
+_9HUH9_2.Name = "9HUH9"
+_9HUH9_2.Parent = _9HUH9
+_9HUH9_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_9HUH9_2.BackgroundTransparency = 1.000
+_9HUH9_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_9HUH9_2.BorderSizePixel = 0
+_9HUH9_2.Position = UDim2.new(0.331428766, 0, 0.91900003, 0)
+_9HUH9_2.Size = UDim2.new(0.333785623, 0, 0.0800000057, 0)
+_9HUH9_2.Font = Enum.Font.Cartoon
+_9HUH9_2.Text = "9HUH9"
+_9HUH9_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+_9HUH9_2.TextScaled = true
+_9HUH9_2.TextSize = 14.000
+_9HUH9_2.TextWrapped = true
+
+Main.Name = "Main"
+Main.Parent = _9HUH9
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.BackgroundTransparency = 1.000
+Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Main.Position = UDim2.new(0.145543754, 0, 0.226331368, 0)
+Main.Size = UDim2.new(0.70641607, 0, 0.54553026, 0)
+Main.Visible = false
+Main.Image = "rbxassetid://3570695787"
+Main.ImageColor3 = Color3.fromRGB(40, 41, 41)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.667
+
+Lines.Name = "Lines"
+Lines.Parent = Main
+
+LINE.Name = "LINE"
+LINE.Parent = Lines
+LINE.BackgroundColor3 = Color3.fromRGB(248, 252, 255)
+LINE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LINE.BorderSizePixel = 0
+LINE.Position = UDim2.new(0.239999995, 0, 0.109999999, 0)
+LINE.Size = UDim2.new(0.75999999, 0, 0.00300000003, 0)
+
+LINE2.Name = "LINE2"
+LINE2.Parent = Lines
+LINE2.BackgroundColor3 = Color3.fromRGB(248, 252, 255)
+LINE2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LINE2.BorderSizePixel = 0
+LINE2.Position = UDim2.new(0.239999995, 0, 0, 0)
+LINE2.Size = UDim2.new(0.00200000009, 0, 1, 0)
+
+_9HUH9_3.Name = "9HUH9"
+_9HUH9_3.Parent = Main
+_9HUH9_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_9HUH9_3.BackgroundTransparency = 1.000
+_9HUH9_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_9HUH9_3.BorderSizePixel = 0
+_9HUH9_3.Position = UDim2.new(0.0122125577, 0, 0, 0)
+_9HUH9_3.Size = UDim2.new(0.23966606, 0, 0.11139109, 0)
+_9HUH9_3.Font = Enum.Font.Cartoon
+_9HUH9_3.Text = "9HUH9"
+_9HUH9_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+_9HUH9_3.TextSize = 14.000
+_9HUH9_3.TextTransparency = 0.500
+_9HUH9_3.TextWrapped = true
+
+Categories.Name = "Categories"
+Categories.Parent = Main
+
+Tweaks.Name = "Tweaks"
+Tweaks.Parent = Categories
+Tweaks.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tweaks.BackgroundTransparency = 1.000
+Tweaks.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tweaks.BorderSizePixel = 0
+Tweaks.Position = UDim2.new(0.241999969, 0, 0, 0)
+Tweaks.Size = UDim2.new(0.759234071, 0, 0.998394251, 0)
+Tweaks.Visible = false
+
+Options.Name = "Options"
+Options.Parent = Tweaks
+
+VT.Name = "VT"
+VT.Parent = Options
+
+VisibilityTweaks.Name = "VisibilityTweaks"
+VisibilityTweaks.Parent = VT
+VisibilityTweaks.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VisibilityTweaks.BackgroundTransparency = 1.000
+VisibilityTweaks.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VisibilityTweaks.BorderSizePixel = 0
+VisibilityTweaks.Position = UDim2.new(0.011057348, 0, 0.139195845, 0)
+VisibilityTweaks.Size = UDim2.new(0, 140, 0, 34)
+VisibilityTweaks.Font = Enum.Font.Cartoon
+VisibilityTweaks.Text = "Visibility tweaks"
+VisibilityTweaks.TextColor3 = Color3.fromRGB(255, 255, 255)
+VisibilityTweaks.TextSize = 20.000
+VisibilityTweaks.TextWrapped = true
+
+Selector.Name = "Selector"
+Selector.Parent = VT
+Selector.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Selector.BackgroundTransparency = 1.000
+Selector.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Selector.BorderSizePixel = 0
+Selector.Position = UDim2.new(0.912972748, 0, 0.149379283, 0)
+Selector.Size = UDim2.new(0.0520000011, 0, 0.0489999987, 0)
+Selector.ZIndex = 10
+Selector.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Selector.ImageTransparency = 1.000
+
+Icon.Name = "Icon"
+Icon.Parent = Selector
+Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon.BackgroundTransparency = 1.000
+Icon.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Icon.Position = UDim2.new(0.0242404323, 0, -0.0420305133, 0)
+Icon.Size = UDim2.new(1, 0, 1, 0)
+Icon.Image = "rbxassetid://3570695787"
+Icon.ScaleType = Enum.ScaleType.Slice
+Icon.SliceCenter = Rect.new(100, 100, 100, 100)
+Icon.SliceScale = 0.667
+
+Enabled.Name = "Enabled"
+Enabled.Parent = Icon
+Enabled.BackgroundColor3 = Color3.fromRGB(255, 40, 0)
+Enabled.BackgroundTransparency = 1.000
+Enabled.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Enabled.Position = UDim2.new(0.144999996, 0, 0.140000001, 0)
+Enabled.Size = UDim2.new(0.699999988, 0, 0.699999988, 0)
+Enabled.ZIndex = 10
+Enabled.Image = "rbxassetid://3570695787"
+Enabled.ImageColor3 = Color3.fromRGB(6, 163, 205)
+Enabled.ImageTransparency = 1.000
+Enabled.ScaleType = Enum.ScaleType.Slice
+Enabled.SliceCenter = Rect.new(100, 100, 100, 100)
+Enabled.SliceScale = 0.667
+
+UIAspectRatioConstraint.Parent = Icon
+UIAspectRatioConstraint.AspectRatio = 0.952
+
+UIAspectRatioConstraint_2.Parent = Selector
+UIAspectRatioConstraint_2.AspectRatio = 0.952
+
+Placeholder.Name = "Placeholder"
+Placeholder.Parent = Categories
+Placeholder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Placeholder.BackgroundTransparency = 1.000
+Placeholder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Placeholder.BorderSizePixel = 0
+Placeholder.Position = UDim2.new(0.241999969, 0, 0, 0)
+Placeholder.Size = UDim2.new(0.759234071, 0, 0.998394251, 0)
+
+Cat.Name = "Cat"
+Cat.Parent = Placeholder
+Cat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cat.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Cat.BorderSizePixel = 0
+Cat.Position = UDim2.new(0.168202758, 0, 0.192970082, 0)
+Cat.Size = UDim2.new(0.654377878, 0, 0.613636374, 0)
+Cat.Image = "http://www.roblox.com/asset/?id=11176073563"
+
+Auto.Name = "Auto"
+Auto.Parent = Categories
+Auto.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Auto.BackgroundTransparency = 1.000
+Auto.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Auto.BorderSizePixel = 0
+Auto.Position = UDim2.new(0.241999969, 0, 0, 0)
+Auto.Size = UDim2.new(0.759234071, 0, 0.998394251, 0)
+Auto.Visible = false
+
+Options_2.Name = "Options"
+Options_2.Parent = Auto
+
+AM.Name = "AM"
+AM.Parent = Options_2
+
+AM_2.Name = "AM"
+AM_2.Parent = AM
+AM_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AM_2.BackgroundTransparency = 1.000
+AM_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AM_2.BorderSizePixel = 0
+AM_2.Position = UDim2.new(0.0110573219, 0, 0.139195845, 0)
+AM_2.Size = UDim2.new(0, 252, 0, 34)
+AM_2.Font = Enum.Font.Cartoon
+AM_2.Text = "AutoMining (binded to T)"
+AM_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+AM_2.TextSize = 20.000
+AM_2.TextWrapped = true
+
+Selector_2.Name = "Selector"
+Selector_2.Parent = AM
+Selector_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Selector_2.BackgroundTransparency = 1.000
+Selector_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Selector_2.BorderSizePixel = 0
+Selector_2.Position = UDim2.new(0.912972748, 0, 0.149379283, 0)
+Selector_2.Size = UDim2.new(0.0520000011, 0, 0.0489999987, 0)
+Selector_2.ZIndex = 10
+Selector_2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Selector_2.ImageTransparency = 1.000
+
+Icon_2.Name = "Icon"
+Icon_2.Parent = Selector_2
+Icon_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_2.BackgroundTransparency = 1.000
+Icon_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Icon_2.Position = UDim2.new(0.0242404323, 0, -0.0420305133, 0)
+Icon_2.Size = UDim2.new(1, 0, 1, 0)
+Icon_2.Image = "rbxassetid://3570695787"
+Icon_2.ScaleType = Enum.ScaleType.Slice
+Icon_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Icon_2.SliceScale = 0.667
+
+Enabled_2.Name = "Enabled"
+Enabled_2.Parent = Icon_2
+Enabled_2.BackgroundColor3 = Color3.fromRGB(255, 40, 0)
+Enabled_2.BackgroundTransparency = 1.000
+Enabled_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Enabled_2.Position = UDim2.new(0.144999996, 0, 0.140000001, 0)
+Enabled_2.Size = UDim2.new(0.699999988, 0, 0.699999988, 0)
+Enabled_2.ZIndex = 10
+Enabled_2.Image = "rbxassetid://3570695787"
+Enabled_2.ImageColor3 = Color3.fromRGB(6, 163, 205)
+Enabled_2.ImageTransparency = 1.000
+Enabled_2.ScaleType = Enum.ScaleType.Slice
+Enabled_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Enabled_2.SliceScale = 0.667
+
+UIAspectRatioConstraint_3.Parent = Icon_2
+UIAspectRatioConstraint_3.AspectRatio = 0.952
+
+UIAspectRatioConstraint_4.Parent = Selector_2
+UIAspectRatioConstraint_4.AspectRatio = 0.952
+
+Selector_3.Name = "Selector"
+Selector_3.Parent = Main
+
+Tweaks_2.Name = "Tweaks"
+Tweaks_2.Parent = Selector_3
+Tweaks_2.BackgroundColor3 = Color3.fromRGB(40, 41, 41)
+Tweaks_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tweaks_2.BorderSizePixel = 0
+Tweaks_2.Position = UDim2.new(0.0117844017, 0, 0.111551821, 0)
+Tweaks_2.Size = UDim2.new(0.222000003, 0, 0.0970000029, 0)
+Tweaks_2.Font = Enum.Font.Cartoon
+Tweaks_2.Text = "  Tweaks"
+Tweaks_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tweaks_2.TextSize = 20.000
+Tweaks_2.TextWrapped = true
+
+Icon_3.Name = "Icon"
+Icon_3.Parent = Tweaks_2
+Icon_3.BackgroundTransparency = 1.000
+Icon_3.Position = UDim2.new(0.122556433, 0, 0.279999942, 0)
+Icon_3.Size = UDim2.new(0.157602444, 0, 0.467851073, 0)
+Icon_3.Image = "rbxassetid://2790551206"
+
+UIAspectRatioConstraint_5.Parent = Icon_3
+UIAspectRatioConstraint_5.AspectRatio = 0.909
+
+Placeholder_2.Name = "Placeholder"
+Placeholder_2.Parent = Selector_3
+Placeholder_2.BackgroundColor3 = Color3.fromRGB(40, 41, 41)
+Placeholder_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Placeholder_2.BorderSizePixel = 0
+Placeholder_2.Position = UDim2.new(0.0155136976, 0, 0.302466094, 0)
+Placeholder_2.Size = UDim2.new(0.221554309, 0, 0.0966553167, 0)
+Placeholder_2.Font = Enum.Font.Cartoon
+Placeholder_2.Text = " SOON"
+Placeholder_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Placeholder_2.TextSize = 20.000
+Placeholder_2.TextWrapped = true
+
+Icon_4.Name = "Icon"
+Icon_4.Parent = Placeholder_2
+Icon_4.BackgroundTransparency = 1.000
+Icon_4.Position = UDim2.new(0.100000001, 0, 0.219999984, 0)
+Icon_4.Size = UDim2.new(0.205295354, 0, 0.57622844, 0)
+Icon_4.Image = "rbxassetid://2790459043"
+
+UIAspectRatioConstraint_6.Parent = Icon_4
+UIAspectRatioConstraint_6.AspectRatio = 0.963
+
+Auto_2.Name = "Auto"
+Auto_2.Parent = Selector_3
+Auto_2.BackgroundColor3 = Color3.fromRGB(40, 41, 41)
+Auto_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Auto_2.BorderSizePixel = 0
+Auto_2.Position = UDim2.new(0.0117844017, 0, 0.206459761, 0)
+Auto_2.Size = UDim2.new(0.222000003, 0, 0.0970000029, 0)
+Auto_2.Font = Enum.Font.Cartoon
+Auto_2.Text = "Automatic"
+Auto_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto_2.TextSize = 16.000
+Auto_2.TextWrapped = true
+
+Icon_5.Name = "Icon"
+Icon_5.Parent = Auto_2
+Icon_5.BackgroundTransparency = 1.000
+Icon_5.Position = UDim2.new(0.0500000007, 0, 0.25, 0)
+Icon_5.Size = UDim2.new(0.157602444, 0, 0.467851073, 0)
+Icon_5.Image = "rbxassetid://2790176032"
+
+UIAspectRatioConstraint_7.Parent = Icon_5
+UIAspectRatioConstraint_7.AspectRatio = 0.909
+
+CategoryText.Name = "CategoryText"
+CategoryText.Parent = Main
+CategoryText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CategoryText.BackgroundTransparency = 1.000
+CategoryText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CategoryText.BorderSizePixel = 0
+CategoryText.Position = UDim2.new(0.269990087, 0, 0.0166879501, 0)
+CategoryText.Size = UDim2.new(0.699715555, 0, 0.0755784735, 0)
+CategoryText.Font = Enum.Font.Cartoon
+CategoryText.Text = "Select an category"
+CategoryText.TextColor3 = Color3.fromRGB(255, 255, 255)
+CategoryText.TextScaled = true
+CategoryText.TextSize = 37.000
+CategoryText.TextWrapped = true
+
+UIAspectRatioConstraint_8.Parent = Main
+UIAspectRatioConstraint_8.AspectRatio = 1.211
+
+-- Module Scripts:
+
+local fake_module_scripts = {}
+
+do -- _9HUH9.Module
+	local script = Instance.new('ModuleScript', _9HUH9)
+	script.Name = "Module"
+	local function module_script()
+		local module = {}
+		
+		
+		local ts = game:GetService("TweenService")
+		local info = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut)
+		
+		function module.getEnableTween(selector) 
+			return ts:Create(
+				selector.Icon.Enabled,
+				info,
+				{ImageTransparency=0}
+			)
+		end
+		
+		function module.getDisableTween(selector) 
+			return ts:Create(
+				selector.Icon.Enabled,
+				info,
+				{ImageTransparency=1}
+			)
+		end
+		
+		
+		
+		return module
+		
+	end
+	fake_module_scripts[script] = module_script
+end
+
+
+-- Scripts:
+
+local function MZUMHOZ_fake_script() -- _9HUH9_2.LocalScript 
+	local script = Instance.new('LocalScript', _9HUH9_2)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Main.Visible = not script.Parent.Parent.Main.Visible
+	end)
+end
+coroutine.wrap(MZUMHOZ_fake_script)()
+local function GGKXG_fake_script() -- VT.Click 
+	local script = Instance.new('LocalScript', VT)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local module = require(script.Parent.Parent.Parent.Parent.Parent.Parent.Module)
+	local rs = game:GetService("RunService")
+	
+	local plr = game.Players.LocalPlayer
+	local main = plr.PlayerGui:FindFirstChild("main")
+	
+	local enabled = false
+	
+	local connections = {}
+	
+	script.Parent.Selector.MouseButton1Click:Connect(function()
+		if enabled then
+			module.getDisableTween(script.Parent.Selector):Play()
+			enabled = false
+			
+			game.Workspace:FindFirstChildOfClass("Atmosphere").Parent = game.Lighting
+			main.dmg.Visible = true
+			
+			for _, v in pairs(connections) do
+				v:Disconnect()
+			end
+		else
+			module.getEnableTween(script.Parent.Selector):Play()
+			enabled = true
+			
+			game.Lighting:FindFirstChildOfClass("Atmosphere").Parent = game.Workspace
+			main.dmg.Visible = false
+			
+			table.insert(connections, 
+				plr.CharacterAdded:Connect(function(char)
+					main.dmg.Visible = false
+				end)
+			)
+			
+			table.insert(connections, 
+				rs.Heartbeat:Connect(function()
+					game.Lighting.ClockTime = 14
+				end)
+				
+			)
+			
+			table.insert(connections,
+				rs.RenderStepped:Connect(function()
+					game.Lighting.Ambient = Color3.fromRGB(138, 134, 114)
+					game.Lighting.OutdoorAmbient = Color3.fromRGB(128, 127, 110)
+				end)
+			)
+		end
+	end)
+end
+coroutine.wrap(GGKXG_fake_script)()
+local function HCXD_fake_script() -- AM.Click 
+	local script = Instance.new('LocalScript', AM)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local module = require(script.Parent.Parent.Parent.Parent.Parent.Parent.Module)
+	local rs = game:GetService("RunService")
+	local uis = game:GetService("UserInputService")
+	
+	local plr = game.Players.LocalPlayer
+	
+	local enabled = false
+	
+	script.Parent.Selector.MouseButton1Click:Connect(function()
+		if enabled then
+			module.getDisableTween(script.Parent.Selector):Play()
+			enabled = false
+			mouse1release()
+		else
+			module.getEnableTween(script.Parent.Selector):Play()
+			enabled = true
+			mouse1press()
+		end
+	end)
+	
+	uis.InputBegan:Connect(function(input, _g)
+		if _g then return end
+		if input.KeyCode == Enum.KeyCode.T then
+			if enabled then
+				mouse1release()
+				module.getDisableTween(script.Parent.Selector):Play()
+				enabled = false
+			else
+				module.getEnableTween(script.Parent.Selector):Play()
+				enabled = true
+				mouse1press()
+			end
+		end
+	end)
+end
+coroutine.wrap(HCXD_fake_script)()
+local function MINL_fake_script() -- Selector_3.LocalScript 
+	local script = Instance.new('LocalScript', Selector_3)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local categories = script.Parent.Parent.Categories
+	local categoryText = script.Parent.Parent.CategoryText
+	
+	local previousCategory = categories.Placeholder
+	
+	for _, v in script.Parent:GetChildren() do
+		if v:IsA("TextButton") then
+			v.MouseButton1Click:Connect(function()
+				local category = categories:FindFirstChild(v.Name)
+				previousCategory.Visible = false
+				
+				categoryText.Text = category.Name
+				category.Visible = true
+				
+				previousCategory = category
+			end)
+		end
+	end
+end
+coroutine.wrap(MINL_fake_script)()
