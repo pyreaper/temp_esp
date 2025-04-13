@@ -1,585 +1,553 @@
-local Converted = {
-	["_9HUH9"] = Instance.new("ScreenGui");
-	["_9HUH91"] = Instance.new("TextButton");
-	["_LocalScript"] = Instance.new("LocalScript");
-	["_Main"] = Instance.new("ImageLabel");
-	["_Lines"] = Instance.new("Folder");
-	["_LINE"] = Instance.new("Frame");
-	["_LINE2"] = Instance.new("Frame");
-	["_9HUH92"] = Instance.new("TextLabel");
-	["_Categories"] = Instance.new("Folder");
-	["_Tweaks"] = Instance.new("Frame");
-	["_Options"] = Instance.new("Folder");
-	["_VT"] = Instance.new("Folder");
-	["_VisibilityTweaks"] = Instance.new("TextLabel");
-	["_Selector"] = Instance.new("ImageButton");
-	["_Icon"] = Instance.new("ImageLabel");
-	["_Enabled"] = Instance.new("ImageLabel");
-	["_Click"] = Instance.new("LocalScript");
-	["_Placeholder"] = Instance.new("Frame");
-	["_Cat"] = Instance.new("ImageLabel");
-	["_Auto"] = Instance.new("Frame");
-	["_Options1"] = Instance.new("Folder");
-	["_AM"] = Instance.new("Folder");
-	["_AM1"] = Instance.new("TextLabel");
-	["_Selector1"] = Instance.new("ImageButton");
-	["_Icon1"] = Instance.new("ImageLabel");
-	["_Enabled1"] = Instance.new("ImageLabel");
-	["_Click1"] = Instance.new("LocalScript");
-	["_ESP"] = Instance.new("Frame");
-	["_Options2"] = Instance.new("Folder");
-	["_PLAYERS"] = Instance.new("Folder");
-	["_PlayerESP"] = Instance.new("TextLabel");
-	["_Selector2"] = Instance.new("ImageButton");
-	["_Icon2"] = Instance.new("ImageLabel");
-	["_Enabled2"] = Instance.new("ImageLabel");
-	["_Click2"] = Instance.new("LocalScript");
-	["_PILLAR"] = Instance.new("Folder");
-	["_Altar"] = Instance.new("TextLabel");
-	["_Selector3"] = Instance.new("ImageButton");
-	["_Icon3"] = Instance.new("ImageLabel");
-	["_Enabled3"] = Instance.new("ImageLabel");
-	["_Click3"] = Instance.new("LocalScript");
-	["_PRISONERS"] = Instance.new("Folder");
-	["_Prisoners"] = Instance.new("TextLabel");
-	["_Selector4"] = Instance.new("ImageButton");
-	["_Icon4"] = Instance.new("ImageLabel");
-	["_Enabled4"] = Instance.new("ImageLabel");
-	["_Click4"] = Instance.new("LocalScript");
-	["_Selector5"] = Instance.new("Folder");
-	["_Tweaks1"] = Instance.new("TextButton");
-	["_Icon5"] = Instance.new("ImageLabel");
-	["_ESP1"] = Instance.new("TextButton");
-	["_Icon6"] = Instance.new("ImageLabel");
-	["_LocalScript1"] = Instance.new("LocalScript");
-	["_Auto1"] = Instance.new("TextButton");
-	["_Icon7"] = Instance.new("ImageLabel");
-	["_CategoryText"] = Instance.new("TextLabel");
-	["_LocalScript2"] = Instance.new("LocalScript");
-	["_UIAspectRatioConstraint"] = Instance.new("UIAspectRatioConstraint");
-	["_Module"] = Instance.new("ModuleScript");
-}
+local _9HUH9 = Instance.new("ScreenGui")
+local _9HUH9_2 = Instance.new("TextButton")
+local Main = Instance.new("ImageLabel")
+local Lines = Instance.new("Folder")
+local LINE = Instance.new("Frame")
+local LINE2 = Instance.new("Frame")
+local _9HUH9_3 = Instance.new("TextLabel")
+local Categories = Instance.new("Folder")
+local Tweaks = Instance.new("Frame")
+local Options = Instance.new("Folder")
+local VT = Instance.new("Folder")
+local VisibilityTweaks = Instance.new("TextLabel")
+local Selector = Instance.new("ImageButton")
+local Icon = Instance.new("ImageLabel")
+local Enabled = Instance.new("ImageLabel")
+local Placeholder = Instance.new("Frame")
+local Cat = Instance.new("ImageLabel")
+local Auto = Instance.new("Frame")
+local Options_2 = Instance.new("Folder")
+local AM = Instance.new("Folder")
+local AM_2 = Instance.new("TextLabel")
+local Selector_2 = Instance.new("ImageButton")
+local Icon_2 = Instance.new("ImageLabel")
+local Enabled_2 = Instance.new("ImageLabel")
+local ESP = Instance.new("Frame")
+local Options_3 = Instance.new("Folder")
+local PLAYERS = Instance.new("Folder")
+local PlayerESP = Instance.new("TextLabel")
+local Selector_3 = Instance.new("ImageButton")
+local Icon_3 = Instance.new("ImageLabel")
+local Enabled_3 = Instance.new("ImageLabel")
+local PILLAR = Instance.new("Folder")
+local Altar = Instance.new("TextLabel")
+local Selector_4 = Instance.new("ImageButton")
+local Icon_4 = Instance.new("ImageLabel")
+local Enabled_4 = Instance.new("ImageLabel")
+local PRISONERS = Instance.new("Folder")
+local Prisoners = Instance.new("TextLabel")
+local Selector_5 = Instance.new("ImageButton")
+local Icon_5 = Instance.new("ImageLabel")
+local Enabled_5 = Instance.new("ImageLabel")
+local Selector_6 = Instance.new("Folder")
+local Tweaks_2 = Instance.new("TextButton")
+local Icon_6 = Instance.new("ImageLabel")
+local ESP_2 = Instance.new("TextButton")
+local Icon_7 = Instance.new("ImageLabel")
+local Auto_2 = Instance.new("TextButton")
+local Icon_8 = Instance.new("ImageLabel")
+local CategoryText = Instance.new("TextLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 
--- Properties:
+--Properties:
 
-Converted["_9HUH9"].ResetOnSpawn = false
-Converted["_9HUH9"].Name = "9HUH9"
-Converted["_9HUH9"].Parent = game:GetService("CoreGui")
+_9HUH9.Name = "9HUH9"
+_9HUH9.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+_9HUH9.ResetOnSpawn = false
 
-Converted["_9HUH91"].Font = Enum.Font.Cartoon
-Converted["_9HUH91"].Text = "9HUH9"
-Converted["_9HUH91"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_9HUH91"].TextScaled = true
-Converted["_9HUH91"].TextSize = 14
-Converted["_9HUH91"].TextWrapped = true
-Converted["_9HUH91"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_9HUH91"].BackgroundTransparency = 1
-Converted["_9HUH91"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_9HUH91"].BorderSizePixel = 0
-Converted["_9HUH91"].Position = UDim2.new(0.331428766, 0, 0.91900003, 0)
-Converted["_9HUH91"].Size = UDim2.new(0.333785623, 0, 0.0800000057, 0)
-Converted["_9HUH91"].Name = "9HUH9"
-Converted["_9HUH91"].Parent = Converted["_9HUH9"]
+_9HUH9_2.Name = "9HUH9"
+_9HUH9_2.Parent = _9HUH9
+_9HUH9_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_9HUH9_2.BackgroundTransparency = 1.000
+_9HUH9_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_9HUH9_2.BorderSizePixel = 0
+_9HUH9_2.Position = UDim2.new(0.331428766, 0, 0.91900003, 0)
+_9HUH9_2.Size = UDim2.new(0.333785623, 0, 0.0800000057, 0)
+_9HUH9_2.Font = Enum.Font.Cartoon
+_9HUH9_2.Text = "9HUH9"
+_9HUH9_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+_9HUH9_2.TextScaled = true
+_9HUH9_2.TextSize = 14.000
+_9HUH9_2.TextWrapped = true
 
-Converted["_Main"].Image = "rbxassetid://3570695787"
-Converted["_Main"].ImageColor3 = Color3.fromRGB(40.00000141561031, 41.00000135600567, 41.00000135600567)
-Converted["_Main"].ImageContent = Content
-Converted["_Main"].ScaleType = Enum.ScaleType.Slice
-Converted["_Main"].SliceCenter = Rect.new(100, 100, 100, 100)
-Converted["_Main"].SliceScale = 0.6666666865348816
-Converted["_Main"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Main"].BackgroundTransparency = 1
-Converted["_Main"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_Main"].Position = UDim2.new(0.234126419, 0, 0.186390534, 0)
-Converted["_Main"].Size = UDim2.new(0.527001321, 0, 0.626891196, 0)
-Converted["_Main"].Visible = false
-Converted["_Main"].Name = "Main"
-Converted["_Main"].Parent = Converted["_9HUH9"]
+Main.Name = "Main"
+Main.Parent = _9HUH9
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.BackgroundTransparency = 1.000
+Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Main.Position = UDim2.new(0.234126419, 0, 0.186390534, 0)
+Main.Size = UDim2.new(0.527001321, 0, 0.626891196, 0)
+Main.Visible = false
+Main.Image = "rbxassetid://3570695787"
+Main.ImageColor3 = Color3.fromRGB(40, 41, 41)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.667
 
-Converted["_Lines"].Name = "Lines"
-Converted["_Lines"].Parent = Converted["_Main"]
+Lines.Name = "Lines"
+Lines.Parent = Main
 
-Converted["_LINE"].BackgroundColor3 = Color3.fromRGB(248.00001561641693, 252.00001537799835, 255)
-Converted["_LINE"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_LINE"].BorderSizePixel = 0
-Converted["_LINE"].Position = UDim2.new(0.00499999989, 0, 0.119999997, 0)
-Converted["_LINE"].Size = UDim2.new(0.99000001, 0, 0.00300000003, 0)
-Converted["_LINE"].Name = "LINE"
-Converted["_LINE"].Parent = Converted["_Lines"]
+LINE.Name = "LINE"
+LINE.Parent = Lines
+LINE.BackgroundColor3 = Color3.fromRGB(248, 252, 255)
+LINE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LINE.BorderSizePixel = 0
+LINE.Position = UDim2.new(0.00499999989, 0, 0.119999997, 0)
+LINE.Size = UDim2.new(0.99000001, 0, 0.00300000003, 0)
 
-Converted["_LINE2"].BackgroundColor3 = Color3.fromRGB(248.00001561641693, 252.00001537799835, 255)
-Converted["_LINE2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_LINE2"].BorderSizePixel = 0
-Converted["_LINE2"].Position = UDim2.new(0.239999995, 0, 0, 0)
-Converted["_LINE2"].Size = UDim2.new(0.00200000009, 0, 1, 0)
-Converted["_LINE2"].Name = "LINE2"
-Converted["_LINE2"].Parent = Converted["_Lines"]
+LINE2.Name = "LINE2"
+LINE2.Parent = Lines
+LINE2.BackgroundColor3 = Color3.fromRGB(248, 252, 255)
+LINE2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LINE2.BorderSizePixel = 0
+LINE2.Position = UDim2.new(0.239999995, 0, 0, 0)
+LINE2.Size = UDim2.new(0.00200000009, 0, 1, 0)
 
-Converted["_9HUH92"].Font = Enum.Font.Cartoon
-Converted["_9HUH92"].Text = "9HUH9"
-Converted["_9HUH92"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_9HUH92"].TextSize = 14
-Converted["_9HUH92"].TextStrokeTransparency = 0
-Converted["_9HUH92"].TextTransparency = 0.5
-Converted["_9HUH92"].TextWrapped = true
-Converted["_9HUH92"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_9HUH92"].BackgroundTransparency = 1
-Converted["_9HUH92"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_9HUH92"].BorderSizePixel = 0
-Converted["_9HUH92"].Position = UDim2.new(0.0122125689, 0, -1.80032629e-08, 0)
-Converted["_9HUH92"].Size = UDim2.new(0.229787439, 0, 0.11999999, 0)
-Converted["_9HUH92"].Name = "9HUH9"
-Converted["_9HUH92"].Parent = Converted["_Main"]
+_9HUH9_3.Name = "9HUH9"
+_9HUH9_3.Parent = Main
+_9HUH9_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_9HUH9_3.BackgroundTransparency = 1.000
+_9HUH9_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_9HUH9_3.BorderSizePixel = 0
+_9HUH9_3.Position = UDim2.new(0.0122125689, 0, -1.80032629e-08, 0)
+_9HUH9_3.Size = UDim2.new(0.229787439, 0, 0.11999999, 0)
+_9HUH9_3.Font = Enum.Font.Cartoon
+_9HUH9_3.Text = "9HUH9"
+_9HUH9_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+_9HUH9_3.TextSize = 14.000
+_9HUH9_3.TextStrokeTransparency = 0.000
+_9HUH9_3.TextTransparency = 0.500
+_9HUH9_3.TextWrapped = true
 
-Converted["_Categories"].Name = "Categories"
-Converted["_Categories"].Parent = Converted["_Main"]
+Categories.Name = "Categories"
+Categories.Parent = Main
 
-Converted["_Tweaks"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Tweaks"].BackgroundTransparency = 1
-Converted["_Tweaks"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Tweaks"].BorderSizePixel = 0
-Converted["_Tweaks"].Position = UDim2.new(0.241999969, 0, 0, 0)
-Converted["_Tweaks"].Size = UDim2.new(0.759234071, 0, 0.998394251, 0)
-Converted["_Tweaks"].Visible = false
-Converted["_Tweaks"].Name = "Tweaks"
-Converted["_Tweaks"].Parent = Converted["_Categories"]
+Tweaks.Name = "Tweaks"
+Tweaks.Parent = Categories
+Tweaks.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tweaks.BackgroundTransparency = 1.000
+Tweaks.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tweaks.BorderSizePixel = 0
+Tweaks.Position = UDim2.new(0.241999969, 0, 0, 0)
+Tweaks.Size = UDim2.new(0.759234071, 0, 0.998394251, 0)
+Tweaks.Visible = false
 
-Converted["_Options"].Name = "Options"
-Converted["_Options"].Parent = Converted["_Tweaks"]
+Options.Name = "Options"
+Options.Parent = Tweaks
 
-Converted["_VT"].Name = "VT"
-Converted["_VT"].Parent = Converted["_Options"]
+VT.Name = "VT"
+VT.Parent = Options
 
-Converted["_VisibilityTweaks"].Font = Enum.Font.Cartoon
-Converted["_VisibilityTweaks"].Text = "Visibility tweaks"
-Converted["_VisibilityTweaks"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_VisibilityTweaks"].TextSize = 20
-Converted["_VisibilityTweaks"].TextWrapped = true
-Converted["_VisibilityTweaks"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_VisibilityTweaks"].BackgroundTransparency = 1
-Converted["_VisibilityTweaks"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_VisibilityTweaks"].BorderSizePixel = 0
-Converted["_VisibilityTweaks"].Position = UDim2.new(0.011057348, 0, 0.139195845, 0)
-Converted["_VisibilityTweaks"].Size = UDim2.new(0, 140, 0, 34)
-Converted["_VisibilityTweaks"].Name = "VisibilityTweaks"
-Converted["_VisibilityTweaks"].Parent = Converted["_VT"]
+VisibilityTweaks.Name = "VisibilityTweaks"
+VisibilityTweaks.Parent = VT
+VisibilityTweaks.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VisibilityTweaks.BackgroundTransparency = 1.000
+VisibilityTweaks.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VisibilityTweaks.BorderSizePixel = 0
+VisibilityTweaks.Position = UDim2.new(0.011057348, 0, 0.139195845, 0)
+VisibilityTweaks.Size = UDim2.new(0, 140, 0, 34)
+VisibilityTweaks.Font = Enum.Font.Cartoon
+VisibilityTweaks.Text = "Visibility tweaks"
+VisibilityTweaks.TextColor3 = Color3.fromRGB(255, 255, 255)
+VisibilityTweaks.TextSize = 20.000
+VisibilityTweaks.TextWrapped = true
 
-Converted["_Selector"].Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-Converted["_Selector"].ImageContent = Content
-Converted["_Selector"].ImageTransparency = 1
-Converted["_Selector"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Selector"].BackgroundTransparency = 1
-Converted["_Selector"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Selector"].BorderSizePixel = 0
-Converted["_Selector"].Position = UDim2.new(0.912972748, 0, 0.149379283, 0)
-Converted["_Selector"].Size = UDim2.new(0.0520000011, 0, 0.0489999987, 0)
-Converted["_Selector"].ZIndex = 10
-Converted["_Selector"].Name = "Selector"
-Converted["_Selector"].Parent = Converted["_VT"]
+Selector.Name = "Selector"
+Selector.Parent = VT
+Selector.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Selector.BackgroundTransparency = 1.000
+Selector.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Selector.BorderSizePixel = 0
+Selector.Position = UDim2.new(0.912972748, 0, 0.149379283, 0)
+Selector.Size = UDim2.new(0.0520000011, 0, 0.0489999987, 0)
+Selector.ZIndex = 10
+Selector.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Selector.ImageTransparency = 1.000
 
-Converted["_Icon"].Image = "rbxassetid://3570695787"
-Converted["_Icon"].ImageContent = Content
-Converted["_Icon"].ScaleType = Enum.ScaleType.Slice
-Converted["_Icon"].SliceCenter = Rect.new(100, 100, 100, 100)
-Converted["_Icon"].SliceScale = 0.6666666865348816
-Converted["_Icon"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Icon"].BackgroundTransparency = 1
-Converted["_Icon"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_Icon"].Position = UDim2.new(0.0242404323, 0, -0.0420305133, 0)
-Converted["_Icon"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Icon"].Name = "Icon"
-Converted["_Icon"].Parent = Converted["_Selector"]
+Icon.Name = "Icon"
+Icon.Parent = Selector
+Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon.BackgroundTransparency = 1.000
+Icon.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Icon.Position = UDim2.new(0.0242404323, 0, -0.0420305133, 0)
+Icon.Size = UDim2.new(1, 0, 1, 0)
+Icon.Image = "rbxassetid://3570695787"
+Icon.ScaleType = Enum.ScaleType.Slice
+Icon.SliceCenter = Rect.new(100, 100, 100, 100)
+Icon.SliceScale = 0.667
 
-Converted["_Enabled"].Image = "rbxassetid://3570695787"
-Converted["_Enabled"].ImageColor3 = Color3.fromRGB(6.0000005923211575, 163.00000548362732, 205.00001817941666)
-Converted["_Enabled"].ImageContent = Content
-Converted["_Enabled"].ImageTransparency = 1
-Converted["_Enabled"].ScaleType = Enum.ScaleType.Slice
-Converted["_Enabled"].SliceCenter = Rect.new(100, 100, 100, 100)
-Converted["_Enabled"].SliceScale = 0.6666666865348816
-Converted["_Enabled"].BackgroundColor3 = Color3.fromRGB(255, 40.00000141561031, 0)
-Converted["_Enabled"].BackgroundTransparency = 1
-Converted["_Enabled"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_Enabled"].Position = UDim2.new(0.144999996, 0, 0.140000001, 0)
-Converted["_Enabled"].Size = UDim2.new(0.699999988, 0, 0.699999988, 0)
-Converted["_Enabled"].ZIndex = 10
-Converted["_Enabled"].Name = "Enabled"
-Converted["_Enabled"].Parent = Converted["_Icon"]
+Enabled.Name = "Enabled"
+Enabled.Parent = Icon
+Enabled.BackgroundColor3 = Color3.fromRGB(255, 40, 0)
+Enabled.BackgroundTransparency = 1.000
+Enabled.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Enabled.Position = UDim2.new(0.144999996, 0, 0.140000001, 0)
+Enabled.Size = UDim2.new(0.699999988, 0, 0.699999988, 0)
+Enabled.ZIndex = 10
+Enabled.Image = "rbxassetid://3570695787"
+Enabled.ImageColor3 = Color3.fromRGB(6, 163, 205)
+Enabled.ImageTransparency = 1.000
+Enabled.ScaleType = Enum.ScaleType.Slice
+Enabled.SliceCenter = Rect.new(100, 100, 100, 100)
+Enabled.SliceScale = 0.667
 
-Converted["_Placeholder"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Placeholder"].BackgroundTransparency = 1
-Converted["_Placeholder"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Placeholder"].BorderSizePixel = 0
-Converted["_Placeholder"].Position = UDim2.new(0.241999969, 0, 0, 0)
-Converted["_Placeholder"].Size = UDim2.new(0.759234071, 0, 0.998394251, 0)
-Converted["_Placeholder"].Name = "Placeholder"
-Converted["_Placeholder"].Parent = Converted["_Categories"]
+Placeholder.Name = "Placeholder"
+Placeholder.Parent = Categories
+Placeholder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Placeholder.BackgroundTransparency = 1.000
+Placeholder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Placeholder.BorderSizePixel = 0
+Placeholder.Position = UDim2.new(0.241999969, 0, 0, 0)
+Placeholder.Size = UDim2.new(0.759234071, 0, 0.998394251, 0)
 
-Converted["_Cat"].Image = "http://www.roblox.com/asset/?id=11176073563"
-Converted["_Cat"].ImageContent = Content
-Converted["_Cat"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Cat"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Cat"].BorderSizePixel = 0
-Converted["_Cat"].Position = UDim2.new(0.168202817, 0, 0.192970112, 0)
-Converted["_Cat"].Size = UDim2.new(0.654377878, 0, 0.613636374, 0)
-Converted["_Cat"].Name = "Cat"
-Converted["_Cat"].Parent = Converted["_Placeholder"]
+Cat.Name = "Cat"
+Cat.Parent = Placeholder
+Cat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cat.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Cat.BorderSizePixel = 0
+Cat.Position = UDim2.new(0.168202817, 0, 0.192970112, 0)
+Cat.Size = UDim2.new(0.654377878, 0, 0.613636374, 0)
+Cat.Image = "http://www.roblox.com/asset/?id=11176073563"
 
-Converted["_Auto"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Auto"].BackgroundTransparency = 1
-Converted["_Auto"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Auto"].BorderSizePixel = 0
-Converted["_Auto"].Position = UDim2.new(0.241999969, 0, 0, 0)
-Converted["_Auto"].Size = UDim2.new(0.759234071, 0, 0.998394251, 0)
-Converted["_Auto"].Visible = false
-Converted["_Auto"].Name = "Auto"
-Converted["_Auto"].Parent = Converted["_Categories"]
+Auto.Name = "Auto"
+Auto.Parent = Categories
+Auto.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Auto.BackgroundTransparency = 1.000
+Auto.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Auto.BorderSizePixel = 0
+Auto.Position = UDim2.new(0.241999969, 0, 0, 0)
+Auto.Size = UDim2.new(0.759234071, 0, 0.998394251, 0)
+Auto.Visible = false
 
-Converted["_Options1"].Name = "Options"
-Converted["_Options1"].Parent = Converted["_Auto"]
+Options_2.Name = "Options"
+Options_2.Parent = Auto
 
-Converted["_AM"].Name = "AM"
-Converted["_AM"].Parent = Converted["_Options1"]
+AM.Name = "AM"
+AM.Parent = Options_2
 
-Converted["_AM1"].Font = Enum.Font.Cartoon
-Converted["_AM1"].Text = "AutoMining (binded to T)"
-Converted["_AM1"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_AM1"].TextSize = 20
-Converted["_AM1"].TextWrapped = true
-Converted["_AM1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_AM1"].BackgroundTransparency = 1
-Converted["_AM1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_AM1"].BorderSizePixel = 0
-Converted["_AM1"].Position = UDim2.new(0.011057334, 0, 0.139195845, 0)
-Converted["_AM1"].Size = UDim2.new(0, 208, 0, 34)
-Converted["_AM1"].Name = "AM"
-Converted["_AM1"].Parent = Converted["_AM"]
+AM_2.Name = "AM"
+AM_2.Parent = AM
+AM_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AM_2.BackgroundTransparency = 1.000
+AM_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AM_2.BorderSizePixel = 0
+AM_2.Position = UDim2.new(0.011057334, 0, 0.139195845, 0)
+AM_2.Size = UDim2.new(0, 208, 0, 34)
+AM_2.Font = Enum.Font.Cartoon
+AM_2.Text = "AutoMining (binded to T)"
+AM_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+AM_2.TextSize = 20.000
+AM_2.TextWrapped = true
 
-Converted["_Selector1"].Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-Converted["_Selector1"].ImageContent = Content
-Converted["_Selector1"].ImageTransparency = 1
-Converted["_Selector1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Selector1"].BackgroundTransparency = 1
-Converted["_Selector1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Selector1"].BorderSizePixel = 0
-Converted["_Selector1"].Position = UDim2.new(0.912972748, 0, 0.149379283, 0)
-Converted["_Selector1"].Size = UDim2.new(0.0520000011, 0, 0.0489999987, 0)
-Converted["_Selector1"].ZIndex = 10
-Converted["_Selector1"].Name = "Selector"
-Converted["_Selector1"].Parent = Converted["_AM"]
+Selector_2.Name = "Selector"
+Selector_2.Parent = AM
+Selector_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Selector_2.BackgroundTransparency = 1.000
+Selector_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Selector_2.BorderSizePixel = 0
+Selector_2.Position = UDim2.new(0.912972748, 0, 0.149379283, 0)
+Selector_2.Size = UDim2.new(0.0520000011, 0, 0.0489999987, 0)
+Selector_2.ZIndex = 10
+Selector_2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Selector_2.ImageTransparency = 1.000
 
-Converted["_Icon1"].Image = "rbxassetid://3570695787"
-Converted["_Icon1"].ImageContent = Content
-Converted["_Icon1"].ScaleType = Enum.ScaleType.Slice
-Converted["_Icon1"].SliceCenter = Rect.new(100, 100, 100, 100)
-Converted["_Icon1"].SliceScale = 0.6666666865348816
-Converted["_Icon1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Icon1"].BackgroundTransparency = 1
-Converted["_Icon1"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_Icon1"].Position = UDim2.new(0.0242404323, 0, -0.0420305133, 0)
-Converted["_Icon1"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Icon1"].Name = "Icon"
-Converted["_Icon1"].Parent = Converted["_Selector1"]
+Icon_2.Name = "Icon"
+Icon_2.Parent = Selector_2
+Icon_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_2.BackgroundTransparency = 1.000
+Icon_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Icon_2.Position = UDim2.new(0.0242404323, 0, -0.0420305133, 0)
+Icon_2.Size = UDim2.new(1, 0, 1, 0)
+Icon_2.Image = "rbxassetid://3570695787"
+Icon_2.ScaleType = Enum.ScaleType.Slice
+Icon_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Icon_2.SliceScale = 0.667
 
-Converted["_Enabled1"].Image = "rbxassetid://3570695787"
-Converted["_Enabled1"].ImageColor3 = Color3.fromRGB(6.0000005923211575, 163.00000548362732, 205.00001817941666)
-Converted["_Enabled1"].ImageContent = Content
-Converted["_Enabled1"].ImageTransparency = 1
-Converted["_Enabled1"].ScaleType = Enum.ScaleType.Slice
-Converted["_Enabled1"].SliceCenter = Rect.new(100, 100, 100, 100)
-Converted["_Enabled1"].SliceScale = 0.6666666865348816
-Converted["_Enabled1"].BackgroundColor3 = Color3.fromRGB(255, 40.00000141561031, 0)
-Converted["_Enabled1"].BackgroundTransparency = 1
-Converted["_Enabled1"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_Enabled1"].Position = UDim2.new(0.144999996, 0, 0.140000001, 0)
-Converted["_Enabled1"].Size = UDim2.new(0.699999988, 0, 0.699999988, 0)
-Converted["_Enabled1"].ZIndex = 10
-Converted["_Enabled1"].Name = "Enabled"
-Converted["_Enabled1"].Parent = Converted["_Icon1"]
+Enabled_2.Name = "Enabled"
+Enabled_2.Parent = Icon_2
+Enabled_2.BackgroundColor3 = Color3.fromRGB(255, 40, 0)
+Enabled_2.BackgroundTransparency = 1.000
+Enabled_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Enabled_2.Position = UDim2.new(0.144999996, 0, 0.140000001, 0)
+Enabled_2.Size = UDim2.new(0.699999988, 0, 0.699999988, 0)
+Enabled_2.ZIndex = 10
+Enabled_2.Image = "rbxassetid://3570695787"
+Enabled_2.ImageColor3 = Color3.fromRGB(6, 163, 205)
+Enabled_2.ImageTransparency = 1.000
+Enabled_2.ScaleType = Enum.ScaleType.Slice
+Enabled_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Enabled_2.SliceScale = 0.667
 
-Converted["_ESP"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ESP"].BackgroundTransparency = 1
-Converted["_ESP"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ESP"].BorderSizePixel = 0
-Converted["_ESP"].Position = UDim2.new(0.241999969, 0, 0, 0)
-Converted["_ESP"].Size = UDim2.new(0.759234071, 0, 0.998394251, 0)
-Converted["_ESP"].Visible = false
-Converted["_ESP"].Name = "ESP"
-Converted["_ESP"].Parent = Converted["_Categories"]
+ESP.Name = "ESP"
+ESP.Parent = Categories
+ESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESP.BackgroundTransparency = 1.000
+ESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESP.BorderSizePixel = 0
+ESP.Position = UDim2.new(0.241999969, 0, 0, 0)
+ESP.Size = UDim2.new(0.759234071, 0, 0.998394251, 0)
+ESP.Visible = false
 
-Converted["_Options2"].Name = "Options"
-Converted["_Options2"].Parent = Converted["_ESP"]
+Options_3.Name = "Options"
+Options_3.Parent = ESP
 
-Converted["_PLAYERS"].Name = "PLAYERS"
-Converted["_PLAYERS"].Parent = Converted["_Options2"]
+PLAYERS.Name = "PLAYERS"
+PLAYERS.Parent = Options_3
 
-Converted["_PlayerESP"].Font = Enum.Font.Cartoon
-Converted["_PlayerESP"].Text = "Player ESP"
-Converted["_PlayerESP"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_PlayerESP"].TextSize = 20
-Converted["_PlayerESP"].TextWrapped = true
-Converted["_PlayerESP"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_PlayerESP"].BackgroundTransparency = 1
-Converted["_PlayerESP"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_PlayerESP"].BorderSizePixel = 0
-Converted["_PlayerESP"].Position = UDim2.new(0.0208969824, 0, 0.136832327, 0)
-Converted["_PlayerESP"].Size = UDim2.new(0, 96, 0, 34)
-Converted["_PlayerESP"].Name = "PlayerESP"
-Converted["_PlayerESP"].Parent = Converted["_PLAYERS"]
+PlayerESP.Name = "PlayerESP"
+PlayerESP.Parent = PLAYERS
+PlayerESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerESP.BackgroundTransparency = 1.000
+PlayerESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerESP.BorderSizePixel = 0
+PlayerESP.Position = UDim2.new(0.0208969824, 0, 0.136832327, 0)
+PlayerESP.Size = UDim2.new(0, 96, 0, 34)
+PlayerESP.Font = Enum.Font.Cartoon
+PlayerESP.Text = "Player ESP"
+PlayerESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerESP.TextSize = 20.000
+PlayerESP.TextWrapped = true
 
-Converted["_Selector2"].Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-Converted["_Selector2"].ImageContent = Content
-Converted["_Selector2"].ImageTransparency = 1
-Converted["_Selector2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Selector2"].BackgroundTransparency = 1
-Converted["_Selector2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Selector2"].BorderSizePixel = 0
-Converted["_Selector2"].Position = UDim2.new(0.912972748, 0, 0.149379283, 0)
-Converted["_Selector2"].Size = UDim2.new(0.0520000011, 0, 0.0489999987, 0)
-Converted["_Selector2"].ZIndex = 10
-Converted["_Selector2"].Name = "Selector"
-Converted["_Selector2"].Parent = Converted["_PLAYERS"]
+Selector_3.Name = "Selector"
+Selector_3.Parent = PLAYERS
+Selector_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Selector_3.BackgroundTransparency = 1.000
+Selector_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Selector_3.BorderSizePixel = 0
+Selector_3.Position = UDim2.new(0.912972748, 0, 0.149379283, 0)
+Selector_3.Size = UDim2.new(0.0520000011, 0, 0.0489999987, 0)
+Selector_3.ZIndex = 10
+Selector_3.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Selector_3.ImageTransparency = 1.000
 
-Converted["_Icon2"].Image = "rbxassetid://3570695787"
-Converted["_Icon2"].ImageContent = Content
-Converted["_Icon2"].ScaleType = Enum.ScaleType.Slice
-Converted["_Icon2"].SliceCenter = Rect.new(100, 100, 100, 100)
-Converted["_Icon2"].SliceScale = 0.6666666865348816
-Converted["_Icon2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Icon2"].BackgroundTransparency = 1
-Converted["_Icon2"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_Icon2"].Position = UDim2.new(0.0242404323, 0, -0.0420305133, 0)
-Converted["_Icon2"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Icon2"].Name = "Icon"
-Converted["_Icon2"].Parent = Converted["_Selector2"]
+Icon_3.Name = "Icon"
+Icon_3.Parent = Selector_3
+Icon_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_3.BackgroundTransparency = 1.000
+Icon_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Icon_3.Position = UDim2.new(0.0242404323, 0, -0.0420305133, 0)
+Icon_3.Size = UDim2.new(1, 0, 1, 0)
+Icon_3.Image = "rbxassetid://3570695787"
+Icon_3.ScaleType = Enum.ScaleType.Slice
+Icon_3.SliceCenter = Rect.new(100, 100, 100, 100)
+Icon_3.SliceScale = 0.667
 
-Converted["_Enabled2"].Image = "rbxassetid://3570695787"
-Converted["_Enabled2"].ImageColor3 = Color3.fromRGB(6.0000005923211575, 163.00000548362732, 205.00001817941666)
-Converted["_Enabled2"].ImageContent = Content
-Converted["_Enabled2"].ImageTransparency = 1
-Converted["_Enabled2"].ScaleType = Enum.ScaleType.Slice
-Converted["_Enabled2"].SliceCenter = Rect.new(100, 100, 100, 100)
-Converted["_Enabled2"].SliceScale = 0.6666666865348816
-Converted["_Enabled2"].BackgroundColor3 = Color3.fromRGB(255, 40.00000141561031, 0)
-Converted["_Enabled2"].BackgroundTransparency = 1
-Converted["_Enabled2"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_Enabled2"].Position = UDim2.new(0.144999996, 0, 0.140000001, 0)
-Converted["_Enabled2"].Size = UDim2.new(0.699999988, 0, 0.699999988, 0)
-Converted["_Enabled2"].ZIndex = 10
-Converted["_Enabled2"].Name = "Enabled"
-Converted["_Enabled2"].Parent = Converted["_Icon2"]
+Enabled_3.Name = "Enabled"
+Enabled_3.Parent = Icon_3
+Enabled_3.BackgroundColor3 = Color3.fromRGB(255, 40, 0)
+Enabled_3.BackgroundTransparency = 1.000
+Enabled_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Enabled_3.Position = UDim2.new(0.144999996, 0, 0.140000001, 0)
+Enabled_3.Size = UDim2.new(0.699999988, 0, 0.699999988, 0)
+Enabled_3.ZIndex = 10
+Enabled_3.Image = "rbxassetid://3570695787"
+Enabled_3.ImageColor3 = Color3.fromRGB(6, 163, 205)
+Enabled_3.ImageTransparency = 1.000
+Enabled_3.ScaleType = Enum.ScaleType.Slice
+Enabled_3.SliceCenter = Rect.new(100, 100, 100, 100)
+Enabled_3.SliceScale = 0.667
 
-Converted["_PILLAR"].Name = "PILLAR"
-Converted["_PILLAR"].Parent = Converted["_Options2"]
+PILLAR.Name = "PILLAR"
+PILLAR.Parent = Options_3
 
-Converted["_Altar"].Font = Enum.Font.Cartoon
-Converted["_Altar"].Text = "Pillars (Altar)"
-Converted["_Altar"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Altar"].TextSize = 20
-Converted["_Altar"].TextWrapped = true
-Converted["_Altar"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Altar"].BackgroundTransparency = 1
-Converted["_Altar"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Altar"].BorderSizePixel = 0
-Converted["_Altar"].Position = UDim2.new(0.0208969824, 0, 0.210101411, 0)
-Converted["_Altar"].Size = UDim2.new(0, 114, 0, 34)
-Converted["_Altar"].Name = "Altar"
-Converted["_Altar"].Parent = Converted["_PILLAR"]
+Altar.Name = "Altar"
+Altar.Parent = PILLAR
+Altar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Altar.BackgroundTransparency = 1.000
+Altar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Altar.BorderSizePixel = 0
+Altar.Position = UDim2.new(0.0208969824, 0, 0.210101411, 0)
+Altar.Size = UDim2.new(0, 114, 0, 34)
+Altar.Font = Enum.Font.Cartoon
+Altar.Text = "Pillars (Altar)"
+Altar.TextColor3 = Color3.fromRGB(255, 255, 255)
+Altar.TextSize = 20.000
+Altar.TextWrapped = true
 
-Converted["_Selector3"].Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-Converted["_Selector3"].ImageContent = Content
-Converted["_Selector3"].ImageTransparency = 1
-Converted["_Selector3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Selector3"].BackgroundTransparency = 1
-Converted["_Selector3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Selector3"].BorderSizePixel = 0
-Converted["_Selector3"].Position = UDim2.new(0.912972748, 0, 0.225011885, 0)
-Converted["_Selector3"].Size = UDim2.new(0.0520000011, 0, 0.0489999987, 0)
-Converted["_Selector3"].ZIndex = 10
-Converted["_Selector3"].Name = "Selector"
-Converted["_Selector3"].Parent = Converted["_PILLAR"]
+Selector_4.Name = "Selector"
+Selector_4.Parent = PILLAR
+Selector_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Selector_4.BackgroundTransparency = 1.000
+Selector_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Selector_4.BorderSizePixel = 0
+Selector_4.Position = UDim2.new(0.912972748, 0, 0.225011885, 0)
+Selector_4.Size = UDim2.new(0.0520000011, 0, 0.0489999987, 0)
+Selector_4.ZIndex = 10
+Selector_4.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Selector_4.ImageTransparency = 1.000
 
-Converted["_Icon3"].Image = "rbxassetid://3570695787"
-Converted["_Icon3"].ImageContent = Content
-Converted["_Icon3"].ScaleType = Enum.ScaleType.Slice
-Converted["_Icon3"].SliceCenter = Rect.new(100, 100, 100, 100)
-Converted["_Icon3"].SliceScale = 0.6666666865348816
-Converted["_Icon3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Icon3"].BackgroundTransparency = 1
-Converted["_Icon3"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_Icon3"].Position = UDim2.new(0.0242404323, 0, -0.0420305133, 0)
-Converted["_Icon3"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Icon3"].Name = "Icon"
-Converted["_Icon3"].Parent = Converted["_Selector3"]
+Icon_4.Name = "Icon"
+Icon_4.Parent = Selector_4
+Icon_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_4.BackgroundTransparency = 1.000
+Icon_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Icon_4.Position = UDim2.new(0.0242404323, 0, -0.0420305133, 0)
+Icon_4.Size = UDim2.new(1, 0, 1, 0)
+Icon_4.Image = "rbxassetid://3570695787"
+Icon_4.ScaleType = Enum.ScaleType.Slice
+Icon_4.SliceCenter = Rect.new(100, 100, 100, 100)
+Icon_4.SliceScale = 0.667
 
-Converted["_Enabled3"].Image = "rbxassetid://3570695787"
-Converted["_Enabled3"].ImageColor3 = Color3.fromRGB(6.0000005923211575, 163.00000548362732, 205.00001817941666)
-Converted["_Enabled3"].ImageContent = Content
-Converted["_Enabled3"].ImageTransparency = 1
-Converted["_Enabled3"].ScaleType = Enum.ScaleType.Slice
-Converted["_Enabled3"].SliceCenter = Rect.new(100, 100, 100, 100)
-Converted["_Enabled3"].SliceScale = 0.6666666865348816
-Converted["_Enabled3"].BackgroundColor3 = Color3.fromRGB(255, 40.00000141561031, 0)
-Converted["_Enabled3"].BackgroundTransparency = 1
-Converted["_Enabled3"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_Enabled3"].Position = UDim2.new(0.144999996, 0, 0.140000001, 0)
-Converted["_Enabled3"].Size = UDim2.new(0.699999988, 0, 0.699999988, 0)
-Converted["_Enabled3"].ZIndex = 10
-Converted["_Enabled3"].Name = "Enabled"
-Converted["_Enabled3"].Parent = Converted["_Icon3"]
+Enabled_4.Name = "Enabled"
+Enabled_4.Parent = Icon_4
+Enabled_4.BackgroundColor3 = Color3.fromRGB(255, 40, 0)
+Enabled_4.BackgroundTransparency = 1.000
+Enabled_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Enabled_4.Position = UDim2.new(0.144999996, 0, 0.140000001, 0)
+Enabled_4.Size = UDim2.new(0.699999988, 0, 0.699999988, 0)
+Enabled_4.ZIndex = 10
+Enabled_4.Image = "rbxassetid://3570695787"
+Enabled_4.ImageColor3 = Color3.fromRGB(6, 163, 205)
+Enabled_4.ImageTransparency = 1.000
+Enabled_4.ScaleType = Enum.ScaleType.Slice
+Enabled_4.SliceCenter = Rect.new(100, 100, 100, 100)
+Enabled_4.SliceScale = 0.667
 
-Converted["_PRISONERS"].Name = "PRISONERS"
-Converted["_PRISONERS"].Parent = Converted["_Options2"]
+PRISONERS.Name = "PRISONERS"
+PRISONERS.Parent = Options_3
 
-Converted["_Prisoners"].Font = Enum.Font.Cartoon
-Converted["_Prisoners"].Text = "Prisoners"
-Converted["_Prisoners"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Prisoners"].TextSize = 20
-Converted["_Prisoners"].TextWrapped = true
-Converted["_Prisoners"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Prisoners"].BackgroundTransparency = 1
-Converted["_Prisoners"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Prisoners"].BorderSizePixel = 0
-Converted["_Prisoners"].Position = UDim2.new(0.0208969824, 0, 0.283370525, 0)
-Converted["_Prisoners"].Size = UDim2.new(0, 82, 0, 34)
-Converted["_Prisoners"].Name = "Prisoners"
-Converted["_Prisoners"].Parent = Converted["_PRISONERS"]
+Prisoners.Name = "Prisoners"
+Prisoners.Parent = PRISONERS
+Prisoners.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Prisoners.BackgroundTransparency = 1.000
+Prisoners.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Prisoners.BorderSizePixel = 0
+Prisoners.Position = UDim2.new(0.0208969824, 0, 0.283370525, 0)
+Prisoners.Size = UDim2.new(0, 82, 0, 34)
+Prisoners.Font = Enum.Font.Cartoon
+Prisoners.Text = "Prisoners"
+Prisoners.TextColor3 = Color3.fromRGB(255, 255, 255)
+Prisoners.TextSize = 20.000
+Prisoners.TextWrapped = true
 
-Converted["_Selector4"].Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-Converted["_Selector4"].ImageContent = Content
-Converted["_Selector4"].ImageTransparency = 1
-Converted["_Selector4"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Selector4"].BackgroundTransparency = 1
-Converted["_Selector4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Selector4"].BorderSizePixel = 0
-Converted["_Selector4"].Position = UDim2.new(0.912972748, 0, 0.298280925, 0)
-Converted["_Selector4"].Size = UDim2.new(0.0520000011, 0, 0.0489999987, 0)
-Converted["_Selector4"].ZIndex = 10
-Converted["_Selector4"].Name = "Selector"
-Converted["_Selector4"].Parent = Converted["_PRISONERS"]
+Selector_5.Name = "Selector"
+Selector_5.Parent = PRISONERS
+Selector_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Selector_5.BackgroundTransparency = 1.000
+Selector_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Selector_5.BorderSizePixel = 0
+Selector_5.Position = UDim2.new(0.912972748, 0, 0.298280925, 0)
+Selector_5.Size = UDim2.new(0.0520000011, 0, 0.0489999987, 0)
+Selector_5.ZIndex = 10
+Selector_5.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Selector_5.ImageTransparency = 1.000
 
-Converted["_Icon4"].Image = "rbxassetid://3570695787"
-Converted["_Icon4"].ImageContent = Content
-Converted["_Icon4"].ScaleType = Enum.ScaleType.Slice
-Converted["_Icon4"].SliceCenter = Rect.new(100, 100, 100, 100)
-Converted["_Icon4"].SliceScale = 0.6666666865348816
-Converted["_Icon4"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Icon4"].BackgroundTransparency = 1
-Converted["_Icon4"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_Icon4"].Position = UDim2.new(0.0242404323, 0, -0.0420305133, 0)
-Converted["_Icon4"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Icon4"].Name = "Icon"
-Converted["_Icon4"].Parent = Converted["_Selector4"]
+Icon_5.Name = "Icon"
+Icon_5.Parent = Selector_5
+Icon_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_5.BackgroundTransparency = 1.000
+Icon_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Icon_5.Position = UDim2.new(0.0242404323, 0, -0.0420305133, 0)
+Icon_5.Size = UDim2.new(1, 0, 1, 0)
+Icon_5.Image = "rbxassetid://3570695787"
+Icon_5.ScaleType = Enum.ScaleType.Slice
+Icon_5.SliceCenter = Rect.new(100, 100, 100, 100)
+Icon_5.SliceScale = 0.667
 
-Converted["_Enabled4"].Image = "rbxassetid://3570695787"
-Converted["_Enabled4"].ImageColor3 = Color3.fromRGB(6.0000005923211575, 163.00000548362732, 205.00001817941666)
-Converted["_Enabled4"].ImageContent = Content
-Converted["_Enabled4"].ImageTransparency = 1
-Converted["_Enabled4"].ScaleType = Enum.ScaleType.Slice
-Converted["_Enabled4"].SliceCenter = Rect.new(100, 100, 100, 100)
-Converted["_Enabled4"].SliceScale = 0.6666666865348816
-Converted["_Enabled4"].BackgroundColor3 = Color3.fromRGB(255, 40.00000141561031, 0)
-Converted["_Enabled4"].BackgroundTransparency = 1
-Converted["_Enabled4"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Converted["_Enabled4"].Position = UDim2.new(0.144999996, 0, 0.140000001, 0)
-Converted["_Enabled4"].Size = UDim2.new(0.699999988, 0, 0.699999988, 0)
-Converted["_Enabled4"].ZIndex = 10
-Converted["_Enabled4"].Name = "Enabled"
-Converted["_Enabled4"].Parent = Converted["_Icon4"]
+Enabled_5.Name = "Enabled"
+Enabled_5.Parent = Icon_5
+Enabled_5.BackgroundColor3 = Color3.fromRGB(255, 40, 0)
+Enabled_5.BackgroundTransparency = 1.000
+Enabled_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Enabled_5.Position = UDim2.new(0.144999996, 0, 0.140000001, 0)
+Enabled_5.Size = UDim2.new(0.699999988, 0, 0.699999988, 0)
+Enabled_5.ZIndex = 10
+Enabled_5.Image = "rbxassetid://3570695787"
+Enabled_5.ImageColor3 = Color3.fromRGB(6, 163, 205)
+Enabled_5.ImageTransparency = 1.000
+Enabled_5.ScaleType = Enum.ScaleType.Slice
+Enabled_5.SliceCenter = Rect.new(100, 100, 100, 100)
+Enabled_5.SliceScale = 0.667
 
-Converted["_Selector5"].Name = "Selector"
-Converted["_Selector5"].Parent = Converted["_Main"]
+Selector_6.Name = "Selector"
+Selector_6.Parent = Main
 
-Converted["_Tweaks1"].Font = Enum.Font.Cartoon
-Converted["_Tweaks1"].Text = "  Tweaks"
-Converted["_Tweaks1"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Tweaks1"].TextSize = 20
-Converted["_Tweaks1"].TextWrapped = true
-Converted["_Tweaks1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 41.00000135600567, 41.00000135600567)
-Converted["_Tweaks1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Tweaks1"].BorderSizePixel = 0
-Converted["_Tweaks1"].Position = UDim2.new(0.0117843859, 0, 0.137303904, 0)
-Converted["_Tweaks1"].Size = UDim2.new(0.214077786, 0, 0.0969999954, 0)
-Converted["_Tweaks1"].Name = "Tweaks"
-Converted["_Tweaks1"].Parent = Converted["_Selector5"]
+Tweaks_2.Name = "Tweaks"
+Tweaks_2.Parent = Selector_6
+Tweaks_2.BackgroundColor3 = Color3.fromRGB(40, 41, 41)
+Tweaks_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tweaks_2.BorderSizePixel = 0
+Tweaks_2.Position = UDim2.new(0.0117843859, 0, 0.137303904, 0)
+Tweaks_2.Size = UDim2.new(0.214077786, 0, 0.0969999954, 0)
+Tweaks_2.Font = Enum.Font.Cartoon
+Tweaks_2.Text = "  Tweaks"
+Tweaks_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tweaks_2.TextSize = 20.000
+Tweaks_2.TextWrapped = true
 
-Converted["_Icon5"].Image = "rbxassetid://2790551206"
-Converted["_Icon5"].ImageContent = Content
-Converted["_Icon5"].BackgroundTransparency = 1
-Converted["_Icon5"].Position = UDim2.new(0.122556433, 0, 0.279999942, 0)
-Converted["_Icon5"].Size = UDim2.new(0.157602444, 0, 0.467851073, 0)
-Converted["_Icon5"].Name = "Icon"
-Converted["_Icon5"].Parent = Converted["_Tweaks1"]
+Icon_6.Name = "Icon"
+Icon_6.Parent = Tweaks_2
+Icon_6.BackgroundTransparency = 1.000
+Icon_6.Position = UDim2.new(0.122556433, 0, 0.279999942, 0)
+Icon_6.Size = UDim2.new(0.157602444, 0, 0.467851073, 0)
+Icon_6.Image = "rbxassetid://2790551206"
 
-Converted["_ESP1"].Font = Enum.Font.Cartoon
-Converted["_ESP1"].Text = "ESP"
-Converted["_ESP1"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ESP1"].TextSize = 20
-Converted["_ESP1"].TextWrapped = true
-Converted["_ESP1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 41.00000135600567, 41.00000135600567)
-Converted["_ESP1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ESP1"].BorderSizePixel = 0
-Converted["_ESP1"].Position = UDim2.new(0.0153282573, 0, 0.328218192, 0)
-Converted["_ESP1"].Size = UDim2.new(0.207413644, 0, 0.0966553017, 0)
-Converted["_ESP1"].Name = "ESP"
-Converted["_ESP1"].Parent = Converted["_Selector5"]
+ESP_2.Name = "ESP"
+ESP_2.Parent = Selector_6
+ESP_2.BackgroundColor3 = Color3.fromRGB(40, 41, 41)
+ESP_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESP_2.BorderSizePixel = 0
+ESP_2.Position = UDim2.new(0.0153282573, 0, 0.328218192, 0)
+ESP_2.Size = UDim2.new(0.207413644, 0, 0.0966553017, 0)
+ESP_2.Font = Enum.Font.Cartoon
+ESP_2.Text = "ESP"
+ESP_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP_2.TextSize = 20.000
+ESP_2.TextWrapped = true
 
-Converted["_Icon6"].Image = "rbxassetid://2790556871"
-Converted["_Icon6"].ImageContent = Content
-Converted["_Icon6"].BackgroundTransparency = 1
-Converted["_Icon6"].Position = UDim2.new(0.100000001, 0, 0.219999999, 0)
-Converted["_Icon6"].Size = UDim2.new(0.205295354, 0, 0.57622844, 0)
-Converted["_Icon6"].Name = "Icon"
-Converted["_Icon6"].Parent = Converted["_ESP1"]
+Icon_7.Name = "Icon"
+Icon_7.Parent = ESP_2
+Icon_7.BackgroundTransparency = 1.000
+Icon_7.Position = UDim2.new(0.100000001, 0, 0.219999999, 0)
+Icon_7.Size = UDim2.new(0.205295354, 0, 0.57622844, 0)
+Icon_7.Image = "rbxassetid://2790556871"
 
-Converted["_Auto1"].Font = Enum.Font.Cartoon
-Converted["_Auto1"].Text = "  Helpers"
-Converted["_Auto1"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Auto1"].TextSize = 19
-Converted["_Auto1"].TextWrapped = true
-Converted["_Auto1"].BackgroundColor3 = Color3.fromRGB(40.00000141561031, 41.00000135600567, 41.00000135600567)
-Converted["_Auto1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Auto1"].BorderSizePixel = 0
-Converted["_Auto1"].Position = UDim2.new(0.0117844148, 0, 0.232211843, 0)
-Converted["_Auto1"].Size = UDim2.new(0.214077741, 0, 0.0969999954, 0)
-Converted["_Auto1"].Name = "Auto"
-Converted["_Auto1"].Parent = Converted["_Selector5"]
+Auto_2.Name = "Auto"
+Auto_2.Parent = Selector_6
+Auto_2.BackgroundColor3 = Color3.fromRGB(40, 41, 41)
+Auto_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Auto_2.BorderSizePixel = 0
+Auto_2.Position = UDim2.new(0.0117844148, 0, 0.232211843, 0)
+Auto_2.Size = UDim2.new(0.214077741, 0, 0.0969999954, 0)
+Auto_2.Font = Enum.Font.Cartoon
+Auto_2.Text = "  Helpers"
+Auto_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto_2.TextSize = 19.000
+Auto_2.TextWrapped = true
 
-Converted["_Icon7"].Image = "rbxassetid://2790176032"
-Converted["_Icon7"].ImageContent = Content
-Converted["_Icon7"].BackgroundTransparency = 1
-Converted["_Icon7"].Position = UDim2.new(0.0900000036, 0, 0.25, 0)
-Converted["_Icon7"].Size = UDim2.new(0.157602444, 0, 0.467851073, 0)
-Converted["_Icon7"].Name = "Icon"
-Converted["_Icon7"].Parent = Converted["_Auto1"]
+Icon_8.Name = "Icon"
+Icon_8.Parent = Auto_2
+Icon_8.BackgroundTransparency = 1.000
+Icon_8.Position = UDim2.new(0.0900000036, 0, 0.25, 0)
+Icon_8.Size = UDim2.new(0.157602444, 0, 0.467851073, 0)
+Icon_8.Image = "rbxassetid://2790176032"
 
-Converted["_CategoryText"].Font = Enum.Font.Cartoon
-Converted["_CategoryText"].Text = "Select an category"
-Converted["_CategoryText"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_CategoryText"].TextScaled = true
-Converted["_CategoryText"].TextSize = 37
-Converted["_CategoryText"].TextWrapped = true
-Converted["_CategoryText"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_CategoryText"].BackgroundTransparency = 1
-Converted["_CategoryText"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_CategoryText"].BorderSizePixel = 0
-Converted["_CategoryText"].Position = UDim2.new(0.269990087, 0, 0.0166879501, 0)
-Converted["_CategoryText"].Size = UDim2.new(0.699715555, 0, 0.0755784735, 0)
-Converted["_CategoryText"].Name = "CategoryText"
-Converted["_CategoryText"].Parent = Converted["_Main"]
+CategoryText.Name = "CategoryText"
+CategoryText.Parent = Main
+CategoryText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CategoryText.BackgroundTransparency = 1.000
+CategoryText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CategoryText.BorderSizePixel = 0
+CategoryText.Position = UDim2.new(0.269990087, 0, 0.0166879501, 0)
+CategoryText.Size = UDim2.new(0.699715555, 0, 0.0755784735, 0)
+CategoryText.Font = Enum.Font.Cartoon
+CategoryText.Text = "Select an category"
+CategoryText.TextColor3 = Color3.fromRGB(255, 255, 255)
+CategoryText.TextScaled = true
+CategoryText.TextSize = 37.000
+CategoryText.TextWrapped = true
 
-Converted["_UIAspectRatioConstraint"].AspectRatio = 1.263474702835083
-Converted["_UIAspectRatioConstraint"].Parent = Converted["_Main"]
+UIAspectRatioConstraint.Parent = Main
+UIAspectRatioConstraint.AspectRatio = 1.263
 
--- Fake Module Scripts:
+-- Module Scripts:
 
 local fake_module_scripts = {}
 
-do -- Fake Module: StarterGui.9HUH9.Module
-    local script = Instance.new("ModuleScript")
-    script.Name = "Module"
-    script.Parent = Converted["_9HUH9"]
-    local function module_script()
+do -- _9HUH9.Module
+	local script = Instance.new('ModuleScript', _9HUH9)
+	script.Name = "Module"
+	local function module_script()
 		local module = {}
 		
 		local ts = game:GetService("TweenService")
@@ -605,41 +573,39 @@ do -- Fake Module: StarterGui.9HUH9.Module
 		
 		return module
 		
-    end
-    fake_module_scripts[script] = module_script
+	end
+	fake_module_scripts[script] = module_script
 end
 
--- Fake Local Scripts:
 
-local function SEFGUC_fake_script() -- Fake Script: StarterGui.9HUH9.9HUH9.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_9HUH91"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+-- Scripts:
+
+local function MXBMKZ_fake_script() -- _9HUH9_2.LocalScript 
+	local script = Instance.new('LocalScript', _9HUH9_2)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Main.Visible = not script.Parent.Parent.Main.Visible
 	end)
 end
-local function EHMZWS_fake_script() -- Fake Script: StarterGui.9HUH9.Main.Categories.Tweaks.Options.VT.Click
-    local script = Instance.new("LocalScript")
-    script.Name = "Click"
-    script.Parent = Converted["_VT"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(MXBMKZ_fake_script)()
+local function ZSDGTDW_fake_script() -- VT.Click 
+	local script = Instance.new('LocalScript', VT)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local module = require(script.Parent.Parent.Parent.Parent.Parent.Parent.Module)
 	local rs = game:GetService("RunService")
@@ -691,18 +657,17 @@ local function EHMZWS_fake_script() -- Fake Script: StarterGui.9HUH9.Main.Catego
 		end
 	end)
 end
-local function BULHBM_fake_script() -- Fake Script: StarterGui.9HUH9.Main.Categories.Auto.Options.AM.Click
-    local script = Instance.new("LocalScript")
-    script.Name = "Click"
-    script.Parent = Converted["_AM"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(ZSDGTDW_fake_script)()
+local function JGOZ_fake_script() -- AM.Click 
+	local script = Instance.new('LocalScript', AM)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local module = require(script.Parent.Parent.Parent.Parent.Parent.Parent.Module)
 	local uis = game:GetService("UserInputService")
@@ -738,18 +703,17 @@ local function BULHBM_fake_script() -- Fake Script: StarterGui.9HUH9.Main.Catego
 		end
 	end)
 end
-local function UZFAPAR_fake_script() -- Fake Script: StarterGui.9HUH9.Main.Categories.ESP.Options.PLAYERS.Click
-    local script = Instance.new("LocalScript")
-    script.Name = "Click"
-    script.Parent = Converted["_PLAYERS"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(JGOZ_fake_script)()
+local function YOVKB_fake_script() -- PLAYERS.Click 
+	local script = Instance.new('LocalScript', PLAYERS)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local module = require(script.Parent.Parent.Parent.Parent.Parent.Parent.Module)
 	local rs = game:GetService("RunService")
@@ -816,18 +780,17 @@ local function UZFAPAR_fake_script() -- Fake Script: StarterGui.9HUH9.Main.Categ
 		end
 	end)
 end
-local function BANS_fake_script() -- Fake Script: StarterGui.9HUH9.Main.Categories.ESP.Options.PILLAR.Click
-    local script = Instance.new("LocalScript")
-    script.Name = "Click"
-    script.Parent = Converted["_PILLAR"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(YOVKB_fake_script)()
+local function AQLDZ_fake_script() -- PILLAR.Click 
+	local script = Instance.new('LocalScript', PILLAR)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local module = require(script.Parent.Parent.Parent.Parent.Parent.Parent.Module)
 	
@@ -866,18 +829,17 @@ local function BANS_fake_script() -- Fake Script: StarterGui.9HUH9.Main.Categori
 		end
 	end)
 end
-local function HTSS_fake_script() -- Fake Script: StarterGui.9HUH9.Main.Categories.ESP.Options.PRISONERS.Click
-    local script = Instance.new("LocalScript")
-    script.Name = "Click"
-    script.Parent = Converted["_PRISONERS"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(AQLDZ_fake_script)()
+local function TOAGN_fake_script() -- PRISONERS.Click 
+	local script = Instance.new('LocalScript', PRISONERS)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local module = require(script.Parent.Parent.Parent.Parent.Parent.Parent.Module)
 	local rs = game:GetService("RunService")
@@ -931,18 +893,17 @@ local function HTSS_fake_script() -- Fake Script: StarterGui.9HUH9.Main.Categori
 		end
 	end)
 end
-local function HZWTCMR_fake_script() -- Fake Script: StarterGui.9HUH9.Main.Selector.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Selector5"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(TOAGN_fake_script)()
+local function TFMVXIN_fake_script() -- Selector_6.LocalScript 
+	local script = Instance.new('LocalScript', Selector_6)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local categories = script.Parent.Parent.Categories
 	local categoryText = script.Parent.Parent.CategoryText
@@ -963,18 +924,17 @@ local function HZWTCMR_fake_script() -- Fake Script: StarterGui.9HUH9.Main.Selec
 		end
 	end
 end
-local function UKGPS_fake_script() -- Fake Script: StarterGui.9HUH9.Main.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Main"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+coroutine.wrap(TFMVXIN_fake_script)()
+local function VUUZAPZ_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local UserInputService = game:GetService("UserInputService")
 	
@@ -1018,12 +978,4 @@ local function UKGPS_fake_script() -- Fake Script: StarterGui.9HUH9.Main.LocalSc
 		end
 	end)
 end
-
-coroutine.wrap(SEFGUC_fake_script)()
-coroutine.wrap(EHMZWS_fake_script)()
-coroutine.wrap(BULHBM_fake_script)()
-coroutine.wrap(UZFAPAR_fake_script)()
-coroutine.wrap(BANS_fake_script)()
-coroutine.wrap(HTSS_fake_script)()
-coroutine.wrap(HZWTCMR_fake_script)()
-coroutine.wrap(UKGPS_fake_script)()
+coroutine.wrap(VUUZAPZ_fake_script)()
