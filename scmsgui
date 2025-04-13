@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local _9HUH9 = Instance.new("ScreenGui")
 local _9HUH9_2 = Instance.new("TextButton")
 local Main = Instance.new("ImageLabel")
@@ -14,42 +9,45 @@ local Categories = Instance.new("Folder")
 local Tweaks = Instance.new("Frame")
 local Options = Instance.new("Folder")
 local VT = Instance.new("Folder")
-local VisibilityTweaks = Instance.new("TextLabel")
 local Selector = Instance.new("ImageButton")
 local Icon = Instance.new("ImageLabel")
 local Enabled = Instance.new("ImageLabel")
-local Placeholder = Instance.new("Frame")
-local Cat = Instance.new("ImageLabel")
-local Auto = Instance.new("Frame")
-local Options_2 = Instance.new("Folder")
+local VisibilityTweaks = Instance.new("TextLabel")
 local AM = Instance.new("Folder")
 local AM_2 = Instance.new("TextLabel")
 local Selector_2 = Instance.new("ImageButton")
 local Icon_2 = Instance.new("ImageLabel")
 local Enabled_2 = Instance.new("ImageLabel")
-local ESP = Instance.new("Frame")
-local Options_3 = Instance.new("Folder")
-local PLAYERS = Instance.new("Folder")
-local PlayerESP = Instance.new("TextLabel")
+local CL = Instance.new("Folder")
 local Selector_3 = Instance.new("ImageButton")
 local Icon_3 = Instance.new("ImageLabel")
 local Enabled_3 = Instance.new("ImageLabel")
-local PILLAR = Instance.new("Folder")
-local Altar = Instance.new("TextLabel")
+local CharacterLight = Instance.new("TextLabel")
+local ESP = Instance.new("Frame")
+local Options_2 = Instance.new("Folder")
+local PLAYERS = Instance.new("Folder")
+local PlayerESP = Instance.new("TextLabel")
 local Selector_4 = Instance.new("ImageButton")
 local Icon_4 = Instance.new("ImageLabel")
 local Enabled_4 = Instance.new("ImageLabel")
-local PRISONERS = Instance.new("Folder")
-local Prisoners = Instance.new("TextLabel")
+local PILLAR = Instance.new("Folder")
+local Altar = Instance.new("TextLabel")
 local Selector_5 = Instance.new("ImageButton")
 local Icon_5 = Instance.new("ImageLabel")
 local Enabled_5 = Instance.new("ImageLabel")
-local Selector_6 = Instance.new("Folder")
-local Tweaks_2 = Instance.new("TextButton")
+local PRISONERS = Instance.new("Folder")
+local Prisoners = Instance.new("TextLabel")
+local Selector_6 = Instance.new("ImageButton")
 local Icon_6 = Instance.new("ImageLabel")
-local ESP_2 = Instance.new("TextButton")
+local Enabled_6 = Instance.new("ImageLabel")
+local Placeholder = Instance.new("Frame")
+local Cat = Instance.new("ImageLabel")
+local Auto = Instance.new("Frame")
+local Options_3 = Instance.new("Folder")
+local Selector_7 = Instance.new("Folder")
+local Tweaks_2 = Instance.new("TextButton")
 local Icon_7 = Instance.new("ImageLabel")
-local Auto_2 = Instance.new("TextButton")
+local ESP_2 = Instance.new("TextButton")
 local Icon_8 = Instance.new("ImageLabel")
 local CategoryText = Instance.new("TextLabel")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
@@ -143,27 +141,13 @@ Options.Parent = Tweaks
 VT.Name = "VT"
 VT.Parent = Options
 
-VisibilityTweaks.Name = "VisibilityTweaks"
-VisibilityTweaks.Parent = VT
-VisibilityTweaks.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VisibilityTweaks.BackgroundTransparency = 1.000
-VisibilityTweaks.BorderColor3 = Color3.fromRGB(0, 0, 0)
-VisibilityTweaks.BorderSizePixel = 0
-VisibilityTweaks.Position = UDim2.new(0.011057348, 0, 0.139195845, 0)
-VisibilityTweaks.Size = UDim2.new(0, 140, 0, 34)
-VisibilityTweaks.Font = Enum.Font.Cartoon
-VisibilityTweaks.Text = "Visibility tweaks"
-VisibilityTweaks.TextColor3 = Color3.fromRGB(255, 255, 255)
-VisibilityTweaks.TextSize = 20.000
-VisibilityTweaks.TextWrapped = true
-
 Selector.Name = "Selector"
 Selector.Parent = VT
 Selector.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Selector.BackgroundTransparency = 1.000
 Selector.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Selector.BorderSizePixel = 0
-Selector.Position = UDim2.new(0.912972748, 0, 0.149379283, 0)
+Selector.Position = UDim2.new(0.912972808, 0, 0.151745126, 0)
 Selector.Size = UDim2.new(0.0520000011, 0, 0.0489999987, 0)
 Selector.ZIndex = 10
 Selector.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
@@ -196,39 +180,23 @@ Enabled.ScaleType = Enum.ScaleType.Slice
 Enabled.SliceCenter = Rect.new(100, 100, 100, 100)
 Enabled.SliceScale = 0.667
 
-Placeholder.Name = "Placeholder"
-Placeholder.Parent = Categories
-Placeholder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Placeholder.BackgroundTransparency = 1.000
-Placeholder.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Placeholder.BorderSizePixel = 0
-Placeholder.Position = UDim2.new(0.241999969, 0, 0, 0)
-Placeholder.Size = UDim2.new(0.759234071, 0, 0.998394251, 0)
-
-Cat.Name = "Cat"
-Cat.Parent = Placeholder
-Cat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Cat.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Cat.BorderSizePixel = 0
-Cat.Position = UDim2.new(0.168202817, 0, 0.192970112, 0)
-Cat.Size = UDim2.new(0.654377878, 0, 0.613636374, 0)
-Cat.Image = "http://www.roblox.com/asset/?id=11176073563"
-
-Auto.Name = "Auto"
-Auto.Parent = Categories
-Auto.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Auto.BackgroundTransparency = 1.000
-Auto.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Auto.BorderSizePixel = 0
-Auto.Position = UDim2.new(0.241999969, 0, 0, 0)
-Auto.Size = UDim2.new(0.759234071, 0, 0.998394251, 0)
-Auto.Visible = false
-
-Options_2.Name = "Options"
-Options_2.Parent = Auto
+VisibilityTweaks.Name = "VisibilityTweaks"
+VisibilityTweaks.Parent = VT
+VisibilityTweaks.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VisibilityTweaks.BackgroundTransparency = 1.000
+VisibilityTweaks.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VisibilityTweaks.BorderSizePixel = 0
+VisibilityTweaks.Position = UDim2.new(0.0258313399, 0, 0.136830002, 0)
+VisibilityTweaks.Size = UDim2.new(0, 140, 0, 34)
+VisibilityTweaks.Font = Enum.Font.Cartoon
+VisibilityTweaks.Text = "Visibility tweaks"
+VisibilityTweaks.TextColor3 = Color3.fromRGB(255, 255, 255)
+VisibilityTweaks.TextSize = 20.000
+VisibilityTweaks.TextWrapped = true
+VisibilityTweaks.TextXAlignment = Enum.TextXAlignment.Left
 
 AM.Name = "AM"
-AM.Parent = Options_2
+AM.Parent = Options
 
 AM_2.Name = "AM"
 AM_2.Parent = AM
@@ -236,13 +204,14 @@ AM_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 AM_2.BackgroundTransparency = 1.000
 AM_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AM_2.BorderSizePixel = 0
-AM_2.Position = UDim2.new(0.011057334, 0, 0.139195845, 0)
-AM_2.Size = UDim2.new(0, 208, 0, 34)
+AM_2.Position = UDim2.new(0.0258313399, 0, 0.217198953, 0)
+AM_2.Size = UDim2.new(0, 210, 0, 34)
 AM_2.Font = Enum.Font.Cartoon
 AM_2.Text = "AutoMining (binded to T)"
 AM_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 AM_2.TextSize = 20.000
 AM_2.TextWrapped = true
+AM_2.TextXAlignment = Enum.TextXAlignment.Left
 
 Selector_2.Name = "Selector"
 Selector_2.Parent = AM
@@ -250,7 +219,7 @@ Selector_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Selector_2.BackgroundTransparency = 1.000
 Selector_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Selector_2.BorderSizePixel = 0
-Selector_2.Position = UDim2.new(0.912972748, 0, 0.149379283, 0)
+Selector_2.Position = UDim2.new(0.912972808, 0, 0.232114092, 0)
 Selector_2.Size = UDim2.new(0.0520000011, 0, 0.0489999987, 0)
 Selector_2.ZIndex = 10
 Selector_2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
@@ -283,43 +252,16 @@ Enabled_2.ScaleType = Enum.ScaleType.Slice
 Enabled_2.SliceCenter = Rect.new(100, 100, 100, 100)
 Enabled_2.SliceScale = 0.667
 
-ESP.Name = "ESP"
-ESP.Parent = Categories
-ESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESP.BackgroundTransparency = 1.000
-ESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESP.BorderSizePixel = 0
-ESP.Position = UDim2.new(0.241999969, 0, 0, 0)
-ESP.Size = UDim2.new(0.759234071, 0, 0.998394251, 0)
-ESP.Visible = false
-
-Options_3.Name = "Options"
-Options_3.Parent = ESP
-
-PLAYERS.Name = "PLAYERS"
-PLAYERS.Parent = Options_3
-
-PlayerESP.Name = "PlayerESP"
-PlayerESP.Parent = PLAYERS
-PlayerESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PlayerESP.BackgroundTransparency = 1.000
-PlayerESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
-PlayerESP.BorderSizePixel = 0
-PlayerESP.Position = UDim2.new(0.0208969824, 0, 0.136832327, 0)
-PlayerESP.Size = UDim2.new(0, 96, 0, 34)
-PlayerESP.Font = Enum.Font.Cartoon
-PlayerESP.Text = "Player ESP"
-PlayerESP.TextColor3 = Color3.fromRGB(255, 255, 255)
-PlayerESP.TextSize = 20.000
-PlayerESP.TextWrapped = true
+CL.Name = "CL"
+CL.Parent = Options
 
 Selector_3.Name = "Selector"
-Selector_3.Parent = PLAYERS
+Selector_3.Parent = CL
 Selector_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Selector_3.BackgroundTransparency = 1.000
 Selector_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Selector_3.BorderSizePixel = 0
-Selector_3.Position = UDim2.new(0.912972748, 0, 0.149379283, 0)
+Selector_3.Position = UDim2.new(0.912972808, 0, 0.314839512, 0)
 Selector_3.Size = UDim2.new(0.0520000011, 0, 0.0489999987, 0)
 Selector_3.ZIndex = 10
 Selector_3.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
@@ -352,30 +294,58 @@ Enabled_3.ScaleType = Enum.ScaleType.Slice
 Enabled_3.SliceCenter = Rect.new(100, 100, 100, 100)
 Enabled_3.SliceScale = 0.667
 
-PILLAR.Name = "PILLAR"
-PILLAR.Parent = Options_3
+CharacterLight.Name = "CharacterLight"
+CharacterLight.Parent = CL
+CharacterLight.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CharacterLight.BackgroundTransparency = 1.000
+CharacterLight.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CharacterLight.BorderSizePixel = 0
+CharacterLight.Position = UDim2.new(0.0258313399, 0, 0.299933851, 0)
+CharacterLight.Size = UDim2.new(0, 139, 0, 34)
+CharacterLight.Font = Enum.Font.Cartoon
+CharacterLight.Text = "Character light"
+CharacterLight.TextColor3 = Color3.fromRGB(255, 255, 255)
+CharacterLight.TextSize = 20.000
+CharacterLight.TextWrapped = true
+CharacterLight.TextXAlignment = Enum.TextXAlignment.Left
 
-Altar.Name = "Altar"
-Altar.Parent = PILLAR
-Altar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Altar.BackgroundTransparency = 1.000
-Altar.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Altar.BorderSizePixel = 0
-Altar.Position = UDim2.new(0.0208969824, 0, 0.210101411, 0)
-Altar.Size = UDim2.new(0, 114, 0, 34)
-Altar.Font = Enum.Font.Cartoon
-Altar.Text = "Pillars (Altar)"
-Altar.TextColor3 = Color3.fromRGB(255, 255, 255)
-Altar.TextSize = 20.000
-Altar.TextWrapped = true
+ESP.Name = "ESP"
+ESP.Parent = Categories
+ESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESP.BackgroundTransparency = 1.000
+ESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESP.BorderSizePixel = 0
+ESP.Position = UDim2.new(0.241999969, 0, 0, 0)
+ESP.Size = UDim2.new(0.759234071, 0, 0.998394251, 0)
+ESP.Visible = false
+
+Options_2.Name = "Options"
+Options_2.Parent = ESP
+
+PLAYERS.Name = "PLAYERS"
+PLAYERS.Parent = Options_2
+
+PlayerESP.Name = "PlayerESP"
+PlayerESP.Parent = PLAYERS
+PlayerESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerESP.BackgroundTransparency = 1.000
+PlayerESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerESP.BorderSizePixel = 0
+PlayerESP.Position = UDim2.new(0.0208969824, 0, 0.136832327, 0)
+PlayerESP.Size = UDim2.new(0, 96, 0, 34)
+PlayerESP.Font = Enum.Font.Cartoon
+PlayerESP.Text = "Player ESP"
+PlayerESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerESP.TextSize = 20.000
+PlayerESP.TextWrapped = true
 
 Selector_4.Name = "Selector"
-Selector_4.Parent = PILLAR
+Selector_4.Parent = PLAYERS
 Selector_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Selector_4.BackgroundTransparency = 1.000
 Selector_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Selector_4.BorderSizePixel = 0
-Selector_4.Position = UDim2.new(0.912972748, 0, 0.225011885, 0)
+Selector_4.Position = UDim2.new(0.912972748, 0, 0.149379283, 0)
 Selector_4.Size = UDim2.new(0.0520000011, 0, 0.0489999987, 0)
 Selector_4.ZIndex = 10
 Selector_4.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
@@ -408,30 +378,30 @@ Enabled_4.ScaleType = Enum.ScaleType.Slice
 Enabled_4.SliceCenter = Rect.new(100, 100, 100, 100)
 Enabled_4.SliceScale = 0.667
 
-PRISONERS.Name = "PRISONERS"
-PRISONERS.Parent = Options_3
+PILLAR.Name = "PILLAR"
+PILLAR.Parent = Options_2
 
-Prisoners.Name = "Prisoners"
-Prisoners.Parent = PRISONERS
-Prisoners.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Prisoners.BackgroundTransparency = 1.000
-Prisoners.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Prisoners.BorderSizePixel = 0
-Prisoners.Position = UDim2.new(0.0208969824, 0, 0.283370525, 0)
-Prisoners.Size = UDim2.new(0, 82, 0, 34)
-Prisoners.Font = Enum.Font.Cartoon
-Prisoners.Text = "Prisoners"
-Prisoners.TextColor3 = Color3.fromRGB(255, 255, 255)
-Prisoners.TextSize = 20.000
-Prisoners.TextWrapped = true
+Altar.Name = "Altar"
+Altar.Parent = PILLAR
+Altar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Altar.BackgroundTransparency = 1.000
+Altar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Altar.BorderSizePixel = 0
+Altar.Position = UDim2.new(0.0208969824, 0, 0.210101411, 0)
+Altar.Size = UDim2.new(0, 114, 0, 34)
+Altar.Font = Enum.Font.Cartoon
+Altar.Text = "Pillars (Altar)"
+Altar.TextColor3 = Color3.fromRGB(255, 255, 255)
+Altar.TextSize = 20.000
+Altar.TextWrapped = true
 
 Selector_5.Name = "Selector"
-Selector_5.Parent = PRISONERS
+Selector_5.Parent = PILLAR
 Selector_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Selector_5.BackgroundTransparency = 1.000
 Selector_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Selector_5.BorderSizePixel = 0
-Selector_5.Position = UDim2.new(0.912972748, 0, 0.298280925, 0)
+Selector_5.Position = UDim2.new(0.912972748, 0, 0.225011885, 0)
 Selector_5.Size = UDim2.new(0.0520000011, 0, 0.0489999987, 0)
 Selector_5.ZIndex = 10
 Selector_5.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
@@ -464,11 +434,98 @@ Enabled_5.ScaleType = Enum.ScaleType.Slice
 Enabled_5.SliceCenter = Rect.new(100, 100, 100, 100)
 Enabled_5.SliceScale = 0.667
 
+PRISONERS.Name = "PRISONERS"
+PRISONERS.Parent = Options_2
+
+Prisoners.Name = "Prisoners"
+Prisoners.Parent = PRISONERS
+Prisoners.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Prisoners.BackgroundTransparency = 1.000
+Prisoners.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Prisoners.BorderSizePixel = 0
+Prisoners.Position = UDim2.new(0.0208969824, 0, 0.283370525, 0)
+Prisoners.Size = UDim2.new(0, 82, 0, 34)
+Prisoners.Font = Enum.Font.Cartoon
+Prisoners.Text = "Prisoners"
+Prisoners.TextColor3 = Color3.fromRGB(255, 255, 255)
+Prisoners.TextSize = 20.000
+Prisoners.TextWrapped = true
+
 Selector_6.Name = "Selector"
-Selector_6.Parent = Main
+Selector_6.Parent = PRISONERS
+Selector_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Selector_6.BackgroundTransparency = 1.000
+Selector_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Selector_6.BorderSizePixel = 0
+Selector_6.Position = UDim2.new(0.912972748, 0, 0.298280925, 0)
+Selector_6.Size = UDim2.new(0.0520000011, 0, 0.0489999987, 0)
+Selector_6.ZIndex = 10
+Selector_6.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Selector_6.ImageTransparency = 1.000
+
+Icon_6.Name = "Icon"
+Icon_6.Parent = Selector_6
+Icon_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_6.BackgroundTransparency = 1.000
+Icon_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Icon_6.Position = UDim2.new(0.0242404323, 0, -0.0420305133, 0)
+Icon_6.Size = UDim2.new(1, 0, 1, 0)
+Icon_6.Image = "rbxassetid://3570695787"
+Icon_6.ScaleType = Enum.ScaleType.Slice
+Icon_6.SliceCenter = Rect.new(100, 100, 100, 100)
+Icon_6.SliceScale = 0.667
+
+Enabled_6.Name = "Enabled"
+Enabled_6.Parent = Icon_6
+Enabled_6.BackgroundColor3 = Color3.fromRGB(255, 40, 0)
+Enabled_6.BackgroundTransparency = 1.000
+Enabled_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Enabled_6.Position = UDim2.new(0.144999996, 0, 0.140000001, 0)
+Enabled_6.Size = UDim2.new(0.699999988, 0, 0.699999988, 0)
+Enabled_6.ZIndex = 10
+Enabled_6.Image = "rbxassetid://3570695787"
+Enabled_6.ImageColor3 = Color3.fromRGB(6, 163, 205)
+Enabled_6.ImageTransparency = 1.000
+Enabled_6.ScaleType = Enum.ScaleType.Slice
+Enabled_6.SliceCenter = Rect.new(100, 100, 100, 100)
+Enabled_6.SliceScale = 0.667
+
+Placeholder.Name = "Placeholder"
+Placeholder.Parent = Categories
+Placeholder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Placeholder.BackgroundTransparency = 1.000
+Placeholder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Placeholder.BorderSizePixel = 0
+Placeholder.Position = UDim2.new(0.241999969, 0, 0, 0)
+Placeholder.Size = UDim2.new(0.759234071, 0, 0.998394251, 0)
+
+Cat.Name = "Cat"
+Cat.Parent = Placeholder
+Cat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cat.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Cat.BorderSizePixel = 0
+Cat.Position = UDim2.new(0.168202817, 0, 0.192970112, 0)
+Cat.Size = UDim2.new(0.654377878, 0, 0.613636374, 0)
+Cat.Image = "http://www.roblox.com/asset/?id=11176073563"
+
+Auto.Name = "Auto"
+Auto.Parent = Categories
+Auto.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Auto.BackgroundTransparency = 1.000
+Auto.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Auto.BorderSizePixel = 0
+Auto.Position = UDim2.new(0.241999969, 0, 0, 0)
+Auto.Size = UDim2.new(0.759234071, 0, 0.998394251, 0)
+Auto.Visible = false
+
+Options_3.Name = "Options"
+Options_3.Parent = Auto
+
+Selector_7.Name = "Selector"
+Selector_7.Parent = Main
 
 Tweaks_2.Name = "Tweaks"
-Tweaks_2.Parent = Selector_6
+Tweaks_2.Parent = Selector_7
 Tweaks_2.BackgroundColor3 = Color3.fromRGB(40, 41, 41)
 Tweaks_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tweaks_2.BorderSizePixel = 0
@@ -480,19 +537,19 @@ Tweaks_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Tweaks_2.TextSize = 20.000
 Tweaks_2.TextWrapped = true
 
-Icon_6.Name = "Icon"
-Icon_6.Parent = Tweaks_2
-Icon_6.BackgroundTransparency = 1.000
-Icon_6.Position = UDim2.new(0.122556433, 0, 0.279999942, 0)
-Icon_6.Size = UDim2.new(0.157602444, 0, 0.467851073, 0)
-Icon_6.Image = "rbxassetid://2790551206"
+Icon_7.Name = "Icon"
+Icon_7.Parent = Tweaks_2
+Icon_7.BackgroundTransparency = 1.000
+Icon_7.Position = UDim2.new(0.122556433, 0, 0.279999942, 0)
+Icon_7.Size = UDim2.new(0.157602444, 0, 0.467851073, 0)
+Icon_7.Image = "rbxassetid://2790551206"
 
 ESP_2.Name = "ESP"
-ESP_2.Parent = Selector_6
+ESP_2.Parent = Selector_7
 ESP_2.BackgroundColor3 = Color3.fromRGB(40, 41, 41)
 ESP_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ESP_2.BorderSizePixel = 0
-ESP_2.Position = UDim2.new(0.0153282573, 0, 0.328218192, 0)
+ESP_2.Position = UDim2.new(0.0171959028, 0, 0.23382926, 0)
 ESP_2.Size = UDim2.new(0.207413644, 0, 0.0966553017, 0)
 ESP_2.Font = Enum.Font.Cartoon
 ESP_2.Text = "ESP"
@@ -500,32 +557,12 @@ ESP_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 ESP_2.TextSize = 20.000
 ESP_2.TextWrapped = true
 
-Icon_7.Name = "Icon"
-Icon_7.Parent = ESP_2
-Icon_7.BackgroundTransparency = 1.000
-Icon_7.Position = UDim2.new(0.100000001, 0, 0.219999999, 0)
-Icon_7.Size = UDim2.new(0.205295354, 0, 0.57622844, 0)
-Icon_7.Image = "rbxassetid://2790556871"
-
-Auto_2.Name = "Auto"
-Auto_2.Parent = Selector_6
-Auto_2.BackgroundColor3 = Color3.fromRGB(40, 41, 41)
-Auto_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Auto_2.BorderSizePixel = 0
-Auto_2.Position = UDim2.new(0.0117844148, 0, 0.232211843, 0)
-Auto_2.Size = UDim2.new(0.214077741, 0, 0.0969999954, 0)
-Auto_2.Font = Enum.Font.Cartoon
-Auto_2.Text = "  Helpers"
-Auto_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Auto_2.TextSize = 19.000
-Auto_2.TextWrapped = true
-
 Icon_8.Name = "Icon"
-Icon_8.Parent = Auto_2
+Icon_8.Parent = ESP_2
 Icon_8.BackgroundTransparency = 1.000
-Icon_8.Position = UDim2.new(0.0900000036, 0, 0.25, 0)
-Icon_8.Size = UDim2.new(0.157602444, 0, 0.467851073, 0)
-Icon_8.Image = "rbxassetid://2790176032"
+Icon_8.Position = UDim2.new(0.100000001, 0, 0.219999999, 0)
+Icon_8.Size = UDim2.new(0.205295354, 0, 0.57622844, 0)
+Icon_8.Image = "rbxassetid://2790556871"
 
 CategoryText.Name = "CategoryText"
 CategoryText.Parent = Main
@@ -554,6 +591,8 @@ do -- _9HUH9.Module
 	script.Name = "Module"
 	local function module_script()
 		local module = {}
+		
+		print("MADE BY 9HUH9")
 		
 		local ts = game:GetService("TweenService")
 		local info = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut)
@@ -585,7 +624,7 @@ end
 
 -- Scripts:
 
-local function SKKOBY_fake_script() -- _9HUH9_2.LocalScript 
+local function ZXJC_fake_script() -- _9HUH9_2.LocalScript 
 	local script = Instance.new('LocalScript', _9HUH9_2)
 	local req = require
 	local require = function(obj)
@@ -600,8 +639,8 @@ local function SKKOBY_fake_script() -- _9HUH9_2.LocalScript
 		script.Parent.Parent.Main.Visible = not script.Parent.Parent.Main.Visible
 	end)
 end
-coroutine.wrap(SKKOBY_fake_script)()
-local function WUCV_fake_script() -- VT.Click 
+coroutine.wrap(ZXJC_fake_script)()
+local function DONQUIJ_fake_script() -- VT.Click 
 	local script = Instance.new('LocalScript', VT)
 	local req = require
 	local require = function(obj)
@@ -662,8 +701,8 @@ local function WUCV_fake_script() -- VT.Click
 		end
 	end)
 end
-coroutine.wrap(WUCV_fake_script)()
-local function MGDK_fake_script() -- AM.Click 
+coroutine.wrap(DONQUIJ_fake_script)()
+local function BRMAST_fake_script() -- AM.Click 
 	local script = Instance.new('LocalScript', AM)
 	local req = require
 	local require = function(obj)
@@ -708,8 +747,61 @@ local function MGDK_fake_script() -- AM.Click
 		end
 	end)
 end
-coroutine.wrap(MGDK_fake_script)()
-local function SRYKWTA_fake_script() -- PLAYERS.Click 
+coroutine.wrap(BRMAST_fake_script)()
+local function AFXPAY_fake_script() -- CL.Click 
+	local script = Instance.new('LocalScript', CL)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local module = require(script.Parent.Parent.Parent.Parent.Parent.Parent.Module)
+	
+	local plr = game.Players.LocalPlayer
+	local char = plr.Character
+	
+	local enabled = false
+	
+	local connections = {}
+	
+	script.Parent.Selector.MouseButton1Click:Connect(function()
+		if enabled then
+			module.getDisableTween(script.Parent.Selector):Play()
+			enabled = false
+			
+			for _, v in connections do
+				v:Disconnect()
+			end
+			
+			char.HumanoidRootPart:FindFirstChild("Light"):Destroy()
+		else
+			module.getEnableTween(script.Parent.Selector):Play()
+			enabled = true
+			
+			local light = Instance.new("PointLight")
+			light.Name = "Light"
+			light.Range = 60
+			light.Brightness = 4
+			light.Parent = char.HumanoidRootPart
+			
+			table.insert(connections, 
+				plr.CharacterAdded:Connect(function(char)
+					local light = Instance.new("PointLight")
+					light.Name = "Light"
+					light.Range = 60
+					light.Brightness = 4
+					light.Parent = char.HumanoidRootPart
+				end)
+			)
+		end
+	end)
+end
+coroutine.wrap(AFXPAY_fake_script)()
+local function DWJHSQS_fake_script() -- PLAYERS.Click 
 	local script = Instance.new('LocalScript', PLAYERS)
 	local req = require
 	local require = function(obj)
@@ -786,8 +878,8 @@ local function SRYKWTA_fake_script() -- PLAYERS.Click
 		end
 	end)
 end
-coroutine.wrap(SRYKWTA_fake_script)()
-local function KJEXE_fake_script() -- PILLAR.Click 
+coroutine.wrap(DWJHSQS_fake_script)()
+local function LXINCV_fake_script() -- PILLAR.Click 
 	local script = Instance.new('LocalScript', PILLAR)
 	local req = require
 	local require = function(obj)
@@ -835,8 +927,8 @@ local function KJEXE_fake_script() -- PILLAR.Click
 		end
 	end)
 end
-coroutine.wrap(KJEXE_fake_script)()
-local function VJFKIJ_fake_script() -- PRISONERS.Click 
+coroutine.wrap(LXINCV_fake_script)()
+local function JXUG_fake_script() -- PRISONERS.Click 
 	local script = Instance.new('LocalScript', PRISONERS)
 	local req = require
 	local require = function(obj)
@@ -899,9 +991,9 @@ local function VJFKIJ_fake_script() -- PRISONERS.Click
 		end
 	end)
 end
-coroutine.wrap(VJFKIJ_fake_script)()
-local function EZNEXZ_fake_script() -- Selector_6.LocalScript 
-	local script = Instance.new('LocalScript', Selector_6)
+coroutine.wrap(JXUG_fake_script)()
+local function QMQRZD_fake_script() -- Selector_7.LocalScript 
+	local script = Instance.new('LocalScript', Selector_7)
 	local req = require
 	local require = function(obj)
 		local fake = fake_module_scripts[obj]
@@ -930,8 +1022,8 @@ local function EZNEXZ_fake_script() -- Selector_6.LocalScript
 		end
 	end
 end
-coroutine.wrap(EZNEXZ_fake_script)()
-local function VGQNRFN_fake_script() -- Main.LocalScript 
+coroutine.wrap(QMQRZD_fake_script)()
+local function ETQTT_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 	local req = require
 	local require = function(obj)
@@ -984,4 +1076,4 @@ local function VGQNRFN_fake_script() -- Main.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VGQNRFN_fake_script)()
+coroutine.wrap(ETQTT_fake_script)()
