@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local _9HUH9 = Instance.new("ScreenGui")
 local _9HUH9_2 = Instance.new("TextButton")
 local Main = Instance.new("ImageLabel")
@@ -585,7 +580,7 @@ end
 
 -- Scripts:
 
-local function VKPIT_fake_script() -- _9HUH9_2.LocalScript 
+local function PKESKF_fake_script() -- _9HUH9_2.LocalScript 
 	local script = Instance.new('LocalScript', _9HUH9_2)
 	local req = require
 	local require = function(obj)
@@ -600,8 +595,8 @@ local function VKPIT_fake_script() -- _9HUH9_2.LocalScript
 		script.Parent.Parent.Main.Visible = not script.Parent.Parent.Main.Visible
 	end)
 end
-coroutine.wrap(VKPIT_fake_script)()
-local function XOABRSB_fake_script() -- VT.Click 
+coroutine.wrap(PKESKF_fake_script)()
+local function KLHPID_fake_script() -- VT.Click 
 	local script = Instance.new('LocalScript', VT)
 	local req = require
 	local require = function(obj)
@@ -662,8 +657,8 @@ local function XOABRSB_fake_script() -- VT.Click
 		end
 	end)
 end
-coroutine.wrap(XOABRSB_fake_script)()
-local function WSLI_fake_script() -- AM.Click 
+coroutine.wrap(KLHPID_fake_script)()
+local function YZGWAN_fake_script() -- AM.Click 
 	local script = Instance.new('LocalScript', AM)
 	local req = require
 	local require = function(obj)
@@ -708,8 +703,8 @@ local function WSLI_fake_script() -- AM.Click
 		end
 	end)
 end
-coroutine.wrap(WSLI_fake_script)()
-local function FNHSFPW_fake_script() -- PLAYERS.Click 
+coroutine.wrap(YZGWAN_fake_script)()
+local function HVMAU_fake_script() -- PLAYERS.Click 
 	local script = Instance.new('LocalScript', PLAYERS)
 	local req = require
 	local require = function(obj)
@@ -730,13 +725,10 @@ local function FNHSFPW_fake_script() -- PLAYERS.Click
 	
 	local connections = {}
 	
-	function esp(char)
-		if plr.Character == char then return end
-		local humanoid = char:FindFirstChildOfClass("Humanoid")
-		humanoid.NameDisplayDistance = 100
-	
+	function plr_esp(char)
 		for _, v in char:GetChildren() do
 			if v:IsA("BasePart") then
+				print(v.Name, char.Name)
 				local box = Instance.new("BoxHandleAdornment")
 				box.Name = v.Name.." ESP"
 				box.Parent = char
@@ -761,7 +753,8 @@ local function FNHSFPW_fake_script() -- PLAYERS.Click
 				v:Disconnect()
 			end
 			
-			for _, v in workspace.players:GetChildren() do
+			for _, p in game.Players:GetPlayers() do
+				local v = p.Character
 				for _, b in v:GetChildren() do
 					print(string.find(b.Name, " ESP"))
 					if string.find(b.Name, " ESP") then
@@ -773,20 +766,23 @@ local function FNHSFPW_fake_script() -- PLAYERS.Click
 			module.getEnableTween(script.Parent.Selector):Play()
 			enabled = true
 			
-			for _, v in workspace.players:GetChildren() do
-				esp(v)
+			for _, p in game.Players:GetPlayers() do
+				if p ~= plr then 
+					local v = p.Character
+					plr_esp(v)
+	
+					table.insert(connections, 
+						p.CharacterAdded:Connect(function(char)
+							plr_esp(char)
+						end)
+					)
+				end
 			end
-			
-			table.insert(connections, 
-				workspace.players.ChildAdded:Connect(function(char)
-					esp(char)
-				end)
-			)
 		end
 	end)
 end
-coroutine.wrap(FNHSFPW_fake_script)()
-local function HVRXEJ_fake_script() -- PILLAR.Click 
+coroutine.wrap(HVMAU_fake_script)()
+local function KVQFPD_fake_script() -- PILLAR.Click 
 	local script = Instance.new('LocalScript', PILLAR)
 	local req = require
 	local require = function(obj)
@@ -834,8 +830,8 @@ local function HVRXEJ_fake_script() -- PILLAR.Click
 		end
 	end)
 end
-coroutine.wrap(HVRXEJ_fake_script)()
-local function MYHPIIX_fake_script() -- PRISONERS.Click 
+coroutine.wrap(KVQFPD_fake_script)()
+local function ZYJOJ_fake_script() -- PRISONERS.Click 
 	local script = Instance.new('LocalScript', PRISONERS)
 	local req = require
 	local require = function(obj)
@@ -857,7 +853,7 @@ local function MYHPIIX_fake_script() -- PRISONERS.Click
 	local connections = {}
 	
 	
-	function esp(v)
+	function prisoners_esp(v)
 		if v.Name == "prisoner" then
 			local box = Instance.new("BoxHandleAdornment")
 			box.Name = "ESP"
@@ -887,19 +883,19 @@ local function MYHPIIX_fake_script() -- PRISONERS.Click
 			enabled = true
 	
 			for _, v in workspace.debris:GetChildren() do
-				esp(v)
+				prisoners_esp(v)
 			end
 	
 			table.insert(connections, 
 				workspace.debris.ChildAdded:Connect(function(v)
-					esp(v)
+					prisoners_esp(v)
 				end)
 			)
 		end
 	end)
 end
-coroutine.wrap(MYHPIIX_fake_script)()
-local function BAOJCBW_fake_script() -- Selector_6.LocalScript 
+coroutine.wrap(ZYJOJ_fake_script)()
+local function CTSKGWQ_fake_script() -- Selector_6.LocalScript 
 	local script = Instance.new('LocalScript', Selector_6)
 	local req = require
 	local require = function(obj)
@@ -929,8 +925,8 @@ local function BAOJCBW_fake_script() -- Selector_6.LocalScript
 		end
 	end
 end
-coroutine.wrap(BAOJCBW_fake_script)()
-local function QSIJXKE_fake_script() -- Main.LocalScript 
+coroutine.wrap(CTSKGWQ_fake_script)()
+local function SCJUHE_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 	local req = require
 	local require = function(obj)
@@ -983,4 +979,4 @@ local function QSIJXKE_fake_script() -- Main.LocalScript
 		end
 	end)
 end
-coroutine.wrap(QSIJXKE_fake_script)()
+coroutine.wrap(SCJUHE_fake_script)()
