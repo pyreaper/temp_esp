@@ -1,1 +1,677 @@
-local v0=Instance.new("ScreenGui");local v1=Instance.new("Frame");local v2=Instance.new("UICorner");local v3=Instance.new("UIAspectRatioConstraint");local v4=Instance.new("Folder");local v5=Instance.new("Frame");local v6=Instance.new("Frame");local v7=Instance.new("UICorner");local v8=Instance.new("TextLabel");local v9=Instance.new("TextButton");local v10=Instance.new("UICorner");local v11=Instance.new("Frame");local v12=Instance.new("UICorner");local v13=Instance.new("Frame");local v14=Instance.new("UICorner");local v15=Instance.new("TextLabel");local v16=Instance.new("TextButton");local v17=Instance.new("UICorner");local v18=Instance.new("Frame");local v19=Instance.new("UICorner");local v20=Instance.new("Frame");local v21=Instance.new("UICorner");local v22=Instance.new("TextLabel");local v23=Instance.new("Folder");local v24=Instance.new("TextLabel");local v25=Instance.new("UICorner");local v26=Instance.new("TextButton");local v27=Instance.new("TextButton");local v28=Instance.new("UIListLayout");local v29=Instance.new("Frame");local v30=Instance.new("Frame");local v31=Instance.new("UICorner");local v32=Instance.new("TextLabel");local v33=Instance.new("TextButton");local v34=Instance.new("UICorner");local v35=Instance.new("Frame");local v36=Instance.new("UICorner");local v37=Instance.new("UIListLayout");local v38=Instance.new("Frame");local v39=Instance.new("UICorner");local v40=Instance.new("TextLabel");local v41=Instance.new("TextButton");local v42=Instance.new("UICorner");local v43=Instance.new("Frame");local v44=Instance.new("UICorner");local v45=Instance.new("Frame");local v46=Instance.new("UICorner");local v47=Instance.new("TextLabel");local v48=Instance.new("TextButton");local v49=Instance.new("UICorner");local v50=Instance.new("Frame");local v51=Instance.new("UICorner");local v52=Instance.new("Frame");local v53=Instance.new("UICorner");local v54=Instance.new("TextLabel");local v55=Instance.new("Frame");local v56=Instance.new("UIListLayout");local v57=Instance.new("TextButton");local v58=Instance.new("Frame");local v59=Instance.new("TextButton");local v60=Instance.new("Frame");local v61=Instance.new("TextButton");v0.Name="SCMS";v0.Parent=game.Players.LocalPlayer:WaitForChild("PlayerGui");v0.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;v1.Name="Main";v1.Parent=v0;v1.BackgroundColor3=Color3.fromRGB(134 -98 ,103 -67 ,6 + 31 );v1.BorderColor3=Color3.fromRGB(0 -0 ,0 -0 ,0 -0 );v1.BorderSizePixel=0;v1.Position=UDim2.new(0.203940883,0 + 0 ,0.220414206 -0 ,0);v1.Size=UDim2.new(0.592118204,0,0.559171617 -0 ,0 + 0 );v2.Parent=v1;v3.Parent=v1;v3.AspectRatio=1.59 + 0 ;v4.Name="Categories";v4.Parent=v1;v5.Name="Tweaks";v5.Parent=v4;v5.BackgroundColor3=Color3.fromRGB(51,1106 -(87 + 968) ,237 -183 );v5.BackgroundTransparency=1 + 0 ;v5.BorderColor3=Color3.fromRGB(0 -0 ,1413 -(447 + 966) ,0 -0 );v5.BorderSizePixel=1817 -(1703 + 114) ;v5.Position=UDim2.new(0.183208853,701 -(376 + 325) ,0.173475236,0 -0 );v5.Size=UDim2.new(0.800000012,0 -0 ,0.800000012,0 + 0 );v5.ZIndex=10 -5 ;v6.Name="VT";v6.Parent=v5;v6.BackgroundColor3=Color3.fromRGB(59 -(9 + 5) ,421 -(85 + 291) ,1312 -(243 + 1022) );v6.BorderColor3=Color3.fromRGB(0 -0 ,0 + 0 ,1180 -(1123 + 57) );v6.BorderSizePixel=0 + 0 ;v6.Size=UDim2.new(255 -(163 + 91) ,1930 -(1869 + 61) ,0.102484472,0);v7.CornerRadius=UDim.new(0.5,0);v7.Parent=v6;v8.Name="Text";v8.Parent=v6;v8.BackgroundColor3=Color3.fromRGB(255,72 + 183 ,897 -642 );v8.BackgroundTransparency=1;v8.BorderColor3=Color3.fromRGB(0 -0 ,0,0);v8.BorderSizePixel=0 + 0 ;v8.Position=UDim2.new(0.021956088,0 -0 ,0,0 + 0 );v8.Size=UDim2.new(0.922155619,1474 -(1329 + 145) ,972 -(140 + 831) ,1850 -(1409 + 441) );v8.Font=Enum.Font.Ubuntu;v8.Text="Visibility tweaks";v8.TextColor3=Color3.fromRGB(973 -(15 + 703) ,119 + 136 ,255);v8.TextSize=14;v8.TextWrapped=true;v8.TextXAlignment=Enum.TextXAlignment.Left;v9.Name="Selector";v9.Parent=v6;v9.BackgroundColor3=Color3.fromRGB(28,466 -(262 + 176) ,1749 -(345 + 1376) );v9.BorderColor3=Color3.fromRGB(688 -(198 + 490) ,0 -0 ,0 -0 );v9.BorderSizePixel=1206 -(696 + 510) ;v9.Position=UDim2.new(0.944111764,0 -0 ,1262.181817561 -(1091 + 171) ,0 + 0 );v9.Size=UDim2.new(0.0399999991 -0 ,0,0.600000024 -0 ,0);v9.AutoButtonColor=false;v9.Font=Enum.Font.SourceSans;v9.Text=" ";v9.TextColor3=Color3.fromRGB(374 -(123 + 251) ,0 -0 ,698 -(208 + 490) );v9.TextSize=2 + 12 ;v10.CornerRadius=UDim.new(0.5 + 0 ,836 -(660 + 176) );v10.Parent=v9;v11.Name="Enable";v11.Parent=v9;v11.BackgroundColor3=Color3.fromRGB(8 + 55 ,69,394 -(14 + 188) );v11.BackgroundTransparency=676 -(534 + 141) ;v11.BorderColor3=Color3.fromRGB(0 + 0 ,0,0 + 0 );v11.BorderSizePixel=0;v11.Position=UDim2.new(0.15500024 + 0 ,0 -0 ,0.140000179,0 -0 );v11.Size=UDim2.new(0.699999988,0,0.699999988 -0 ,0 + 0 );v11.ZIndex=2 + 1 ;v12.CornerRadius=UDim.new(0.5,0);v12.Parent=v11;v13.Name="CL";v13.Parent=v5;v13.BackgroundColor3=Color3.fromRGB(441 -(115 + 281) ,104 -59 ,39 + 8 );v13.BorderColor3=Color3.fromRGB(0,0,0 -0 );v13.BorderSizePixel=0 -0 ;v13.Size=UDim2.new(868 -(550 + 317) ,0,0.102484472,0 -0 );v14.CornerRadius=UDim.new(0.5,0);v14.Parent=v13;v15.Name="Text";v15.Parent=v13;v15.BackgroundColor3=Color3.fromRGB(255,358 -103 ,712 -457 );v15.BackgroundTransparency=1;v15.BorderColor3=Color3.fromRGB(285 -(134 + 151) ,1665 -(970 + 695) ,0 -0 );v15.BorderSizePixel=1990 -(582 + 1408) ;v15.Position=UDim2.new(0.0219560787 -0 ,0 -0 ,0,0 -0 );v15.Size=UDim2.new(0.922155559,1824 -(1195 + 629) ,1,0 -0 );v15.Font=Enum.Font.Ubuntu;v15.Text="Character light";v15.TextColor3=Color3.fromRGB(255,255,496 -(187 + 54) );v15.TextSize=794 -(162 + 618) ;v15.TextWrapped=true;v15.TextXAlignment=Enum.TextXAlignment.Left;v16.Name="Selector";v16.Parent=v13;v16.BackgroundColor3=Color3.fromRGB(20 + 8 ,28,28);v16.BorderColor3=Color3.fromRGB(0 + 0 ,0 -0 ,0);v16.BorderSizePixel=0;v16.Position=UDim2.new(0.944111764,0 -0 ,0.181817561 + 0 ,1636 -(1373 + 263) );v16.Size=UDim2.new(0.0399999991,1000 -(451 + 549) ,0.600000024 + 0 ,0 -0 );v16.AutoButtonColor=false;v16.Font=Enum.Font.SourceSans;v16.Text=" ";v16.TextColor3=Color3.fromRGB(0 -0 ,1384 -(746 + 638) ,0 + 0 );v16.TextSize=20 -6 ;v17.CornerRadius=UDim.new(341.5 -(218 + 123) ,1581 -(1535 + 46) );v17.Parent=v16;v18.Name="Enable";v18.Parent=v16;v18.BackgroundColor3=Color3.fromRGB(63 + 0 ,10 + 59 ,752 -(306 + 254) );v18.BackgroundTransparency=1 + 0 ;v18.BorderColor3=Color3.fromRGB(0,0,0 -0 );v18.BorderSizePixel=1467 -(899 + 568) ;v18.Position=UDim2.new(0.15500024 + 0 ,0 -0 ,0.140000179,603 -(268 + 335) );v18.Size=UDim2.new(290.699999988 -(60 + 230) ,572 -(426 + 146) ,0.699999988,0 + 0 );v18.ZIndex=1459 -(282 + 1174) ;v19.CornerRadius=UDim.new(811.5 -(569 + 242) ,0 -0 );v19.Parent=v18;v20.Name="CLSelect";v20.Parent=v5;v20.BackgroundColor3=Color3.fromRGB(45,3 + 42 ,1071 -(706 + 318) );v20.BorderColor3=Color3.fromRGB(0,1251 -(721 + 530) ,1271 -(945 + 326) );v20.BorderSizePixel=0 -0 ;v20.Size=UDim2.new(1,0 + 0 ,0.102484472,700 -(271 + 429) );v21.CornerRadius=UDim.new(0.5 + 0 ,1500 -(1408 + 92) );v21.Parent=v20;v22.Name="Text";v22.Parent=v20;v22.BackgroundColor3=Color3.fromRGB(1341 -(461 + 625) ,255,1543 -(993 + 295) );v22.BackgroundTransparency=1 + 0 ;v22.BorderColor3=Color3.fromRGB(1171 -(418 + 753) ,0,0 + 0 );v22.BorderSizePixel=0 + 0 ;v22.Position=UDim2.new(0.0219560787,0 + 0 ,0 + 0 ,0);v22.Size=UDim2.new(0.682734966,0,530 -(406 + 123) ,1769 -(1749 + 20) );v22.Font=Enum.Font.Ubuntu;v22.Text="Character light brightness";v22.TextColor3=Color3.fromRGB(255,255,61 + 194 );v22.TextSize=1336 -(1249 + 73) ;v22.TextWrapped=true;v22.TextXAlignment=Enum.TextXAlignment.Left;v23.Name="Selector";v23.Parent=v20;v24.Name="Value";v24.Parent=v23;v24.BackgroundColor3=Color3.fromRGB(10 + 18 ,28,1173 -(466 + 679) );v24.BorderColor3=Color3.fromRGB(0 -0 ,0 -0 ,0);v24.BorderSizePixel=0;v24.Position=UDim2.new(1900.856559277 -(106 + 1794) ,0,0.181999907 + 0 ,0 + 0 );v24.Size=UDim2.new(0.0858021453,0 -0 ,0.600000024 -0 ,114 -(4 + 110) );v24.Font=Enum.Font.Ubuntu;v24.Text="1";v24.TextColor3=Color3.fromRGB(839 -(57 + 527) ,1682 -(41 + 1386) ,358 -(17 + 86) );v24.TextScaled=true;v24.TextSize=14;v24.TextWrapped=true;v25.CornerRadius=UDim.new(0.5 + 0 ,0 -0 );v25.Parent=v24;v26.Name="Subtract";v26.Parent=v23;v26.BackgroundColor3=Color3.fromRGB(28,81 -53 ,194 -(122 + 44) );v26.BackgroundTransparency=1 -0 ;v26.BorderColor3=Color3.fromRGB(0 -0 ,0 + 0 ,0);v26.BorderSizePixel=0;v26.Position=UDim2.new(0.81503284 + 0 ,0 -0 ,65.181817561 -(30 + 35) ,0);v26.Size=UDim2.new(0.0399999991 + 0 ,1257 -(1043 + 214) ,0.600000024 -0 ,1212 -(323 + 889) );v26.Font=Enum.Font.Ubuntu;v26.Text="-";v26.TextColor3=Color3.fromRGB(255,255,686 -431 );v26.TextScaled=true;v26.TextSize=594 -(361 + 219) ;v26.TextWrapped=true;v27.Name="Add";v27.Parent=v23;v27.BackgroundColor3=Color3.fromRGB(348 -(53 + 267) ,7 + 21 ,441 -(15 + 398) );v27.BackgroundTransparency=1;v27.BorderColor3=Color3.fromRGB(982 -(18 + 964) ,0 -0 ,0 + 0 );v27.BorderSizePixel=0 + 0 ;v27.Position=UDim2.new(850.944111764 -(20 + 830) ,0 + 0 ,0.181817561,126 -(116 + 10) );v27.Size=UDim2.new(0.0399999991 + 0 ,738 -(542 + 196) ,0.600000024 -0 ,0);v27.Font=Enum.Font.Ubuntu;v27.Text="+";v27.TextColor3=Color3.fromRGB(75 + 180 ,255,255);v27.TextScaled=true;v27.TextSize=14;v27.TextWrapped=true;v28.Parent=v5;v28.SortOrder=Enum.SortOrder.LayoutOrder;v28.Padding=UDim.new(0.0199999996 + 0 ,0 + 0 );v29.Name="ESP";v29.Parent=v4;v29.BackgroundColor3=Color3.fromRGB(51,51,54);v29.BackgroundTransparency=2 -1 ;v29.BorderColor3=Color3.fromRGB(0 -0 ,1551 -(1126 + 425) ,0);v29.BorderSizePixel=405 -(118 + 287) ;v29.Position=UDim2.new(0.183208853 -0 ,1121 -(118 + 1003) ,0.173475236 -0 ,377 -(142 + 235) );v29.Size=UDim2.new(0.800000012 -0 ,0 + 0 ,977.800000012 -(553 + 424) ,0 -0 );v29.Visible=false;v29.ZIndex=5 + 0 ;v30.Name="PL";v30.Parent=v29;v30.BackgroundColor3=Color3.fromRGB(45 + 0 ,27 + 18 ,20 + 27 );v30.BorderColor3=Color3.fromRGB(0 + 0 ,0,0 -0 );v30.BorderSizePixel=0 -0 ;v30.Size=UDim2.new(2 -1 ,0 + 0 ,0.102484472,0 -0 );v31.CornerRadius=UDim.new(753.5 -(239 + 514) ,0 + 0 );v31.Parent=v30;v32.Name="Text";v32.Parent=v30;v32.BackgroundColor3=Color3.fromRGB(1584 -(797 + 532) ,186 + 69 ,87 + 168 );v32.BackgroundTransparency=1;v32.BorderColor3=Color3.fromRGB(0 -0 ,1202 -(373 + 829) ,731 -(476 + 255) );v32.BorderSizePixel=0;v32.Position=UDim2.new(1130.021956088 -(369 + 761) ,0 + 0 ,0 -0 ,0 -0 );v32.Size=UDim2.new(238.922155619 -(64 + 174) ,0 + 0 ,1 -0 ,336 -(144 + 192) );v32.Font=Enum.Font.Ubuntu;v32.Text="Player ESP";v32.TextColor3=Color3.fromRGB(471 -(42 + 174) ,255,192 + 63 );v32.TextSize=12 + 2 ;v32.TextWrapped=true;v32.TextXAlignment=Enum.TextXAlignment.Left;v33.Name="Selector";v33.Parent=v30;v33.BackgroundColor3=Color3.fromRGB(28,12 + 16 ,1532 -(363 + 1141) );v33.BorderColor3=Color3.fromRGB(1580 -(1183 + 397) ,0 -0 ,0);v33.BorderSizePixel=0 + 0 ;v33.Position=UDim2.new(0.944111764 + 0 ,0,0.181817561,0);v33.Size=UDim2.new(0.0399999991,1975 -(1913 + 62) ,0.600000024,0);v33.AutoButtonColor=false;v33.Font=Enum.Font.SourceSans;v33.Text=" ";v33.TextColor3=Color3.fromRGB(0 + 0 ,0 -0 ,1933 -(565 + 1368) );v33.TextSize=52 -38 ;v34.CornerRadius=UDim.new(1661.5 -(1477 + 184) ,0 -0 );v34.Parent=v33;v35.Name="Enable";v35.Parent=v33;v35.BackgroundColor3=Color3.fromRGB(59 + 4 ,925 -(564 + 292) ,192);v35.BackgroundTransparency=1 -0 ;v35.BorderColor3=Color3.fromRGB(0 -0 ,304 -(244 + 60) ,0 + 0 );v35.BorderSizePixel=476 -(41 + 435) ;v35.Position=UDim2.new(1001.15500024 -(938 + 63) ,0 + 0 ,0.140000179,0);v35.Size=UDim2.new(0.699999988,0,1125.699999988 -(936 + 189) ,0 + 0 );v35.ZIndex=1616 -(1565 + 48) ;v36.CornerRadius=UDim.new(0.5 + 0 ,1138 -(782 + 356) );v36.Parent=v35;v37.Parent=v29;v37.SortOrder=Enum.SortOrder.LayoutOrder;v37.Padding=UDim.new(0.0199999996,267 -(176 + 91) );v38.Name="PE";v38.Parent=v29;v38.BackgroundColor3=Color3.fromRGB(117 -72 ,66 -21 ,1139 -(975 + 117) );v38.BorderColor3=Color3.fromRGB(1875 -(157 + 1718) ,0,0 + 0 );v38.BorderSizePixel=0;v38.Size=UDim2.new(3 -2 ,0,0.102484472 -0 ,0);v39.CornerRadius=UDim.new(0.5,0);v39.Parent=v38;v40.Name="Text";v40.Parent=v38;v40.BackgroundColor3=Color3.fromRGB(1273 -(697 + 321) ,694 -439 ,539 -284 );v40.BackgroundTransparency=2 -1 ;v40.BorderColor3=Color3.fromRGB(0 + 0 ,0 -0 ,0 -0 );v40.BorderSizePixel=1227 -(322 + 905) ;v40.Position=UDim2.new(611.0219560787 -(602 + 9) ,1189 -(449 + 740) ,872 -(826 + 46) ,947 -(245 + 702) );v40.Size=UDim2.new(0.922155559 -0 ,0,1 + 0 ,0);v40.Font=Enum.Font.Ubuntu;v40.Text="Prisoner ESP";v40.TextColor3=Color3.fromRGB(255,2153 -(260 + 1638) ,695 -(382 + 58) );v40.TextSize=44 -30 ;v40.TextWrapped=true;v40.TextXAlignment=Enum.TextXAlignment.Left;v41.Name="Selector";v41.Parent=v38;v41.BackgroundColor3=Color3.fromRGB(24 + 4 ,57 -29 ,83 -55 );v41.BorderColor3=Color3.fromRGB(1205 -(902 + 303) ,0,0);v41.BorderSizePixel=0 -0 ;v41.Position=UDim2.new(0.944111764 -0 ,0 + 0 ,0.181817561,1690 -(1121 + 569) );v41.Size=UDim2.new(0.0399999991,214 -(22 + 192) ,0.600000024,683 -(483 + 200) );v41.AutoButtonColor=false;v41.Font=Enum.Font.SourceSans;v41.Text=" ";v41.TextColor3=Color3.fromRGB(0,0,0);v41.TextSize=14;v42.CornerRadius=UDim.new(1463.5 -(1404 + 59) ,0 -0 );v42.Parent=v41;v43.Name="Enable";v43.Parent=v41;v43.BackgroundColor3=Color3.fromRGB(84 -21 ,834 -(468 + 297) ,192);v43.BackgroundTransparency=563 -(334 + 228) ;v43.BorderColor3=Color3.fromRGB(0 -0 ,0 -0 ,0 -0 );v43.BorderSizePixel=0 + 0 ;v43.Position=UDim2.new(0.15500024,236 -(141 + 95) ,0.140000179,0);v43.Size=UDim2.new(0.699999988 + 0 ,0,0.699999988 -0 ,0 -0 );v43.ZIndex=3;v44.CornerRadius=UDim.new(0.5 + 0 ,0 -0 );v44.Parent=v43;v45.Name="AE";v45.Parent=v29;v45.BackgroundColor3=Color3.fromRGB(45,32 + 13 ,25 + 22 );v45.BorderColor3=Color3.fromRGB(0 -0 ,0 + 0 ,163 -(92 + 71) );v45.BorderSizePixel=0;v45.Size=UDim2.new(1 + 0 ,0 -0 ,765.102484472 -(574 + 191) ,0);v46.CornerRadius=UDim.new(0.5 + 0 ,0);v46.Parent=v45;v47.Name="Text";v47.Parent=v45;v47.BackgroundColor3=Color3.fromRGB(255,638 -383 ,255);v47.BackgroundTransparency=1 + 0 ;v47.BorderColor3=Color3.fromRGB(849 -(254 + 595) ,126 -(55 + 71) ,0 -0 );v47.BorderSizePixel=1790 -(573 + 1217) ;v47.Position=UDim2.new(0.0219560787 -0 ,0,0,0 + 0 );v47.Size=UDim2.new(0.922155559 -0 ,939 -(714 + 225) ,2 -1 ,0);v47.Font=Enum.Font.Ubuntu;v47.Text="Altar (Pillars) ESP";v47.TextColor3=Color3.fromRGB(355 -100 ,255,28 + 227 );v47.TextSize=20 -6 ;v47.TextWrapped=true;v47.TextXAlignment=Enum.TextXAlignment.Left;v48.Name="Selector";v48.Parent=v45;v48.BackgroundColor3=Color3.fromRGB(834 -(118 + 688) ,76 -(25 + 23) ,6 + 22 );v48.BorderColor3=Color3.fromRGB(0,1886 -(927 + 959) ,0 -0 );v48.BorderSizePixel=0;v48.Position=UDim2.new(0.944111764,0,732.181817561 -(16 + 716) ,0);v48.Size=UDim2.new(0.0399999991 -0 ,97 -(11 + 86) ,0.600000024,0);v48.AutoButtonColor=false;v48.Font=Enum.Font.SourceSans;v48.Text=" ";v48.TextColor3=Color3.fromRGB(0 -0 ,285 -(175 + 110) ,0 -0 );v48.TextSize=69 -55 ;v49.CornerRadius=UDim.new(1796.5 -(503 + 1293) ,0);v49.Parent=v48;v50.Name="Enable";v50.Parent=v48;v50.BackgroundColor3=Color3.fromRGB(175 -112 ,50 + 19 ,1253 -(810 + 251) );v50.BackgroundTransparency=1;v50.BorderColor3=Color3.fromRGB(0 + 0 ,0 + 0 ,0);v50.BorderSizePixel=0;v50.Position=UDim2.new(0.15500024 + 0 ,533 -(43 + 490) ,733.140000179 -(711 + 22) ,0 -0 );v50.Size=UDim2.new(859.699999988 -(240 + 619) ,0 + 0 ,0.699999988 -0 ,0 + 0 );v50.ZIndex=1747 -(1344 + 400) ;v51.CornerRadius=UDim.new(405.5 -(255 + 150) ,0);v51.Parent=v50;v52.Name="Placeholder";v52.Parent=v1;v52.BackgroundColor3=Color3.fromRGB(41 + 10 ,28 + 23 ,230 -176 );v52.BorderColor3=Color3.fromRGB(0,0,0 -0 );v52.BorderSizePixel=1739 -(404 + 1335) ;v52.Position=UDim2.new(406.166389331 -(183 + 223) ,0,0.148148149,0);v52.Size=UDim2.new(0.83443284 -0 ,0 + 0 ,0.852692008 + 0 ,337 -(10 + 327) );v53.Parent=v52;v54.Name="Naming";v54.Parent=v1;v54.BackgroundColor3=Color3.fromRGB(92 + 39 ,155,593 -(118 + 220) );v54.BackgroundTransparency=1 + 0 ;v54.BorderColor3=Color3.fromRGB(449 -(108 + 341) ,0,0 + 0 );v54.BorderSizePixel=0 -0 ;v54.Size=UDim2.new(1.00000012,1493 -(711 + 782) ,0.145646155,0);v54.ZIndex=0;v54.Font=Enum.Font.Ubuntu;v54.Text="Made by 9HUH9 & contributors";v54.TextColor3=Color3.fromRGB(131,297 -142 ,724 -(270 + 199) );v54.TextSize=7 + 13 ;v55.Name="Selectors";v55.Parent=v1;v55.BackgroundColor3=Color3.fromRGB(2074 -(580 + 1239) ,758 -503 ,255);v55.BackgroundTransparency=1 + 0 ;v55.BorderColor3=Color3.fromRGB(0,0 + 0 ,0);v55.BorderSizePixel=0;v55.Position=UDim2.new(0,0 + 0 ,0.145646155 -0 ,0 + 0 );v55.Size=UDim2.new(1167.16488792 -(645 + 522) ,0,1790.852692008 -(1010 + 780) ,0 + 0 );v56.Parent=v55;v56.SortOrder=Enum.SortOrder.LayoutOrder;v57.Name="Tweaks";v57.Parent=v55;v57.BackgroundColor3=Color3.fromRGB(76,362 -286 ,79);v57.BackgroundTransparency=2 -1 ;v57.BorderColor3=Color3.fromRGB(1836 -(1045 + 791) ,0 -0 ,0 -0 );v57.BorderSizePixel=0;v57.Size=UDim2.new(506.01010096 -(351 + 154) ,1574 -(1281 + 293) ,0.102484472,266 -(28 + 238) );v57.ZIndex=5;v57.AutoButtonColor=false;v57.Font=Enum.Font.Ubuntu;v57.Text="Tweaks";v57.TextColor3=Color3.fromRGB(255,569 -314 ,1814 -(1381 + 178) );v57.TextSize=14 + 0 ;v58.Name="Color";v58.Parent=v57;v58.BackgroundColor3=Color3.fromRGB(131,125 + 30 ,109 + 146 );v58.BorderColor3=Color3.fromRGB(0 -0 ,0 + 0 ,0);v58.BorderSizePixel=470 -(381 + 89) ;v58.Size=UDim2.new(1,0 + 0 ,0.0500000007,0 + 0 );v59.Name="ESP";v59.Parent=v55;v59.BackgroundColor3=Color3.fromRGB(129 -53 ,76,1235 -(1074 + 82) );v59.BackgroundTransparency=1 -0 ;v59.BorderColor3=Color3.fromRGB(0,1784 -(214 + 1570) ,1455 -(990 + 465) );v59.BorderSizePixel=0;v59.Position=UDim2.new(0 + 0 ,0 + 0 ,0.102484472 + 0 ,0 -0 );v59.Size=UDim2.new(1727.01010096 -(1668 + 58) ,626 -(512 + 114) ,0.102484472 -0 ,0 -0 );v59.ZIndex=17 -12 ;v59.AutoButtonColor=false;v59.Font=Enum.Font.Ubuntu;v59.Text="ESP";v59.TextColor3=Color3.fromRGB(119 + 136 ,48 + 207 ,222 + 33 );v59.TextSize=47 -33 ;v59.TextTransparency=1994.5 -(109 + 1885) ;v60.Name="Color";v60.Parent=v59;v60.BackgroundColor3=Color3.fromRGB(1600 -(1269 + 200) ,297 -142 ,255);v60.BackgroundTransparency=816 -(98 + 717) ;v60.BorderColor3=Color3.fromRGB(0,0,826 -(802 + 24) );v60.BorderSizePixel=0;v60.Size=UDim2.new(1 -0 ,0 -0 ,0.0500000007,0 + 0 );v60.Visible=false;v61.Name="Hide";v61.Parent=v1;v61.BackgroundColor3=Color3.fromRGB(196 + 59 ,255,42 + 213 );v61.BackgroundTransparency=1 + 0 ;v61.BorderColor3=Color3.fromRGB(0 -0 ,0 -0 ,0 + 0 );v61.BorderSizePixel=0;v61.Position=UDim2.new(0.960505188 + 0 ,0 + 0 ,0.0238330066 + 0 ,0 + 0 );v61.Size=UDim2.new(0.0221602302,1433 -(797 + 636) ,0.0370735638,0);v61.AutoButtonColor=false;v61.Font=Enum.Font.Unknown;v61.Text="X";v61.TextColor3=Color3.fromRGB(636 -505 ,1774 -(1427 + 192) ,255);v61.TextScaled=true;v61.TextSize=14;v61.TextWrapped=true;local v497={};do local v502=Instance.new("ModuleScript",v0);v502.Name="Module";local function v504() local v566=0 + 0 ;local v567;local v568;local v569;local v570;while true do if (v566==(0 -0)) then v567={};v568=game:GetService("TweenService");v569=TweenInfo.new(0.1 + 0 ,Enum.EasingStyle.Quad,Enum.EasingDirection.InOut);v566=1;end if (v566==(2 + 2)) then return v567;end if (v566==(328 -(192 + 134))) then v567.getHoverTween=function(v646) return v568:Create(v646.Enable,v569,{BackgroundTransparency=1276.8 -(316 + 960) });end;v567.getUnHoverTween=function(v647) return v568:Create(v647.Enable,v569,{BackgroundTransparency=1});end;v567.selectorHover=function(v648) return v568:Create(v648,v569,{BackgroundTransparency=0.9 + 0 });end;v566=3 + 0 ;end if (v566==1) then v570=TweenInfo.new(0.3,Enum.EasingStyle.Quad,Enum.EasingDirection.InOut);v567.getEnableTween=function(v649) return v568:Create(v649.Enable,v569,{BackgroundTransparency=0 + 0 });end;v567.getDisableTween=function(v650) return v568:Create(v650.Enable,v569,{BackgroundTransparency=1});end;v566=7 -5 ;end if (v566==(554 -(83 + 468))) then v567.selectorUnHover=function(v651) return v568:Create(v651,v569,{BackgroundTransparency=1807 -(1202 + 604) });end;v567.selectorClicked=function(v652) local v653=0 -0 ;while true do if (v653==(1 -0)) then v568:Create(v652.Color,v570,{BackgroundTransparency=0 -0 }):Play();break;end if (v653==(325 -(45 + 280))) then v568:Create(v652,v569,{TextTransparency=0 + 0 }):Play();v568:Create(v652,v569,{BackgroundTransparency=0.7}):Play();v653=1;end end end;v567.selectorUnClicked=function(v654) local v655=0 + 0 ;while true do if (v655==(0 + 0)) then v654.TextTransparency=0.5;v568:Create(v654,v569,{BackgroundTransparency=1 + 0 }):Play();v655=1 + 0 ;end if (v655==(1 -0)) then v568:Create(v654.Color,v570,{BackgroundTransparency=1912 -(340 + 1571) }):Play();break;end end end;v566=2 + 2 ;end end end v497[v502]=v504;end local function v498() local v506=Instance.new("LocalScript",v5);local v507=require;local v508=function(v571) local v572=v497[v571];if v572 then return v572();end return v507(v571);end;local v509=v508(v506.Parent.Parent.Parent.Parent.Module);local v510=game:GetService("RunService");local v511=game.Players.LocalPlayer;local v512=v511.Character;local v513=v511.PlayerGui:FindFirstChild("main");local v514=v506.Parent.CL;local v515=v506.Parent.CLSelect;local v516=v506.Parent.VT;local v517=v515.Selector.Add;local v518=v515.Selector.Subtract;local v519=v515.Selector.Value;local v520=v514.Selector;local v521=v516.Selector;local v522=v509.getEnableTween(v520);local v523=v509.getEnableTween(v521);local v524=v509.getDisableTween(v520);local v525=v509.getDisableTween(v521);local v526={};local v527={};local v528=nil;local v529=1773 -(1733 + 39) ;v521.MouseButton1Click:Connect(function() if  not v521.Clicked.Value then v521.Clicked.Value= not v521.Clicked.Value;v523:Play();game.Lighting:FindFirstChildOfClass("Atmosphere").Parent=game.Workspace;v513:WaitForChild("dmg").Visible=false;local v602=v511.CharacterAdded:Connect(function(v636) v513:WaitForChild("dmg").Visible=false;end);local v603=v510.Heartbeat:Connect(function() game.Lighting.ClockTime=14;end);local v604=v510.RenderStepped:Connect(function() local v639=0;while true do if (v639==(0 -0)) then game.Lighting.Ambient=Color3.fromRGB(1172 -(125 + 909) ,2082 -(1096 + 852) ,52 + 62 );game.Lighting.OutdoorAmbient=Color3.fromRGB(128,127,110);break;end end end);table.insert(v527,v602);table.insert(v527,v603);table.insert(v527,v604);else local v605=0 -0 ;while true do if ((1 + 0)==v605) then game.Workspace:FindFirstChildOfClass("Atmosphere").Parent=game.Lighting;v513:WaitForChild("dmg").Visible=true;v605=514 -(409 + 103) ;end if (v605==(238 -(46 + 190))) then for v687,v688 in pairs(v527) do v688:Disconnect();end break;end if (v605==(95 -(51 + 44))) then v521.Clicked.Value= not v521.Clicked.Value;v525:Play();v605=1 + 0 ;end end end end);v520.MouseButton1Click:Connect(function() local function v573() local v590=Instance.new("PointLight");v590.Name="Light";v590.Range=1377 -(1114 + 203) ;v590.Brightness=v529;v590.Parent=v512.HumanoidRootPart;v528=v590;end if  not v520.Clicked.Value then local v606=726 -(228 + 498) ;local v607;while true do if (v606==1) then v573();v607=workspace.players.ChildAdded:Connect(function(v689) if (v689.Name==v511.Name) then v512=v689;v573();end end);v606=2;end if ((1 + 1)==v606) then table.insert(v526,v607);break;end if (v606==0) then v520.Clicked.Value= not v520.Clicked.Value;v522:Play();v606=1;end end else local v608=0;while true do if (v608==0) then v520.Clicked.Value= not v520.Clicked.Value;v524:Play();v608=1 + 0 ;end if (v608==1) then if v528 then v528:Destroy();end break;end end end end);v517.MouseButton1Click:Connect(function() if (v529<10) then v529+=1 end v519.Text=v529;if v528 then v528.Brightness=v529;end end);v518.MouseButton1Click:Connect(function() if (v529>(664 -(174 + 489))) then v529-=(2 -1) end v519.Text=v529;if v528 then v528.Brightness=v529;end end);end coroutine.wrap(v498)();local function v499() local v530=Instance.new("LocalScript",v29);local v531=require;local v532=function(v576) local v577=v497[v576];if v577 then return v577();end return v531(v576);end;local v533=v532(v530.Parent.Parent.Parent.Parent.Module);local v534=game:GetService("RunService");local v535=game.Players.LocalPlayer;local v536=v535.Character;local v537=v535.PlayerGui:FindFirstChild("main");local v538=v530.Parent.AE;local v539=v530.Parent.PE;local v540=v530.Parent.PL;local v541=v538.Selector;local v542=v539.Selector;local v543=v540.Selector;local v544=v533.getEnableTween(v541);local v545=v533.getEnableTween(v542);local v546=v533.getEnableTween(v543);local v547=v533.getDisableTween(v541);local v548=v533.getDisableTween(v542);local v549=v533.getDisableTween(v543);local v550={};local v551={};function prisoners_esp(v578) if (v578.Name=="prisoner") then local v611=1905 -(830 + 1075) ;local v612;while true do if (v611==1) then v612.Parent=v578;v612.Adornee=v578;v611=2;end if (v611==0) then v612=Instance.new("BoxHandleAdornment");v612.Name="ESP";v611=525 -(303 + 221) ;end if (v611==(1272 -(231 + 1038))) then v612.Size=v578.Size;v612.Transparency=0.5 + 0 ;v611=4;end if (v611==(1164 -(171 + 991))) then v612.AlwaysOnTop=true;v612.ZIndex=41 -31 ;v611=7 -4 ;end if (v611==4) then v612.Color3=v578.Color;break;end end end end function plr_esp(v579) for v596,v597 in v579:GetChildren() do if v597:IsA("BasePart") then local v640=0 -0 ;local v641;while true do if (v640==4) then v641.Transparency=0.5;v641.Color3=Color3.fromRGB(205 + 50 ,255,893 -638 );break;end if (v640==1) then v641.Name=v597.Name   .. " ESP" ;v641.Parent=v579;v640=2;end if (v640==0) then print(v597.Name,v579.Name);v641=Instance.new("BoxHandleAdornment");v640=2 -1 ;end if (v640==(4 -1)) then v641.ZIndex=10;v641.Size=v597.Size;v640=12 -8 ;end if (v640==2) then v641.Adornee=v597;v641.AlwaysOnTop=true;v640=1251 -(111 + 1137) ;end end end end end v541.MouseButton1Click:Connect(function() if  not v541.Clicked.Value then local v613=158 -(91 + 67) ;while true do if (v613==(0 -0)) then v541.Clicked.Value= not v541.Clicked.Value;v544:Play();v613=1 + 0 ;end if (v613==(524 -(423 + 100))) then for v699,v700 in workspace.map.rocks:GetChildren() do if (v700.Name=="pillar") then local v716=0;local v717;while true do if (2==v716) then v717.AlwaysOnTop=true;v717.ZIndex=1 + 9 ;v716=3;end if (v716==0) then v717=Instance.new("BoxHandleAdornment");v717.Name="ESP";v716=2 -1 ;end if (v716==(1 + 0)) then v717.Parent=v700;v717.Adornee=v700;v716=773 -(326 + 445) ;end if ((17 -13)==v716) then v717.Color3=Color3.fromRGB(490 -270 ,246,248);break;end if (3==v716) then v717.Size=v700.Size;v717.Transparency=0.5 -0 ;v716=715 -(530 + 181) ;end end end end break;end end else local v614=0;while true do if (v614==0) then v541.Clicked.Value= not v541.Clicked.Value;v547:Play();v614=1;end if (v614==(882 -(614 + 267))) then for v701,v702 in workspace.map.rocks:GetChildren() do if (v702.Name=="pillar") then v702:FindFirstChild("ESP"):Destroy();end end break;end end end end);v542.MouseButton1Click:Connect(function() if  not v542.Clicked.Value then local v615=32 -(19 + 13) ;local v616;while true do if (v615==(1 -0)) then for v703,v704 in workspace.debris:GetChildren() do prisoners_esp(v704);end v616=workspace.debris.ChildAdded:Connect(function(v705) prisoners_esp(v705);end);v615=4 -2 ;end if (v615==(0 -0)) then v542.Clicked.Value= not v542.Clicked.Value;v545:Play();v615=1 + 0 ;end if (v615==(3 -1)) then table.insert(v550,v616);break;end end else local v617=0 -0 ;while true do if (0==v617) then v542.Clicked.Value= not v542.Clicked.Value;v548:Play();v617=1813 -(1293 + 519) ;end if ((1 -0)==v617) then for v706,v707 in v550 do v707:Disconnect();end for v708,v709 in workspace.debris:GetChildren() do if (v709.Name=="prisoner") then v709:FindFirstChild("ESP"):Destroy();end end break;end end end end);v543.MouseButton1Click:Connect(function() if  not v543.Clicked.Value then local v618=0 -0 ;local v619;while true do if ((1 -0)==v618) then for v710,v711 in workspace.players:GetChildren() do if (v711.Name~=v535.Name) then plr_esp(v711);end end v619=workspace.players.ChildAdded:Connect(function(v712) if (v712.Name~=v535.Name) then plr_esp(v712);end end);v618=8 -6 ;end if (v618==(0 -0)) then v543.Clicked.Value= not v543.Clicked.Value;v546:Play();v618=1 + 0 ;end if (v618==2) then table.insert(v551,v619);break;end end else v543.Clicked.Value= not v543.Clicked.Value;v549:Play();for v642,v643 in v551 do v643:Disconnect();end for v644,v645 in workspace.players:GetChildren() do for v656,v657 in v645:GetChildren() do print(string.find(v657.Name," ESP"));if string.find(v657.Name," ESP") then v657:Destroy();end end end end end);end coroutine.wrap(v499)();local function v500() local v552=Instance.new("LocalScript",v0);local v553=require;local v554=function(v580) local v581=v497[v580];if v581 then return v581();end return v553(v580);end;local v555=v554(v552.Parent.Module);local v556=v552.Parent.Main.Selectors;local v557=v552.Parent.Main.Selectors.Tweaks;local v558=nil;for v582,v583 in v556:GetChildren() do if v583:IsA("TextButton") then local v621=0;while true do if (v621==(1 + 0)) then v583.MouseButton1Click:Connect(function() if  not v583.Color.Visible then local v718=0;local v719;local v720;while true do if (v718==(4 -2)) then v583.Color.Visible=true;v555.selectorClicked(v583);v718=1 + 2 ;end if (v718==(1 + 2)) then v719=v552.Parent.Main.Categories:FindFirstChild(v583.Name);v720=v552.Parent.Main.Categories:FindFirstChild(v558.Name);v718=3 + 1 ;end if (v718==0) then v555.selectorUnClicked(v557);v557.Color.Visible=false;v718=1;end if (v718==(1100 -(709 + 387))) then v720.Visible=false;v719.Visible=true;break;end if (v718==1) then v558=v557;v557=v583;v718=2;end end end end);break;end if (v621==(1858 -(673 + 1185))) then v583.MouseEnter:Connect(function() if  not v583.Color.Visible then print(v583.Name);v555.selectorHover(v583):Play();end end);v583.MouseLeave:Connect(function() if  not v583.Color.Visible then print(v583.Name);v555.selectorUnHover(v583):Play();end end);v621=2 -1 ;end end end end end coroutine.wrap(v500)();local function v501() local v559=Instance.new("LocalScript",v0);local v560=require;local v561=function(v584) local v585=v497[v584];if v585 then return v585();end return v560(v584);end;local v562=v561(v559.Parent.Module);local v563=game:GetService("UserInputService");local v564=v559.Parent.Main.Categories:GetDescendants();for v586,v587 in v564 do print(v587:IsA("TextButton"));print(v587.Name,v587.Name=="Selector" );if (v587:IsA("TextButton") and (v587.Name=="Selector")) then local v622=0;local v623;local v624;local v625;while true do if (v622==(3 -2)) then v623.Name="Clicked";v623.Parent=v587;v622=2 -0 ;end if (v622==(2 + 0)) then v624=v562.getHoverTween(v587);v625=v562.getUnHoverTween(v587);v622=3 + 0 ;end if (v622==(0 -0)) then print(v587.Name,v587.Parent.Name);v623=Instance.new("BoolValue");v622=1 + 0 ;end if (v622==3) then v587.MouseEnter:Connect(function() if  not v623.Value then v624:Play();end end);v587.MouseLeave:Connect(function() if  not v623.Value then v625:Play();end end);break;end end end end local v565=false;function closeNotify() game:GetService("StarterGui"):SetCore("SendNotification",{Title="UI is hidden",Text="Press Right Shift to reopen it"});end v563.InputBegan:Connect(function(v588,v589) if v589 then return;end if (v588.KeyCode==Enum.KeyCode.RightShift) then if v565 then local v658=0;while true do if (v658==0) then v559.Parent.Enabled=true;v565=false;break;end end else local v659=0 -0 ;while true do if (v659==1) then v565=true;break;end if (v659==(0 -0)) then v559.Parent.Enabled=false;closeNotify();v659=1881 -(446 + 1434) ;end end end end end);v559.Parent.Main.Hide.MouseButton1Click:Connect(function() if v565 then local v626=1283 -(1040 + 243) ;while true do if (v626==(0 -0)) then v559.Parent.Enabled=true;v565=false;break;end end else local v627=1847 -(559 + 1288) ;while true do if (v627==1) then v565=true;break;end if (v627==(1931 -(609 + 1322))) then v559.Parent.Enabled=false;closeNotify();v627=1;end end end end);end coroutine.wrap(v501)();
+--love4u version: 0.1
+local color = Color3.fromRGB(131, 155, 255)
+local ntext = "SCMS GUI"
+
+local rs = game:GetService("RunService")
+
+local s = nil
+local sf = nil
+
+
+--local getgenv = getgenv
+local cloneref = cloneref or function(x) return x end
+local hui = function() return script.Parent end --gethui or get_hidden_ui --
+local coregui = cloneref(game:GetService("CoreGui"))
+
+
+local currentSl = nil
+
+--if getgenv().FUCK then return end
+
+--pcall(function() getgenv().FUCK = true end)
+
+if not game:IsLoaded() then
+	game.Loaded:Wait()
+end
+
+local plr = game.Players.LocalPlayer
+local char = plr.Character
+
+
+function notify(title: string, text: string)
+	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = title,
+		Text = text
+	})
+end
+
+
+game:GetService("UserInputService").InputBegan:Connect(function(input, _g)
+	if not s then return end
+	if _g then return end
+
+	if input.KeyCode == Enum.KeyCode.RightShift then
+		if s.Enabled then
+			notify("love4u - UI is hidden", "Press RightShift to open it")
+			s.Enabled = false
+		else
+			s.Enabled = true
+		end
+	end
+end)
+
+
+notify("love4u - Join Discord", "https://discord.gg/smEse2a2")
+
+
+local function rns()
+	local length = math.random(6, 15)
+	local array = {}
+	for i = 1, length do
+		array[i] = string.char(math.random(32, 126))
+	end
+	return table.concat(array)
+end
+
+
+local categories = {}
+
+local function module_script()
+	local module = {}
+
+	local ts = game:GetService("TweenService")
+	local info = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut)
+	local selectorInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut)
+
+
+	function module.getEnableTween(selector: TextButton) 
+		return ts:Create(
+			selector:FindFirstChildOfClass("Frame"),
+			info,
+			{BackgroundTransparency=0}
+		)
+	end
+
+	function module.getDisableTween(selector: TextButton) 
+		return ts:Create(
+			selector:FindFirstChildOfClass("Frame"),
+			info,
+			{BackgroundTransparency=1}
+		)
+	end
+
+	function module.getHoverTween(selector: TextButton)
+		return ts:Create(
+			selector:FindFirstChildOfClass("Frame"),
+			info,
+			{BackgroundTransparency=0.8}
+		)
+	end
+
+	function module.getUnHoverTween(selector: TextButton)
+		return ts:Create(
+			selector:FindFirstChildOfClass("Frame"),
+			info,
+			{BackgroundTransparency=1}
+		)
+	end
+
+
+	function module.selectorHover(selector: TextButton)
+		return ts:Create(
+			selector,
+			info,
+			{BackgroundTransparency=0.9}
+		)
+	end
+
+	function module.selectorUnHover(selector: TextButton)
+		return ts:Create(
+			selector,
+			info,
+			{BackgroundTransparency=1}
+		)
+	end
+
+	function module.selectorClicked(selector: TextButton)
+		ts:Create(
+			selector,
+			info,
+			{TextTransparency=0}
+		):Play()
+
+		ts:Create(
+			selector,
+			info,
+			{BackgroundTransparency=0.7}
+		):Play()
+
+		ts:Create(
+			selector:FindFirstChildOfClass("Frame"),
+			selectorInfo,
+			{BackgroundTransparency=0}
+		):Play()
+	end
+
+	function module.selectorUnClicked(selector: TextButton)
+		selector.TextTransparency = 0.5
+
+		ts:Create(
+			selector,
+			info,
+			{BackgroundTransparency=1}
+		):Play()
+
+		ts:Create(
+			selector:FindFirstChildOfClass("Frame"),
+			selectorInfo,
+			{BackgroundTransparency=1}
+		):Play()
+	end
+
+
+	function module.dropdownOpen(dropdown: TextButton)
+		ts:Create(
+			dropdown:FindFirstChildOfClass("ImageLabel"),
+			info,
+			{Rotation=180}
+		):Play()
+		ts:Create(
+			dropdown.Dropdown,
+			info,
+			{Size=UDim2.new(1, 0, 6.406, 0)}
+		):Play()
+	end
+
+	function module.dropdownClose(dropdown: TextButton)
+		ts:Create(
+			dropdown:FindFirstChildOfClass("ImageLabel"),
+			info,
+			{Rotation=0}
+		):Play()
+		ts:Create(
+			dropdown:FindFirstChildOfClass("ScrollingFrame"),
+			info,
+			{Size=UDim2.new(1, 0, 0, 0)}
+		):Play()
+	end
+
+	return module
+
+end
+
+
+module = module_script()
+
+
+local function screenGui()
+	local sg = Instance.new("ScreenGui")
+	sg.Name = rns()
+	sg.ResetOnSpawn = false
+
+	if hui then
+		sg.Parent = hui()
+	else 
+		sg.Parent = coregui
+	end
+
+	return sg
+end
+
+local function mf()
+	local frame = Instance.new("Frame")
+
+	local uc = Instance.new("UICorner")
+	local uc2 = Instance.new("UICorner")
+
+	local uac = Instance.new("UIAspectRatioConstraint")
+
+	frame.Name = rns()
+	frame.Parent = s
+	frame.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
+	frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	frame.BorderSizePixel = 0
+	frame.Position = UDim2.new(0.2, 0, 0.2, 0)
+	frame.Size = UDim2.new(0.592118204, 0, 0.559171617, 0)
+	uac.AspectRatio = 1.590
+	uc.Parent = frame
+	uac.Parent = frame
+
+	local selectors = Instance.new("Frame")
+	local placeholder = Instance.new("Frame")
+	local ul = Instance.new("UIListLayout")
+	sf = selectors
+
+	selectors.Name = rns()
+	selectors.Parent = frame
+	selectors.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	selectors.BackgroundTransparency = 1.000
+	selectors.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	selectors.BorderSizePixel = 0
+	selectors.Position = UDim2.new(0, 0, 0.145646155, 0)
+	selectors.Size = UDim2.new(0.16488792, 0, 0.852692008, 0)
+
+	placeholder.Name = rns()
+	placeholder.Parent = frame
+	placeholder.BackgroundColor3 = Color3.fromRGB(51, 51, 54)
+	placeholder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	placeholder.BorderSizePixel = 0
+	placeholder.Position = UDim2.new(0.166389331, 0, 0.148148149, 0)
+	placeholder.Size = UDim2.new(0.83443284, 0, 0.852692008, 0)
+	ul.Parent = selectors
+
+	local naming = Instance.new("TextLabel")
+	naming.Parent = frame
+	naming.BackgroundTransparency = 1.000
+	naming.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	naming.BorderSizePixel = 0
+	naming.Size = UDim2.new(1.00000012, 0, 0.145646155, 0)
+	naming.Font = Enum.Font.Arimo
+	naming.Text = "SCMS GUI"
+	naming.TextColor3 = Color3.fromRGB(131, 155, 255)
+	naming.TextSize = 20.000
+
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+
+	local function update(input)
+		local delta = input.Position - dragStart
+		frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = frame.Position
+
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+
+	frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			if s.Enabled then
+				update(input)
+			end
+		end
+	end)
+
+	return frame
+end
+
+
+function category(mf: Frame)
+	local c = Instance.new("Frame")
+	local ul = Instance.new("UIListLayout")
+
+	c.Name = rns()
+	c.Parent = mf
+	c.BackgroundTransparency = 1.000
+	c.BorderSizePixel = 0
+	c.Position = UDim2.new(0.183208853, 0, 0.173475236, 0)
+	c.Size = UDim2.new(0.800000012, 0, 0.800000012, 0)
+	c.ZIndex = 5
+	c.Visible = false
+
+	ul.Parent = c
+	ul.SortOrder = Enum.SortOrder.LayoutOrder
+	ul.Padding = UDim.new(0.0199999996, 0)
+
+	table.insert(categories, c)
+
+	return c
+end
+
+
+function categorySelector(mf: Frame, sText: string, cc: Frame)
+	local sl = Instance.new("TextButton")
+	sl.Name = rns()
+	sl.Parent = sf
+	sl.BackgroundColor3 = Color3.fromRGB(76, 76, 79)
+	sl.BackgroundTransparency = 1.000
+	sl.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	sl.BorderSizePixel = 0
+	sl.Position = UDim2.new(0, 0, 0.102484472, 0)
+	sl.Size = UDim2.new(1.01010096, 0, 0.102484472, 0)
+	sl.AutoButtonColor = false
+	sl.Font = Enum.Font.Ubuntu
+	sl.Text = sText
+	sl.TextColor3 = Color3.fromRGB(255, 255, 255)
+	sl.TextSize = 14.000
+	sl.TextTransparency = 0.500
+
+	local c = Instance.new("Frame")
+	c.Name = rns()
+	c.Parent = sl
+	c.BackgroundColor3 = color
+	c.BackgroundTransparency = 1.000
+	c.BorderSizePixel = 0
+	c.Size = UDim2.new(1, 0, 0.0500000007, 0)
+	c.Visible = false
+
+	sl.MouseEnter:Connect(function()
+		if not sl:FindFirstChildOfClass("Frame").Visible then
+			module.selectorHover(sl):Play()
+		end
+	end)
+
+	sl.MouseLeave:Connect(function()
+		if not sl:FindFirstChildOfClass("Frame").Visible then
+			module.selectorUnHover(sl):Play()
+		end
+	end)
+
+	sl.MouseButton1Click:Connect(function()
+		if not sl:FindFirstChildOfClass("Frame").Visible then
+			if currentSl then
+				module.selectorUnClicked(currentSl)
+				currentSl:FindFirstChildOfClass("Frame").Visible = false
+			end
+
+			currentSl = sl
+
+			sl:FindFirstChildOfClass("Frame").Visible = true
+
+			module.selectorClicked(sl)
+
+			for _, v in categories do
+				v.Visible = false
+			end
+
+			cc.Visible = true
+		end
+	end)
+
+	return sl
+end
+
+
+function buttonSelector(
+	c: Frame, 
+	slText: string, 
+	afterEnable, 
+	afterDisable
+)
+	local sl = Instance.new("Frame")
+	sl.Name = rns()
+	sl.Parent = c
+	sl.BackgroundColor3 = Color3.fromRGB(45, 45, 47)
+	sl.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	sl.BorderSizePixel = 0
+	sl.Size = UDim2.new(1, 0, 0.102484472, 0)
+
+	local text = Instance.new("TextLabel")
+	text.Parent = sl
+	text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	text.BackgroundTransparency = 1.000
+	text.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	text.BorderSizePixel = 0
+	text.Position = UDim2.new(0.0219560787, 0, 0, 0)
+	text.Size = UDim2.new(0.922155559, 0, 1, 0)
+	text.Font = Enum.Font.Ubuntu
+	text.Text = slText
+	text.TextColor3 = Color3.fromRGB(255, 255, 255)
+	text.TextSize = 14.000
+	text.TextWrapped = true
+	text.TextXAlignment = Enum.TextXAlignment.Left
+
+	local btn = Instance.new("TextButton")
+	local uc = Instance.new("UICorner")
+
+	btn.Parent = sl
+	btn.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+	btn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	btn.BorderSizePixel = 0
+	btn.Position = UDim2.new(0.944111764, 0, 0.181817561, 0)
+	btn.Size = UDim2.new(0.0399999991, 0, 0.600000024, 0)
+	btn.AutoButtonColor = false
+	btn.Font = Enum.Font.SourceSans
+	btn.Text = " "
+	btn.TextColor3 = Color3.fromRGB(0, 0, 0)
+	btn.TextSize = 14.000
+	uc.Parent = btn
+
+	local enable = Instance.new("Frame")
+	local uc2 = Instance.new("UICorner")
+
+	enable.Name = rns()
+	enable.Parent = btn
+	enable.BackgroundColor3 = Color3.fromRGB(63, 69, 192)
+	enable.BackgroundTransparency = 1.000
+	enable.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	enable.BorderSizePixel = 0
+	enable.Position = UDim2.new(0.15500024, 0, 0.140000179, 0)
+	enable.Size = UDim2.new(0.699999988, 0, 0.699999988, 0)
+	enable.ZIndex = 3
+	uc2.Parent = enable
+
+	btn:SetAttribute("Clicked", false)
+
+	local btnHover = module.getHoverTween(btn)
+	local btnUnHover = module.getUnHoverTween(btn)
+	local btnClicked = module.getEnableTween(btn)
+	local btnUnClicked = module.getDisableTween(btn)
+
+	btn.MouseEnter:Connect(function()
+		if not btn:GetAttribute("Clicked") then
+			btnHover:Play()
+		end
+	end)
+
+	btn.MouseLeave:Connect(function()
+		if not btn:GetAttribute("Clicked") then
+			btnUnHover:Play()
+		end
+	end)
+
+	btn.MouseButton1Click:Connect(function()
+		if btn:GetAttribute("Clicked") then
+			btn:SetAttribute("Clicked", false)
+			btnUnClicked:Play()
+
+			afterDisable()
+		else
+			btn:SetAttribute("Clicked", true)
+
+			btnClicked:Play()
+			afterEnable()
+		end
+	end)
+end
+
+
+function numberSelector(
+	c: Frame, 
+	slText: string, 
+	min: number,
+	max: number,
+	afterChange: (n: number) -> ()
+)
+	local num = min
+
+	local sl = Instance.new("Frame")
+	sl.Name = rns()
+	sl.Parent = c
+	sl.BackgroundColor3 = Color3.fromRGB(45, 45, 47)
+	sl.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	sl.BorderSizePixel = 0
+	sl.Size = UDim2.new(1, 0, 0.102484472, 0)
+
+	local text = Instance.new("TextLabel")
+	text.Parent = sl
+	text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	text.BackgroundTransparency = 1.000
+	text.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	text.BorderSizePixel = 0
+	text.Position = UDim2.new(0.0219560787, 0, 0, 0)
+	text.Size = UDim2.new(0.922155559, 0, 1, 0)
+	text.Font = Enum.Font.Ubuntu
+	text.Text = slText
+	text.TextColor3 = Color3.fromRGB(255, 255, 255)
+	text.TextSize = 14.000
+	text.TextWrapped = true
+	text.TextXAlignment = Enum.TextXAlignment.Left
+
+	local add = Instance.new("TextButton")
+	add.Parent = sl
+	add.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+	add.BackgroundTransparency = 1.000
+	add.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	add.BorderSizePixel = 0
+	add.Position = UDim2.new(0.944111764, 0, 0.181817561, 0)
+	add.Size = UDim2.new(0.0399999991, 0, 0.600000024, 0)
+	add.Font = Enum.Font.Ubuntu
+	add.Text = "+"
+	add.TextColor3 = Color3.fromRGB(255, 255, 255)
+	add.TextScaled = true
+	add.TextSize = 14.000
+	add.TextWrapped = true
+
+	local subtract = Instance.new("TextButton")
+	subtract.Parent = sl
+	subtract.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+	subtract.BackgroundTransparency = 1.000
+	subtract.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	subtract.BorderSizePixel = 0
+	subtract.Position = UDim2.new(0.81503284, 0, 0.181817561, 0)
+	subtract.Size = UDim2.new(0.0399999991, 0, 0.600000024, 0)
+	subtract.Font = Enum.Font.Ubuntu
+	subtract.Text = "-"
+	subtract.TextColor3 = Color3.fromRGB(255, 255, 255)
+	subtract.TextScaled = true
+	subtract.TextSize = 14.000
+	subtract.TextWrapped = true
+
+	local value = Instance.new("TextLabel")
+	local uc = Instance.new("UICorner")
+	value.Parent = sl
+	value.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+	value.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	value.BorderSizePixel = 0
+	value.Position = UDim2.new(0.856559277, 0, 0.181999907, 0)
+	value.Size = UDim2.new(0.0858021453, 0, 0.600000024, 0)
+	value.Font = Enum.Font.Ubuntu
+	value.Text = num
+	value.TextColor3 = Color3.fromRGB(255, 255, 255)
+	value.TextScaled = true
+	value.TextSize = 14.000
+	value.TextWrapped = true
+	uc.Parent = value
+
+	add.MouseButton1Click:Connect(function()
+		if num == max then return end
+
+		num += 1
+		value.Text = num
+		afterChange(num + 1)
+	end)
+
+	subtract.MouseButton1Click:Connect(function()
+		if num == min then return end
+
+		num -= 1
+		value.Text = num
+		afterChange(num - 1)
+	end)
+end
+
+
+
+s = screenGui()
+local main = mf(s)
+
+
+local tweaks = category(main)
+local tweaksSelector = categorySelector(
+	main,
+	"Tweaks",
+	tweaks
+)
+
+local vtConnections = {}
+local vt = buttonSelector(
+	tweaks,
+	"Visibility tweaks",
+	
+	function()
+		game.Lighting:FindFirstChildOfClass("Atmosphere").Parent = game.Workspace
+		main:WaitForChild("dmg").Visible = false
+
+		local c = plr.CharacterAdded:Connect(function(char)
+			main:WaitForChild("dmg").Visible = false
+		end)
+
+		local h = rs.Heartbeat:Connect(function()
+			game.Lighting.ClockTime = 14
+		end)
+
+		local r = rs.RenderStepped:Connect(function()
+			game.Lighting.Ambient = Color3.fromRGB(138, 134, 114)
+			game.Lighting.OutdoorAmbient = Color3.fromRGB(128, 127, 110)
+		end)
+
+		table.insert(vtConnections, c)
+		table.insert(vtConnections, h)
+		table.insert(vtConnections, r)
+	end,
+	
+	function()
+		game.Workspace:FindFirstChildOfClass("Atmosphere").Parent = game.Lighting
+		plr.PlayerGui:WaitForChild("main"):WaitForChild("dmg").Visible = true
+		
+		for i, v in vtConnections do
+			v:Disconnect()
+			vtConnections[i] = nil
+		end
+	end
+)
+
+
+local currentLight = nil
+local currentBrightness = 1
+local clConnection = nil
+
+local cl = buttonSelector(
+	tweaks,
+	"Character light",
+	
+	function()
+		local function cLight()
+			local light = Instance.new("PointLight")
+			light.Name = "Light"
+			light.Range = 60
+			light.Brightness = currentBrightness
+			light.Parent = char.HumanoidRootPart
+
+			currentLight = light
+		end
+		
+		cLight()
+		clConnection = workspace.players.ChildAdded:Connect(function(newChar)
+			if newChar.Name == plr.Name then
+				char = newChar
+				cLight()
+			end
+		end)
+	end,
+	
+	function()
+		if currentLight then currentLight:Destroy() end
+	end
+)
+
+local clSelect = numberSelector(
+	tweaks,
+	"Character light Brightness",
+	1, 10,
+	
+	function(n)
+		currentBrightness = n
+		if currentLight then
+			currentLight.Brightness = currentBrightness
+		end
+	end
+)
